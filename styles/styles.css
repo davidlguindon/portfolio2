@@ -1,0 +1,74 @@
+li {
+display: inline;
+text-align: right;
+}
+.biography{
+
+}
+header{
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: lightblue;
+}
+footer{
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: lightblue;
+}
+.alignright{
+background-color: orange;
+width: 76%;
+text-align: right;
+}
+.alignleft{
+background-color: red;
+text-align: center;
+width: 24%;
+}
+.hero{
+height: 400px;
+background-color: lightgray;
+}
+.projectcard{
+width: 80%;
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 50px;
+margin-bottom: 50px;
+height: 300px;
+background-color: pink;
+display: flex;
+align-items: center;
+justify-content: center;
+resize: both;
+overflow: auto;
+}
+h1{
+font-size: 36px;
+text-align: center;
+margin-top: 18px;
+}
+p {
+text-align: center;
+margin-top: 18px;
+margin-left: 25%;
+margin-right: 25%;
+}
+.designprocess{
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 180px;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+border: 1px black solid;
+box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
+}
