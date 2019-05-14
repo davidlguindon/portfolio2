@@ -33,6 +33,10 @@ text-align: center;
 width: 24%;
 }
 .hero{
+background-image: url(../assets/dock.jpg);
+background-position: center;
+background-position: middle
+;
 margin-top: 100px;
 height: 400px;
 background-color: lightgray;
@@ -61,17 +65,60 @@ height: 300px;
 height: 300px;
 background-image: url(../assets/projectswish.png) , url(../assets/racecar.jpg);
 background-repeat: no-repeat;
+background-position: left, bottom;
+background-size: contain , cover;
+}
+.projectpicture2{
+height: 300px;
+background-image: url(../assets/projectswish.png) , url(../assets/wall.jpeg);
+background-repeat: no-repeat;
+background-size: contain , cover;
+}
+.projectpicture3{
+height: 300px;
+background-image: url(../assets/projectswish.png) , url(../assets/bench.jpeg);
+background-repeat: no-repeat;
+background-position: center;
+background-position: left;
 background-size: contain , cover;
 }
 h1{
-font-size: 36px;
-text-align: center;
-margin-top: 18px;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 18px;
+}
+.projectdesc h2 {
+  margin-top: 40px;
+  position: relative;
+  left: 20%;
+}
+.projectdesc h3 {
+  position: relative;
+  left: 20%;
+  margin-top: 5px;
+}
+h2{
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+}
+h3{
+  color: #ffffff;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
 }
 p {
-text-align: center;
-margin-top: 18px;
-margin-left: 25%;
+  text-align: center;
+  margin-top: 18px;
+  margin-left: 25%;
 margin-right: 25%;
 }
 .designprocess{
@@ -87,4 +134,47 @@ margin-right: 25%;
   justify-content: center;
   border: 1px black solid;
   box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
+}
+.projectcardbutton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #23395e;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #23395e;
+	box-shadow:inset 0px 1px 0px 0px #23395e;
+	background:-moz-linear-gradient(top, #2e466e 5%, #415989 100%);
+	background:-webkit-linear-gradient(top, #2e466e 5%, #415989 100%);
+	background:-o-linear-gradient(top, #2e466e 5%, #415989 100%);
+	background:-ms-linear-gradient(top, #2e466e 5%, #415989 100%);
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e466e', endColorstr='#415989',GradientType=0);
+	background-color:#2e466e;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #1f2f47;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Roboto;
+  font-size:15px;
+  font-weight:bold;
+  padding:16px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #263666;
+  text-align:center;
+  display:block;
+  position: relative;
+  top: 30px;
+  left: 20%;
+margin-bottom: 20px;
+}
+.projectcardbutton:hover {
+  background:-moz-linear-gradient(top, #415989 5%, #2e466e 100%);
+  background:-webkit-linear-gradient(top, #415989 5%, #2e466e 100%);
+  background:-o-linear-gradient(top, #415989 5%, #2e466e 100%);
+  background:-ms-linear-gradient(top, #415989 5%, #2e466e 100%);
+  background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#415989', endColorstr='#2e466e',GradientType=0);
+  background-color:#415989;
+}
+.projectcardbutton:active {
+  position:relative;
+  top:1px;
 }
