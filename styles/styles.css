@@ -35,8 +35,7 @@ width: 24%;
 .hero{
 background-image: url(../assets/dock.jpg);
 background-position: center;
-background-position: middle
-;
+background-size: cover;
 margin-top: 100px;
 height: 400px;
 background-color: lightgray;
@@ -177,4 +176,18 @@ margin-bottom: 20px;
 .projectcardbutton:active {
   position:relative;
   top:1px;
+}
+.designprocess{
+background-image:url(../assets/discoveryandresearch.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+cursor:pointer;
+}
+#designprocessbutton:checked + label{
+  width: 76%;
+height: 500px;
+}
+#designprocessbutton{
+display: none;
 }
