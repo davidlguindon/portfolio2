@@ -1,184 +1,89 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>CSS Accordion Slider</title>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <style>
-.accordion.discoveryaccordion {
-   -webkit-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
-   -moz-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
-   box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
-   font-family: Arial, Helvetica, sans-serif;
-   border-color: #484f52;
-   border-style: solid;
-   border-width: 1px;
-   border-radius: 0px;
-   margin: 0 auto;
-   height: 458px;
-   width: 700px;
+body {
+ color: #2c3e50;
+ background: #ecf0f1;
+ padding: 0 1em 1em;
+}
+h1 {
+ margin: 0;
+ line-height: 2;
+ text-align: center;
+}
+h2 {
+ margin: 0 0 0.5em;
+ font-weight: normal;
+}
+input {
+ position: absolute;
+ opacity: 0;
+ z-index: -1;
+}
+.row {
+ display: flex;
+}
+.row .col {
+ flex: 1;
+}
+.row .col:last-child {
+ margin-left: 1em;
+}
+/* Accordion styles */
+.tabs {
+ border-radius: 8px;
+ overflow: hidden;
+ box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+.tab {
+ width: 100%;
+ color: white;
+ overflow: hidden;
+}
+.tab-label {
+ display: flex;
+ justify-content: space-between;
+ padding: 1em;
+ background: #2c3e50;
+ font-weight: bold;
+ cursor: pointer;
+/* Icon */
+}
+.tab-label:hover {
+ background: #1a252f;
+}
+.tab-label::after {
+ content: "\276F";
+ width: 1em;
+ height: 1em;
+ text-align: center;
+ transition: all 0.35s;
+}
+.tab-content {
+ max-height: 0;
+ padding: 0 1em;
+ color: #2c3e50;
+ background: white;
+ transition: all 0.35s;
+}
+.tab-close {
+ display: flex;
+ justify-content: flex-end;
+ padding: 1em;
+ font-size: 0.75em;
+ background: #2c3e50;
+ cursor: pointer;
+}
+.tab-close:hover {
+ background: #1a252f;
+}
+input:checked + .tab-label {
+ background: #1a252f;
+}
+input:checked + .tab-label::after {
+ transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+ max-height: 100vh;
+ padding: 1em;
 }
 
-.accordion.discoveryaccordion > ul > li,
-.discoveryaccordion.discoveryaccordion .accordion-title,
-.discoveryaccordion.discoveryaccordion .accordion-content,
-.discoveryaccordion.discoveryaccordion .accordion-separator {
-   float: none;
-}
-
-.accordion.discoveryaccordion > ul > li {
-   background-color: #528fcc;
-   margin-right: -0px;
-   margin-bottom: -290px;
-}
-
-.discoveryaccordion.discoveryaccordion .accordion-select:checked ~.discoveryaccordion .accordion-separator {
-   margin-right: 0px;
-   margin-bottom: 290px;
-}
-
-.discoveryaccordion.discoveryaccordion .accordion-title,
-.discoveryaccordion.discoveryaccordion .accordion-select  {
-   background-color: #79bcff;
-   color: #ffffff;
-   width: 700px;
-   height: 40px;
-   font-size: 18px;
-}
-
-.discoveryaccordion.discoveryaccordion .accordion-title span {
-   margin-bottom: 20px;
-   margin-left: 20px;
-}
-
-.discoveryaccordion.discoveryaccordion .accordion-select:hover ~.discoveryaccordion .accordion-title,
-.discoveryaccordion.discoveryaccordion .accordion-select:checked ~.discoveryaccordion .accordion-title {
-   background-color: #378ee5;
-}
-
-.discoveryaccordion.discoveryaccordion .accordion-title span  {
-   transform: rotate(0deg);
-   -o-transform: rotate(0deg);
-   -moz-transform: rotate(0deg);
-   -webkit-transform: rotate(0deg);
-   -ms-writing-mode: lr-tb;
-   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
-   margin-bottom: 0px;
-   line-height: 40px;
-}
-
-.discoveryaccordion.discoveryaccordion .accordion-content {
-   background-color: #ffffff;
-   color: #484f52;
-   height: 234px;
-   width: 644px;
-   padding: 28px;
-}
-
-.discoveryaccordion.discoveryaccordion .accordion-title,
-.discoveryaccordion.discoveryaccordion .accordion-select:checked ~.discoveryaccordion .accordion-content {
-   margin-right: 2px;
-   margin-bottom: 2px;
-}
-
-/* Do not change following properties, they aren't
-generated automatically and are common for each slider. */
-.accordion {
-   overflow: hidden;
-}
-
-.accordion > ul {
-   margin: 0;
-   padding: 0;
-   list-style: none;
-   width: 101%;
-}
-
-.accordion > ul > li,
-.accordion-title {
-   position: relative;
-}
-
-.accordion-select {
-   cursor: pointer;
-   position: absolute;
-   opacity: 0;
-   top: 0;
-   left: 0;
-   margin: 0;
-   z-index: 1;
-}
-
-.accordion-title span {
-   display: block;
-   position: absolute;
-   bottom: 0px;
-   width: 100%;
-   white-space: nowrap;
-}
-
-.accordion-content {
-   position: relative;
-   overflow: auto;
-}
-
-.accordion-separator {
-   transition: margin 0.3s ease 0.1s;
-   -o-transition: margin 0.3s ease 0.1s;
-   -moz-transition: margin 0.3s ease 0.1s;
-   -webkit-transition: margin 0.3s ease 0.1s;
-}
 </style>
-</head>
-<body>
-<div class="accordion discoveryaccordion">
-   <ul>
-        <li>
-           <input type="radio" name="select" class="accordion-select" checked />
-           <div class="accordion-title">
-               <span>Title</span>
-           </div>
-           <div class="accordion-content">
-               Content
-           </div>
-           <div class="accordion-separator"></div>
-       </li>
-        <li>
-           <input type="radio" name="select" class="accordion-select" />
-           <div class="accordion-title">
-               <span>Title</span>
-           </div>
-           <div class="accordion-content">
-               Content
-           </div>
-           <div class="accordion-separator"></div>
-       </li>
-        <li>
-           <input type="radio" name="select" class="accordion-select" />
-           <div class="accordion-title">
-               <span>Title</span>
-           </div>
-           <div class="accordion-content">
-               Content
-           </div>
-           <div class="accordion-separator"></div>
-       </li>
-        <li>
-           <input type="radio" name="select" class="accordion-select" />
-           <div class="accordion-title">
-               <span>Title</span>
-           </div>
-           <div class="accordion-content">
-               Content
-           </div>
-           <div class="accordion-separator"></div>
-       </li>
-   </ul>
-</div>
-<div style="text-align:center;margin-top:50px;">
-   <a href="https://accordionslider.com/" style="color:#568EEA;text-decoration:none;">
-       Css Accordion Slider Generator
-   </a>
-</div>
-</body>
-</html> 
