@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Accordion Slider</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+.accordion.discoveryaccordion {
+   -webkit-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
+   -moz-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
+   box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
+   font-family: Arial, Helvetica, sans-serif;
+   border-color: #484f52;
+   border-style: solid;
+   border-width: 1px;
+   border-radius: 0px;
+   margin: 0 auto;
+   height: 458px;
+   width: 700px;
+}
+
+.accordion.discoveryaccordion > ul > li,
+.discoveryaccordion.discoveryaccordion .accordion-title,
+.discoveryaccordion.discoveryaccordion .accordion-content,
+.discoveryaccordion.discoveryaccordion .accordion-separator {
+   float: none;
+}
+
+.accordion.discoveryaccordion > ul > li {
+   background-color: #528fcc;
+   margin-right: -0px;
+   margin-bottom: -290px;
+}
+
+.discoveryaccordion.discoveryaccordion .accordion-select:checked ~.discoveryaccordion .accordion-separator {
+   margin-right: 0px;
+   margin-bottom: 290px;
+}
+
+.discoveryaccordion.discoveryaccordion .accordion-title,
+.discoveryaccordion.discoveryaccordion .accordion-select  {
+   background-color: #79bcff;
+   color: #ffffff;
+   width: 700px;
+   height: 40px;
+   font-size: 18px;
+}
+
+.discoveryaccordion.discoveryaccordion .accordion-title span {
+   margin-bottom: 20px;
+   margin-left: 20px;
+}
+
+.discoveryaccordion.discoveryaccordion .accordion-select:hover ~.discoveryaccordion .accordion-title,
+.discoveryaccordion.discoveryaccordion .accordion-select:checked ~.discoveryaccordion .accordion-title {
+   background-color: #378ee5;
+}
+
+.discoveryaccordion.discoveryaccordion .accordion-title span  {
+   transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   -webkit-transform: rotate(0deg);
+   -ms-writing-mode: lr-tb;
+   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+   margin-bottom: 0px;
+   line-height: 40px;
+}
+
+.discoveryaccordion.discoveryaccordion .accordion-content {
+   background-color: #ffffff;
+   color: #484f52;
+   height: 234px;
+   width: 644px;
+   padding: 28px;
+}
+
+.discoveryaccordion.discoveryaccordion .accordion-title,
+.discoveryaccordion.discoveryaccordion .accordion-select:checked ~.discoveryaccordion .accordion-content {
+   margin-right: 2px;
+   margin-bottom: 2px;
+}
+
+/* Do not change following properties, they aren't
+generated automatically and are common for each slider. */
+.accordion {
+   overflow: hidden;
+}
+
+.accordion > ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   width: 101%;
+}
+
+.accordion > ul > li,
+.accordion-title {
+   position: relative;
+}
+
+.accordion-select {
+   cursor: pointer;
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   left: 0;
+   margin: 0;
+   z-index: 1;
+}
+
+.accordion-title span {
+   display: block;
+   position: absolute;
+   bottom: 0px;
+   width: 100%;
+   white-space: nowrap;
+}
+
+.accordion-content {
+   position: relative;
+   overflow: auto;
+}
+
+.accordion-separator {
+   transition: margin 0.3s ease 0.1s;
+   -o-transition: margin 0.3s ease 0.1s;
+   -moz-transition: margin 0.3s ease 0.1s;
+   -webkit-transition: margin 0.3s ease 0.1s;
+}
+</style>
+</head>
+<body>
+<div class="accordion discoveryaccordion">
+   <ul>
+        <li>
+           <input type="radio" name="select" class="accordion-select" checked />
+           <div class="accordion-title">
+               <span>Title</span>
+           </div>
+           <div class="accordion-content">
+               Content
+           </div>
+           <div class="accordion-separator"></div>
+       </li>
+        <li>
+           <input type="radio" name="select" class="accordion-select" />
+           <div class="accordion-title">
+               <span>Title</span>
+           </div>
+           <div class="accordion-content">
+               Content
+           </div>
+           <div class="accordion-separator"></div>
+       </li>
+        <li>
+           <input type="radio" name="select" class="accordion-select" />
+           <div class="accordion-title">
+               <span>Title</span>
+           </div>
+           <div class="accordion-content">
+               Content
+           </div>
+           <div class="accordion-separator"></div>
+       </li>
+        <li>
+           <input type="radio" name="select" class="accordion-select" />
+           <div class="accordion-title">
+               <span>Title</span>
+           </div>
+           <div class="accordion-content">
+               Content
+           </div>
+           <div class="accordion-separator"></div>
+       </li>
+   </ul>
+</div>
+<div style="text-align:center;margin-top:50px;">
+   <a href="https://accordionslider.com/" style="color:#568EEA;text-decoration:none;">
+       Css Accordion Slider Generator
+   </a>
+</div>
+</body>
+</html> 
