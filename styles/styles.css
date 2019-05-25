@@ -7,7 +7,7 @@ height: 100px;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: lightblue;
+background-color: #27737D;
 position: fixed;
 margin-top: -100px;
 width: 100%;
@@ -17,7 +17,7 @@ footer{
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: lightblue;
+background-color: #27737D;
 height: 75px;
 }
 footer li {
@@ -25,14 +25,13 @@ display: inline;
 text-align: right;
 }
 .alignright{
-background-color: orange;
 width: 76%;
 text-align: right;
 }
 .alignleft{
-background-color: red;
 text-align: center;
 width: 24%;
+background-color: red;
 }
 .hero{
 background-image: url(../assets/dock.jpg);
@@ -90,6 +89,7 @@ h1{
 }
 .projectdesc h2 {
   margin-top: 40px;
+  text-align: center;
   position: relative;
   left: 20%;
 }
@@ -97,6 +97,10 @@ h1{
   position: relative;
   left: 20%;
   margin-top: 5px;
+white-space: nowrap;
+}
+.projectdesc a {
+  text-align: center;
 }
 h2{
   color: #ffffff;
@@ -128,9 +132,16 @@ p {
 .designprocesscontainer{
 width: 100px;
 height: 100px;
-background-color: lightblue;
-position: relative;
-right: 189px;
+background-color: pink;
+/* position: relative;
+right: 189px; */
+}
+#designprocessbutton:checked ~ .designprocesscontainer{
+  width: 80%;
+  height: 200px;
+-webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+transition: width 1s, height 50s, transform 2s;
+/* display: none; */
 }
 .designprocess{
   width: 50%;
@@ -202,13 +213,17 @@ transition: width 2s, height 5s, transform 2s;
 transform: rotate(0deg);
   transform: translate(-18.5%, -100%);
 }
-#designprocessbutton:checked + #designprocesscontainer{
-display: none;
-background-color: yellow;
+#designprocessbutton2:checked + label{
+  width: 80%;
+-webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+transition: width 2s, height 5s, transform 2s;
+-webkit-transform: rotate(180deg); /* Safari */
+transform: rotate(0deg);
+  transform: translate(-18.5%, -100%);
 }
-#designprocessbutton{
+/* #designprocessbutton{
 display: none;
-}
+} */
 .accordion.Discovery {
    -webkit-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
    -moz-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
@@ -362,4 +377,35 @@ generated automatically and are common for each slider. */
   transform: rotate(360deg);
   left: calc(100% - 102px);
   background: yellow;
+}
+@-webkit-keyframes spinner {
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(-360deg);
+  }
+}
+
+#stage {
+  margin: 1em auto;
+  -webkit-perspective: 1200px;
+}
+
+#spinner {
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 6s;
+  -webkit-transform-style: preserve-3d;
+}
+#spinner:hover {
+  -webkit-animation-play-state: paused;
+}
+
+#spinner img {
+  position: absolute;
+  border: 1px solid #ccc;
+  background: rgba(255,255,255,0.8);
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
 }
