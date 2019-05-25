@@ -126,9 +126,11 @@ p {
   color: green;
 }
 .designprocesscontainer{
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto, auto;
+width: 100px;
+height: 100px;
+background-color: lightblue;
+position: relative;
+right: 189px;
 }
 .designprocess{
   width: 50%;
@@ -199,6 +201,10 @@ transition: width 2s, height 5s, transform 2s;
 -webkit-transform: rotate(180deg); /* Safari */
 transform: rotate(0deg);
   transform: translate(-18.5%, -100%);
+}
+#designprocessbutton:checked + #designprocesscontainer{
+display: none;
+background-color: yellow;
 }
 #designprocessbutton{
 display: none;
