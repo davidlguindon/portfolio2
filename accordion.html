@@ -1,10 +1,215 @@
+<!-- <script type="text/javascript" src="\scripts\script.js"></script>
+<link rel="stylesheet" type="text/css" href="/styles/accordion.css">
+<div class="container">
+          <h1 class="heading-primary">CSS Responsive Animated Accordion</h1>
+          <div class="accordion">
+            <dl>
+              <dt>
+                <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">First Accordion heading</a>
+              </dt>
+              <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
+                <p>Lorem ipsum dolor sit amet, consectetur <a href="https://www.google.com">Test</a>adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris. </p>
+                <p>Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.</p>
+              </dd>
+              <dt>
+                <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">
+                  Second Accordion heading</a>
+              </dt>
+              <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris. </p>
+                <p>Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.</p>
+              </dd>
+              <dt>
+                <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+                  Third Accordion heading
+                </a>
+              </dt>
+              <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris. </p>
+                <p>Aliquam dapibus, ante quis fringilla feugiat, mauris risus condimentum massa, at elementum libero quam ac ligula. Pellentesque at rhoncus dolor. Duis porttitor nibh ut lobortis aliquam. Nullam eu dolor venenatis mauris placerat tristique eget id dolor. Quisque blandit adipiscing erat vitae dapibus. Nulla aliquam magna nec elementum tincidunt.</p>
+              </dd>
+            </dl>
+          </div>
+        </div> -->
+        <!DOCTYPE html>
+       <html>
+       <head>
+       <title>CSS Accordion Slider</title>
+       <style>
+       .accordion.Discovery {
+           -webkit-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
+           -moz-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
+           box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
+           font-family: Arial, Helvetica, sans-serif;
+           border-color: #505050;
+           border-style: solid;
+           border-width: 0px;
+           border-radius: 0px;
+           margin: 0 auto;
+           height: 664px;
+           width: 100%;
+       }
 
-<!-- <div id="stage" style="padding-left: 180px; height: 160px;">
-<div id="spinner" style="-webkit-transform-origin: 180px 0 0;">
-<img style="-webkit-transform: rotateY(0deg) translateX(180px); padding: 0 0 0 160px;" src="images/beach1.jpg" width="200" height="160" alt="">
-<img style="-webkit-transform: rotateY(-72deg) translateX(180px); padding: 0 0 0 147px;" src="images/beach2.jpg" width="213" height="160" alt="">
-<img style="-webkit-transform: rotateY(-144deg) translateX(180px); padding: 0 0 0 120px;" src="images/beach3.jpg" width="240" height="160" alt="">
-<img style="-webkit-transform: rotateY(-216deg) translateX(180px); padding: 0 0 0 147px;" src="images/beach4.jpg" width="213" height="160" alt="">
-<img style="-webkit-transform: rotateY(-288deg) translateX(180px); padding: 0 0 0 122px;" src="images/beach5.jpg" width="238" height="160" alt="">
-</div>
-</div> -->
+       .accordion.Discovery > ul > li,
+       .Discovery .accordion-title,
+       .Discovery .accordion-content,
+       .Discovery .accordion-separator {
+           float: none;
+       }
+
+       .accordion.Discovery > ul > li {
+           background-color: #1f1f1f;
+           margin-right: -0px;
+           margin-bottom: -500px;
+       }
+
+       .Discovery .accordion-select:checked ~ .accordion-separator {
+           margin-right: 0px;
+           margin-bottom: 500px;
+       }
+
+       .Discovery .accordion-title,
+       .Discovery .accordion-select  {
+           background-color: #2d2d2d;
+           color: #ffffff;
+           width: 100%;
+           height: 40px;
+           font-size: 18px;
+       }
+
+       .Discovery .accordion-title span {
+           margin-bottom: 20px;
+           margin-left: 20px;
+       }
+
+       .Discovery .accordion-select:hover ~ .accordion-title,
+       .Discovery .accordion-select:checked ~ .accordion-title {
+           background-color: #3068cc;
+       }
+
+        .Discovery .accordion-title span  {
+           transform: rotate(0deg);
+           -o-transform: rotate(0deg);
+           -moz-transform: rotate(0deg);
+           -webkit-transform: rotate(0deg);
+           -ms-writing-mode: lr-tb;
+           filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+           margin-bottom: 0px;
+           line-height: 40px;
+       }
+
+       .Discovery .accordion-content {
+           background-color: #3e3e3e;
+           color: #f5f2f0;
+           height: 404px;
+           width: 100%;
+           padding: 48px;
+       }
+
+       .Discovery .accordion-title,
+       .Discovery .accordion-select:checked ~ .accordion-content {
+           margin-right: 1px;
+           margin-bottom: 1px;
+       }
+
+       /* Do not change following properties, they aren't
+       generated automatically and are common for each slider. */
+       .accordion {
+           overflow: hidden;
+       }
+
+       .accordion > ul {
+           margin: 0;
+           padding: 0;
+           list-style: none;
+           width: 101%;
+       }
+
+       .accordion > ul > li,
+       .accordion-title {
+           position: relative;
+       }
+
+       .accordion-select {
+           cursor: pointer;
+           position: absolute;
+           opacity: 0;
+           top: 0;
+           left: 0;
+           margin: 0;
+           z-index: 1;
+       }
+
+       .accordion-title span {
+           display: block;
+           position: absolute;
+           bottom: 0px;
+           width: 100%;
+           white-space: nowrap;
+       }
+
+       .accordion-content {
+           position: relative;
+           overflow: auto;
+       }
+
+       .accordion-separator {
+           transition: margin 0.3s ease 0.1s;
+           -o-transition: margin 0.3s ease 0.1s;
+           -moz-transition: margin 0.3s ease 0.1s;
+           -webkit-transition: margin 0.3s ease 0.1s;
+       }
+       </style>
+       </head>
+       <body>
+        <div class="accordion Discovery">
+           <ul>
+                <li>
+                   <input type="radio" name="select" class="accordion-select" checked />
+                   <div class="accordion-title">
+                       <span>Title</span>
+                   </div>
+                   <div class="accordion-content">
+                       Content
+                   </div>
+                   <div class="accordion-separator"></div>
+               </li>
+                <li>
+                   <input type="radio" name="select" class="accordion-select" />
+                   <div class="accordion-title">
+                       <span>Title</span>
+                   </div>
+                   <div class="accordion-content">
+                       Content
+                   </div>
+                   <div class="accordion-separator"></div>
+               </li>
+                <li>
+                   <input type="radio" name="select" class="accordion-select" />
+                   <div class="accordion-title">
+                       <span>Title</span>
+                   </div>
+                   <div class="accordion-content">
+                       Content
+                   </div>
+                   <div class="accordion-separator"></div>
+               </li>
+                <li>
+                   <input type="radio" name="select" class="accordion-select" />
+                   <div class="accordion-title">
+                       <span>Title</span>
+                   </div>
+                   <div class="accordion-content">
+                       Content
+                   </div>
+                   <div class="accordion-separator"></div>
+               </li>
+           </ul>
+       </div>
+       <div style="text-align:center;margin-top:50px;">
+           <a href="https://accordionslider.com/" style="color:#568EEA;text-decoration:none;">
+               Css Accordion Slider Generator
+           </a>
+       </div>
+       </body>
+       </html>

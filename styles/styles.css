@@ -130,25 +130,26 @@ p {
   color: green;
 }
 .designprocesscontainer{
-width: 100px;
+width: 50%;
 height: 100px;
 background-color: pink;
+  margin: 0 auto;
 /* position: relative;
 right: 189px; */
 }
 #designprocessbutton:checked ~ .designprocesscontainer{
-  width: 80%;
-  height: 200px;
+width: 80%;
 -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
-transition: width 1s, height 50s, transform 2s;
-/* display: none; */
+transition: width 2s, height 5s, transform 2s;
+-webkit-transform: rotate(180deg); /* Safari */
+transform: rotate(360deg);
 }
 .designprocess{
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   height: 180px;
   background-color: pink;
   display: flex;
@@ -207,12 +208,11 @@ margin-bottom: 20px;
 } */
 #designprocessbutton:checked + label{
   width: 80%;
--webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
-transition: width 2s, height 5s, transform 2s;
--webkit-transform: rotate(180deg); /* Safari */
-transform: rotate(0deg);
-  transform: translate(-18.5%, -100%);
+  transition: width 2s, height 5s, transform 2s;
+  margin: 0 auto;
 }
+
+
 #designprocessbutton2:checked + label{
   width: 80%;
 -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
