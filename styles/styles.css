@@ -7,17 +7,24 @@ height: 100px;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #27737D;
+background-color: #205C65;
 position: fixed;
 margin-top: -100px;
 width: 100%;
 z-index: 1;
 }
+header ul{
+font-size: 20px;
+color: #ffffff;
+}
+header a{
+margin-right: 2%;
+}
 footer{
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #27737D;
+background-color: #205C65;
 height: 75px;
 }
 footer li {
@@ -29,9 +36,10 @@ width: 76%;
 text-align: right;
 }
 .alignleft{
-text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
 width: 24%;
-background-color: red;
 }
 .hero{
 background-image: url(../assets/dock.jpg);
@@ -39,7 +47,7 @@ background-position: center;
 background-size: cover;
 margin-top: 100px;
 height: 400px;
-background-color: lightgray;
+background-color: #ffffff;
 display: grid;
 }
 .projectcard{
@@ -58,7 +66,7 @@ display: grid;
 grid-template-columns: 30% 70%;
 }
 .projectdesc{
-background-color: #27737D;
+background-color: #205C65;
 height: 300px;
 }
 .projectpicture{
@@ -127,22 +135,22 @@ p {
   margin-right: 25%;
 }
 .designprocess h2{
-  color: green;
+  color: yellow;
 }
 .designprocesscontainer{
 width: 50%;
-height: 100px;
-background-color: pink;
-  margin: 0 auto;
-/* position: relative;
-right: 189px; */
+height: 0px;
+margin: 0 auto;
+border-radius: 1px solid black;
+overflow: hidden;
 }
 #designprocessbutton:checked ~ .designprocesscontainer{
 width: 80%;
 -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
-transition: width 2s, height 5s, transform 2s;
--webkit-transform: rotate(180deg); /* Safari */
+transition: width 2s, height 5s, transform 1s;
+-webkit-transform: rotate(360deg); /* Safari */
 transform: rotate(360deg);
+overflow: visible;
 }
 .designprocess{
   width: 50%;
@@ -207,12 +215,11 @@ margin-bottom: 20px;
   top: 1px;
 } */
 #designprocessbutton:checked + label{
+transition: width 2s, height 5s, transform 2s;
   width: 80%;
-  transition: width 2s, height 5s, transform 2s;
   margin: 0 auto;
+  margin-top: 50px;
 }
-
-
 #designprocessbutton2:checked + label{
   width: 80%;
 -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
@@ -221,191 +228,129 @@ transition: width 2s, height 5s, transform 2s;
 transform: rotate(0deg);
   transform: translate(-18.5%, -100%);
 }
-/* #designprocessbutton{
+#designprocessbutton{
 display: none;
-} */
+}
 .accordion.Discovery {
-   -webkit-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
-   -moz-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
-   box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
-   font-family: Arial, Helvetica, sans-serif;
-   border-color: #505050;
-   border-style: solid;
-   border-width: 0px;
-   border-radius: 0px;
-   margin: 0 auto;
-   height: 500px;
-   width: 1364px;
+    -webkit-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
+    -moz-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
+    box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: #505050;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 0px;
+    margin: 0 auto;
+    height: 664px;
+    width: 100%;
 }
 
 .accordion.Discovery > ul > li,
 .Discovery .accordion-title,
 .Discovery .accordion-content,
 .Discovery .accordion-separator {
-   float: left;
+    float: none;
 }
 
 .accordion.Discovery > ul > li {
-   background-color: #1f1f1f;
-   margin-right: -1200px;
-   margin-bottom: -0px;
+    background-color: #1f1f1f;
+    margin-right: -0px;
+    margin-bottom: -500px;
 }
 
 .Discovery .accordion-select:checked ~ .accordion-separator {
-   margin-right: 1200px;
-   margin-bottom: 0px;
+    margin-right: 0px;
+    margin-bottom: 500px;
 }
 
 .Discovery .accordion-title,
 .Discovery .accordion-select  {
-   background-color: #2d2d2d;
-   color: #ffffff;
-   width: 40px;
-   height: 500px;
-   font-size: 18px;
+    background-color: #2d2d2d;
+    color: #ffffff;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
 }
 
 .Discovery .accordion-title span {
-   margin-bottom: 20px;
-   margin-left: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 .Discovery .accordion-select:hover ~ .accordion-title,
 .Discovery .accordion-select:checked ~ .accordion-title {
-   background-color: #3068cc;
+    background-color: #205C65;
 }
 
-.Discovery .accordion-title span  {
-   transform: rotate(-90deg);
-   -o-transform: rotate(-90deg);
-   -moz-transform: rotate(-90deg);
-   -webkit-transform: rotate(-90deg);
-   -ms-writing-mode: lr-bt;
-   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-   margin-left: 0px;
-   line-height: 40px;
+ .Discovery .accordion-title span  {
+    transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-writing-mode: lr-tb;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+    margin-bottom: 0px;
+    line-height: 40px;
 }
 
 .Discovery .accordion-content {
-   background-color: #3e3e3e;
-   color: #f5f2f0;
-   height: 404px;
-   width: 1104px;
-   padding: 48px;
+    background-color: #ffffff;
+    color: black;
+    height: 404px;
+    width: 100%;
+    padding: 48px;
 }
 
 .Discovery .accordion-title,
 .Discovery .accordion-select:checked ~ .accordion-content {
-   margin-right: 1px;
-   margin-bottom: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
 }
 
 /* Do not change following properties, they aren't
 generated automatically and are common for each slider. */
 .accordion {
-   overflow: hidden;
+    overflow: hidden;
 }
 
 .accordion > ul {
-   margin: 0;
-   padding: 0;
-   list-style: none;
-   width: 101%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 101%;
 }
 
 .accordion > ul > li,
 .accordion-title {
-   position: relative;
+    position: relative;
 }
 
 .accordion-select {
-   cursor: pointer;
-   position: absolute;
-   opacity: 0;
-   top: 0;
-   left: 0;
-   margin: 0;
-   z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 1;
 }
 
 .accordion-title span {
-   display: block;
-   position: absolute;
-   bottom: 0px;
-   width: 100%;
-   white-space: nowrap;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    white-space: nowrap;
 }
 
 .accordion-content {
-   position: relative;
-   overflow: auto;
+    position: relative;
+    overflow: auto;
 }
 
 .accordion-separator {
-   transition: margin 0.3s ease 0.1s;
-   -o-transition: margin 0.3s ease 0.1s;
-   -moz-transition: margin 0.3s ease 0.1s;
-   -webkit-transition: margin 0.3s ease 0.1s;
-}
-.Discovery {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  position: relative;
-  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-  animation-name: example;
-  animation-duration: 4s;
-}
-
-#accordion {
-  position: absolute;
-  left: 120px;
-  ...
-  background: blue;
-  ...
-  -webkit-transition: 1s ease-in-out;
-  -moz-transition: 1s ease-in-out;
-  -o-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-}
-#accordianheader:hover + #accordion {
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  transform: rotate(360deg);
-  left: calc(100% - 102px);
-  background: yellow;
-}
-@-webkit-keyframes spinner {
-  from {
-    -webkit-transform: rotateY(0deg);
-  }
-  to {
-    -webkit-transform: rotateY(-360deg);
-  }
-}
-
-#stage {
-  margin: 1em auto;
-  -webkit-perspective: 1200px;
-}
-
-#spinner {
-  -webkit-animation-name: spinner;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 6s;
-  -webkit-transform-style: preserve-3d;
-}
-#spinner:hover {
-  -webkit-animation-play-state: paused;
-}
-
-#spinner img {
-  position: absolute;
-  border: 1px solid #ccc;
-  background: rgba(255,255,255,0.8);
-  box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+    transition: margin 0.3s ease 0.1s;
+    -o-transition: margin 0.3s ease 0.1s;
+    -moz-transition: margin 0.3s ease 0.1s;
+    -webkit-transition: margin 0.3s ease 0.1s;
 }
