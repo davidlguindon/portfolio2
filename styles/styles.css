@@ -26,6 +26,10 @@ box-shadow:
 -webkit-transform: translateX(-3px);
 transform: translateX(-3px);
 }
+header a:active{
+position: relative;
+top: 1px;
+}
 header{
 height: 100px;
 display: flex;
@@ -161,8 +165,13 @@ p {
   margin-right: 25%;
 }
 .designprocess h2{
-  color: red;
-font-size: 48px;
+  color: #ffffff;
+  font-size: 48px;
+  /* text-shadow: 2px 2px 8px #205C65; */
+color: red;
+
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 .designprocesscontainer{
 width: 50%;
@@ -174,7 +183,7 @@ overflow: hidden;
 #designprocessbutton:checked ~ .designprocesscontainer{
 width: 80.01%;
 -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
-transition: width 2s, height 5s, transform 1s;
+transition: width 2s, height 3s, transform 1s;
 -webkit-transform: rotate(0deg); /* Safari */
 transform: rotate(0deg);
 overflow: hidden;
