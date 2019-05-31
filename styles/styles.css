@@ -68,14 +68,21 @@ text-align: right;
 
 }
 .alignright{
-width: 76%;
+width: 24%;
 text-align: right;
 }
 .alignleft{
 display: flex;
-align-items: center;
+align-items: left;
 justify-content: center;
 width: 24%;
+}
+.aligncenter{
+text-align: center;
+width: 50%;
+}
+i{
+margin: 0px 15px 0px 15px;
 }
 .hero{
 background-image: url(../assets/dock.jpg);
@@ -180,6 +187,7 @@ p {
   color: #f9a825;
   font-size: 48px;
   text-shadow: 3px 3px 4px #000000;
+  text-align: center;
 }
 .designprocess3 h2{
   color: #ffffff;
