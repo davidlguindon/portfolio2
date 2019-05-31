@@ -65,24 +65,16 @@ width: 100%;
 footer li {
 display: inline;
 text-align: right;
-
 }
 .alignright{
-width: 24%;
+width: 76%;
 text-align: right;
 }
 .alignleft{
 display: flex;
-align-items: left;
+align-items: center;
 justify-content: center;
 width: 24%;
-}
-.aligncenter{
-text-align: center;
-width: 50%;
-}
-i{
-margin: 0px 15px 0px 15px;
 }
 .hero{
 background-image: url(../assets/dock.jpg);
@@ -187,7 +179,6 @@ p {
   color: #f9a825;
   font-size: 48px;
   text-shadow: 3px 3px 4px #000000;
-  text-align: center;
 }
 .designprocess3 h2{
   color: #ffffff;
@@ -596,4 +587,21 @@ generated automatically and are common for each slider. */
     -o-transition: margin 0.3s ease 0.1s;
     -moz-transition: margin 0.3s ease 0.1s;
     -webkit-transition: margin 0.3s ease 0.1s;
+}
+footer .alignright{
+width: 24%;
+text-align: right;
+}
+footer .alignleft{
+display: flex;
+align-items: left;
+justify-content: center;
+width: 24%;
+}
+footer .aligncenter{
+text-align: center;
+width: 50%;
+}
+i{
+margin: 0px 15px 0px 15px;
 }
