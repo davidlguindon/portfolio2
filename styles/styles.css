@@ -91,21 +91,19 @@ margin-left: 10%;
 margin-right: 10%;
 margin-top: 50px;
 margin-bottom: 50px;
-height: 301px;
+height: 300px;
 resize:horizontal;
 overflow: auto;
-/* border: 1px black solid; */
+border: 1px black solid;
 box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
 display: grid;
 grid-template-columns: 30% 70%;
+background-color: #205C65;
 }
 .projectdesc{
-background-color: #205C65;
 height: 300px;
 position: relative;
 left: 1px;
-border: 1px solid black;
-border-right: 0px;
 }
 .projectpicture{
 height: 300px;
@@ -113,16 +111,13 @@ background-image: url(../assets/projectswish.png) , url(../assets/racecar.jpg);
 background-repeat: no-repeat;
 background-position: left, bottom;
 background-size: contain , cover;
-border: 1px solid black;
-border-left: 0px;
 }
 .projectpicture2{
 height: 300px;
 background-image: url(../assets/projectswish.png) , url(../assets/wall.jpeg);
 background-repeat: no-repeat;
 background-size: contain , cover;
-border: 1px solid black;
-border-left: 0px;
+
 }
 .projectpicture3{
 height: 300px;
@@ -131,8 +126,7 @@ background-repeat: no-repeat;
 background-position: center;
 background-position: left;
 background-size: contain , cover;
-border: 1px solid black;
-border-left: 0px;
+
 }
 h1{
   font-size: 36px;
