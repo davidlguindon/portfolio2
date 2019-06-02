@@ -383,7 +383,7 @@ color: red;
   background-image:url(../assets/finalprototype.jpg);
   background-size:cover;
   background-repeat: no-repeat;
-  background-position: 50% 20%;
+  background-position: 50% 45%;
   cursor:pointer;
   z-index: 1;
 border-radius: 10px 10px 10px 10px;
@@ -628,8 +628,11 @@ footer .aligncenter{
 text-align: center;
 width: 50%;
 }
-i{
+footer i{
 color: white;
 font-size: 32px;
 margin: 0px 15px 0px 15px;
+}
+footer li{
+color: white;
 }
