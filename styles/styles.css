@@ -6,20 +6,15 @@ header li {
 display: inline;
 text-align: right;
 }
-a{
-color: #CDA74E;
-color: #f9a825;
-/* color: #ffffff; */
-text-decoration: none;
-white-space: nowrap;
-}
 header a {
 color: #CDA74E;
 color: #f9a825;
-/* color: #ffffff; */
 text-decoration: none;
 transition: all .3s ease;
 white-space: nowrap;
+}
+#headername{
+color: white;
 }
 header a:hover{
 box-shadow:
@@ -28,6 +23,26 @@ box-shadow:
         0px 3px #53a7ea;
 -webkit-transform: translateX(-3px);
 transform: translateX(-3px);
+}
+footer i{
+  transition: all .3s ease;
+  white-space: nowrap;
+}
+footer i:hover{
+color: red;
+box-shadow:
+        0px 1px #53a7ea,
+        0px 2px #53a7ea,
+        0px 3px #53a7ea;
+-webkit-transform: translateX(-1px);
+transform: translateX(-1px);
+}
+.personallogo:hover {
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+  transition: width 2s, height 3s, transform .2s;
+  -webkit-transform: rotate(360deg); /* Safari */
+  transform: rotate(360deg);
+box-shadow: none;
 }
 header a:active{
 position: relative;
@@ -49,9 +64,6 @@ font-size: 20px;
 color: #ffffff;
 white-space: nowrap;
 }
-header a{
-margin-right: 2%;
-}
 footer{
 display: flex;
 justify-content: center;
@@ -66,15 +78,25 @@ footer li {
 display: inline;
 text-align: right;
 }
-.alignright{
-width: 76%;
+header .alignright{
+float: left;
+width: 75%;
 text-align: right;
 }
-.alignleft{
-display: flex;
-align-items: center;
-justify-content: center;
-width: 24%;
+header .alignright a{
+margin-right: 3%;
+}
+header .alignleft{
+  display: flex;
+  align-items:center;
+float: left;
+width: 25%;
+padding-left: 20px;
+}
+header .aligncenter{
+float: left;
+text-align: center;
+width: 0%;
 }
 .hero{
 background-image: url(../assets/dock.jpg);
@@ -621,8 +643,8 @@ text-align: right;
 footer .alignleft{
 display: flex;
 align-items: left;
-justify-content: center;
 width: 24%;
+padding-left: 20px;
 }
 footer .aligncenter{
 text-align: center;
