@@ -102,11 +102,10 @@ background-color: #205C65;
 }
 .projectdesc{
 height: 300px;
-position: relative;
-left: 1px;
 }
 .projectpicture{
 height: 300px;
+background-color: #205C65;
 background-image: url(../assets/projectswish.png) , url(../assets/racecar.jpg);
 background-repeat: no-repeat;
 background-position: left, bottom;
