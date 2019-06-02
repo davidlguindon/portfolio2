@@ -102,6 +102,9 @@ background-color: #205C65;
 }
 .projectdesc{
 height: 300px;
+position: relative;
+left: 1px;
+background-color: #205C65;
 }
 .projectpicture{
 height: 300px;
