@@ -180,12 +180,14 @@ p {
   color: white;
   text-shadow: 2px 2px 4px #000000;
   text-align: center;
+line-height: 1.2;
 }
 .designprocess2 h2{
   color: #f9a825;
   font-size: 48px;
   text-shadow: 3px 3px 4px #000000;
 text-align: center;
+line-height: 1.2;
 }
 .designprocess3 h2{
   color: #ffffff;
@@ -203,20 +205,22 @@ left: 25%;
   font-size: 48px;
   /* text-shadow: 2px 2px 4px white; */
   text-align: center;
-  line-height: 109%;
+  line-height: 120%;
+line-height: 1.2;
 
 
 /* color: white;
 mix-blend-mode: exclusion; */
 
-background-image:url(../assets/finalprototype.jpg);
+/* background-image:url(../assets/finalprototype.jpg);
+background-size:cover;
+background-repeat: no-repeat;
+background-position: center; */
+background: inherit;
 width: 100%;
 background-clip: text;
 -webkit-background-clip: text;
 filter: invert(1) grayscale(1) drop-shadow(0px 0px 1px black);
-background-size:cover;
-background-repeat: no-repeat;
-background-position: center;
 color: transparent;
 
 }
@@ -379,7 +383,7 @@ color: red;
   background-image:url(../assets/finalprototype.jpg);
   background-size:cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 20%;
   cursor:pointer;
   z-index: 1;
 border-radius: 10px 10px 10px 10px;
