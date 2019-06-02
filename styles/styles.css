@@ -102,6 +102,7 @@ grid-template-columns: 30% 70%;
 .projectdesc{
 background-color: #205C65;
 height: 300px;
+padding-right: 1px;
 }
 .projectpicture{
 height: 300px;
@@ -619,5 +620,7 @@ text-align: center;
 width: 50%;
 }
 i{
+color: white;
+font-size: 32px;
 margin: 0px 15px 0px 15px;
 }
