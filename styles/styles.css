@@ -277,13 +277,13 @@ border-radius: 1px solid black;
 overflow: hidden;
 }
 #designprocessbutton:checked ~ .designprocesscontainer{
-width: 100%;
+width: 95%;
 -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
 transition: width 2s, height 3s, transform 1s;
 -webkit-transform: rotate(0deg); /* Safari */
 transform: rotate(0deg);
 overflow: hidden;
-height: 664px;
+height: 163px;
 border: 1px black solid;
 border-top: 0px;
 box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
@@ -458,12 +458,12 @@ border-radius: 10px 10px 10px 10px;
   width: 80%;
   margin: 0 auto;
   margin-top: 50px; */
-  width: 100%;
+  width: 95%;
 -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
 transition: width 2s, height 5s, transform 2s;
  margin: 0 auto;
 margin-top: 50px;
-border-radius: 0px 0px 0px 0px;
+border-radius: 10px 10px 0px 0px;
 }
 #designprocessbutton2:checked + label{
   width: 100%;
