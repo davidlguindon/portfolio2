@@ -282,15 +282,22 @@ width: 95%;
 transition: width 2s, height 3s, transform 1s;
 -webkit-transform: rotate(0deg); /* Safari */
 transform: rotate(0deg);
-overflow: hidden;
-height: 163px;
+overflow:hidden;
+/* height:1%; */
+/* height: 163px; */
+height: 664px;
 border: 1px black solid;
 border-top: 0px;
 box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
 border-radius: 0px 0px 10px 10px;
 }
+
+.designprocesscontainer ~ .Discovery .accordion-select:checked{
+height: 500px;
+}
+
 #designprocessbutton2:checked ~ .designprocesscontainer2{
-width: 100%;
+width: 95%;
 -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
 transition: width 2s, height 3s, transform 1s;
 -webkit-transform: rotate(0deg); /* Safari */
@@ -328,6 +335,12 @@ border-top: 0px;
 box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
 border-radius: 0px 0px 10px 10px;
 }
+
+/* #designprocessbutton:checked + label */
+
+/* .Discovery .accordion-select:checked ~ .designprocesscontainer{
+  height: 664px;
+} */
 .designprocess{
   width: 50%;
   margin-left: 25%;
@@ -466,7 +479,7 @@ margin-top: 50px;
 border-radius: 10px 10px 0px 0px;
 }
 #designprocessbutton2:checked + label{
-  width: 100%;
+  width: 95.01%;
 -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
 transition: width 2s, height 5s, transform 2s;
  margin: 0 auto;
@@ -474,7 +487,7 @@ margin-top: 50px;
  /* transform: rotate(20deg); */
   /* transform: translate(-18.5%, 0%); */
   /* transform: translate(-18.5%, -100%); */
-border-radius: 0px 0px 0px 0px;
+border-radius: 10px 10px 0px 0px;
 }
 #designprocessbutton3:checked + label{
 /* transition: width 2s, height 5s, transform 2s;
@@ -627,7 +640,7 @@ generated automatically and are common for each slider. */
 
 .accordion-content {
     position: relative;
-    overflow: auto;
+    overflow:auto;
 }
 
 .accordion-separator {
