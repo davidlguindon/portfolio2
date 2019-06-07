@@ -300,7 +300,7 @@ p {
   -moz-transition: max-height 1s, width .35s;
   -ms-transition: max-height 1s, width .35s;
   -o-transition: max-height 1s, width .35s;
-  transition: max-height 1s, width .35s;
+  transition: max-height 1s, width .35s border-radius 1s;;
 }
 #designprocessbutton:checked ~ .designprocesscontainer{
   width: 95%;
@@ -391,11 +391,11 @@ p {
   z-index: 1;
   filter: grayscale(0%);
   border-radius: 10px 10px 10px 10px;
-  -webkit-transition: max-height 1s, width .35s;
-  -moz-transition: max-height 1s, width .35s;
-  -ms-transition: max-height 1s, width .35s;
-  -o-transition: max-height 1s, width .35s;
-  transition: max-height 1s, width .35s;
+  -webkit-transition: max-height 1s, width .35s, border-radius 1s;
+  -moz-transition: max-height 1s, width .35s, border-radius 1s;
+  -ms-transition: max-height 1s, width .35s, border-radius 1s;
+  -o-transition: max-height 1s, width .35s, border-radius 1s;
+  transition: max-height 1s, width .35s, border-radius 1s;
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -415,11 +415,11 @@ p {
   cursor:pointer;
   z-index: 1;
   border-radius: 10px 10px 10px 10px;
-  -webkit-transition: max-height 1s, width .35s;
-  -moz-transition: max-height 1s, width .35s;
-  -ms-transition: max-height 1s, width .35s;
-  -o-transition: max-height 1s, width .35s;
-  transition: max-height 1s, width .35s;
+  -webkit-transition: max-height 1s, width .35s, border-radius 1s;
+  -moz-transition: max-height 1s, width .35s, border-radius 1s;
+  -ms-transition: max-height 1s, width .35s, border-radius 1s;
+  -o-transition: max-height 1s, width .35s, border-radius 1s;
+  transition: max-height 1s, width .35s, border-radius 1s;
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -438,11 +438,11 @@ p {
   cursor:pointer;
   z-index: 1;
   border-radius: 10px 10px 10px 10px;
-  -webkit-transition: max-height 1s, width .35s;
-  -moz-transition: max-height 1s, width .35s;
-  -ms-transition: max-height 1s, width .35s;
-  -o-transition: max-height 1s, width .35s;
-  transition: max-height 1s, width .35s;
+  -webkit-transition: max-height 1s, width .35s, border-radius 1s;
+  -moz-transition: max-height 1s, width .35s, border-radius 1s;
+  -ms-transition: max-height 1s, width .35s, border-radius 1s;
+  -o-transition: max-height 1s, width .35s, border-radius 1s;
+  transition: max-height 1s, width .35s, border-radius 1s;
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -462,11 +462,11 @@ p {
   cursor:pointer;
   z-index: 1;
   border-radius: 10px 10px 10px 10px;
-  -webkit-transition: max-height 1s, width .35s;
-  -moz-transition: max-height 1s, width .35s;
-  -ms-transition: max-height 1s, width .35s;
-  -o-transition: max-height 1s, width .35s;
-  transition: max-height 1s, width .35s;
+  -webkit-transition: max-height 1s, width .35s, border-radius 1;
+  -moz-transition: max-height 1s, width .35s, border-radius 1s;
+  -ms-transition: max-height 1s, width .35s, border-radius 1s;
+  -o-transition: max-height 1s, width .35s, border-radius 1s;
+  transition: max-height 1s, width .35s, border-radius 1s;
   margin: 0 auto;
   margin-top: 50px;
 }
