@@ -3,7 +3,7 @@ html{
   min-height: 100%;
 }
 body{
-margin-bottom: 125px;
+  margin-bottom: 125px;
 }
 header li {
   display: inline;
@@ -27,6 +27,10 @@ header a:hover{
   -webkit-transform: translateX(-3px);
   transform: translateX(-3px);
 }
+header a:active{
+  position: relative;
+  top: 1px;
+}
 footer i{
   transition: all .3s ease;
   white-space: nowrap;
@@ -46,10 +50,6 @@ footer i:hover{
   -webkit-transform: rotate(360deg); /* Safari */
   transform: rotate(360deg);
   box-shadow: none;
-}
-header a:active{
-  position: relative;
-  top: 1px;
 }
 header{
   height: 100px;
@@ -76,6 +76,7 @@ footer{
   height: 75px;
   position: absolute;
   bottom: 0px; left: 0;
+  white-space: nowrap;
 }
 footer li {
   display: inline;
@@ -118,6 +119,7 @@ header .aligncenter{
   margin-bottom: 50px;
   height: 300px;
   resize:horizontal;
+  min-width: 690px;
   overflow: auto;
   border: 1px black solid;
   box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
@@ -531,7 +533,7 @@ p {
   transition: width 2s, height 5s, transform 2s;
   margin: 0 auto;
   border-radius: 10px 10px 0px 0px;
-margin-top: 50px;
+  margin-top: 50px;
 }
 #designprocessbutton3:checked + label{
   width: 95.01%;
@@ -565,6 +567,7 @@ margin-top: 50px;
 footer .alignright{
   width: 24%;
   text-align: right;
+  margin-right: 5%;
 }
 
 footer .alignleft{
@@ -674,4 +677,85 @@ input:checked + .tab-label::after {
 input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
+}
+.hero h1{
+  font-size: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 4px 4px 4px black;
+  margin: 20px;
+}
+.hero h2{
+  font-size: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 4px 4px 4px black;
+}
+
+/* .hero{
+display: flex;
+justify-content: center;
+align-items: center;
+} */
+
+.herobox{
+  width: 35%;
+  height: 100px;
+  border-top: none;
+  background-color: #205C65;
+  opacity: .8;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  top: 100px;
+  left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.herobox a {
+  color: #CDA74E;
+  color: #f9a825;
+  text-decoration: none;
+  transition: all .3s ease;
+  white-space: nowrap;
+}
+.herobox a:hover{
+  box-shadow:
+  /* 0px 1px #53a7ea,
+  0px 2px #53a7ea,
+  0px 3px #53a7ea; */
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+.herobox a:active{
+  position: relative;
+  top: 1px;
+}
+.nohighlight{
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+  supported by Chrome and Opera */
+}
+h5{
+  -webkit-touch-callout: all; /* iOS Safari */
+  -webkit-user-select: all; /* Safari */
+  -khtml-user-select: all; /* Konqueror HTML */
+  -moz-user-select: all; /* Firefox */
+  -ms-user-select: all; /* Internet Explorer/Edge */
+  user-select: all; /* Non-prefixed version, currently
+  supported by Chrome and Opera */
+user-select:
+}
+@media (min-width: 320px) {
+  footer{
+    white-space: normal;
+  }
 }
