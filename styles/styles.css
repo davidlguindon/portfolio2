@@ -744,18 +744,15 @@ align-items: center;
   user-select: none; /* Non-prefixed version, currently
   supported by Chrome and Opera */
 }
-h5{
-  -webkit-touch-callout: all; /* iOS Safari */
-  -webkit-user-select: all; /* Safari */
-  -khtml-user-select: all; /* Konqueror HTML */
-  -moz-user-select: all; /* Firefox */
-  -ms-user-select: all; /* Internet Explorer/Edge */
-  user-select: all; /* Non-prefixed version, currently
-  supported by Chrome and Opera */
-user-select:
-}
 @media (min-width: 320px) {
   footer{
     white-space: normal;
   }
+}
+.personacontainer{
+border: 2px solid black;
+padding:5%;
+}
+.personacontainer h2{
+color: inherit;
 }
