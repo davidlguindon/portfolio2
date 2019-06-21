@@ -311,7 +311,7 @@ p {
   -webkit-transform: rotate(0deg); /* Safari */
   transform: rotate(0deg);
   overflow:hidden;
-  max-height: 2500px;
+  max-height: 4500px;
   border: 1px black solid;
   border-top: 0px;
   box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
@@ -320,7 +320,7 @@ p {
   -moz-transition: max-height 5s, width 2s;
   -ms-transition: max-height 5s, width 2s;
   -o-transition: max-height 5s, width 2s;
-  transition: max-height 5s, width 2s;
+  transition: max-height 15s, width 2s;
 }
 
 #designprocessbutton2:checked ~ .designprocesscontainer2{
@@ -330,7 +330,7 @@ p {
   -webkit-transform: rotate(0deg); /* Safari */
   transform: rotate(0deg);
   overflow:hidden;
-  max-height: 2500px;
+  max-height: 4500px;
   border: 1px black solid;
   border-top: 0px;
   box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
@@ -339,7 +339,7 @@ p {
   -moz-transition: max-height 5s, width 2s;
   -ms-transition: max-height 5s, width 2s;
   -o-transition: max-height 5s, width 2s;
-  transition: max-height 5s, width 2s;
+  transition: max-height1 5s, width 2s;
 }
 #designprocessbutton3:checked ~ .designprocesscontainer3{
   width: 95%;
@@ -348,7 +348,7 @@ p {
   -webkit-transform: rotate(0deg); /* Safari */
   transform: rotate(0deg);
   overflow:hidden;
-  max-height: 2500px;
+  max-height: 4500px;
   border: 1px black solid;
   border-top: 0px;
   box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
@@ -357,7 +357,7 @@ p {
   -moz-transition: max-height 5s, width 2s;
   -ms-transition: max-height 5s, width 2s;
   -o-transition: max-height 5s, width 2s;
-  transition: max-height 5s, width 2s;
+  transition: max-height 15s, width 2s;
 }
 #designprocessbutton4:checked ~ .designprocesscontainer4{
   width: 95%;
@@ -366,7 +366,7 @@ p {
   -webkit-transform: rotate(0deg); /* Safari */
   transform: rotate(0deg);
   overflow:hidden;
-  max-height: 2500px;
+  max-height: 4500px;
   border: 1px black solid;
   border-top: 0px;
   box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
@@ -375,7 +375,7 @@ p {
   -moz-transition: max-height 5s, width 2s;
   -ms-transition: max-height 5s, width 2s;
   -o-transition: max-height 5s, width 2s;
-  transition: max-height 5s, width 2s;
+  transition: max-height 15s, width 2s;
 }
 .designprocess{
   width: 50%;
@@ -766,29 +766,53 @@ align-items: center;
 .tab-content{
   display: flex;
   display: grid;
-  grid-template-columns: 35% auto;
-  justify-items: center;
-  justify-content: space-evenly;
-  align-items:center;
-background-color: #eae4e1;
+  grid-template-columns:auto 640px;
+  /* justify-items: center;
+  justify-content: space-evenly */
+  /* align-items:center; */
+  background-color: #eae4e1;
+  z-index: -1;
 }
 .tab-content ul{
   border: 3px solid #205C65;
   border-radius: 5px;
   margin-right: 25px;
-  line-height: 120%;
-  font-size: 18px;
-background-color: white;
+  font-size: calc(0px + 1.5vw);
+  background-color: white;
+  max-height: 650px;
+  display:grid;
+  grid-template-columns: 1fr 9fr;
+  align-items: center;
+overflow: hidden;
+  grid-row-gap: 35px;
 }
-  .tab-content ul li{
-    margin: 35px;
-  }
-  .tab-content img{
-    border-radius: 5px;
-    /* height: 100%; */
-    width: 600px;
-    align-self: center;
-border: 1px solid #205C65;
-background-color: white;
-padding: 20px;
-  }
+.tab-content ul li{
+  line-height: 1.5;
+  text-align: left;
+  margin-right: 25px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  overflow: hidden;
+}
+.tab-content ul i{
+  margin-right: 30px;
+  color: #205C65;
+  text-align: right;
+  margin-left: 10px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  overflow: hidden;
+}
+.tab-content img{
+  border-radius: 5px;
+  width: 600px;
+  align-self: center;
+  border: 1px solid #205C65;
+  /* border: 3px solid #205C65; */
+  background-color: white;
+  padding: 20px;
+  /* position: relative;
+  bottom: 35px;
+  left: 15%; */
+  /* transform: scale(2); */
+}
