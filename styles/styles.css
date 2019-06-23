@@ -248,9 +248,8 @@ p {
   width: 100%;
   background-clip: text;
   -webkit-background-clip: text;
-  filter: invert(1) sepia(1) drop-shadow(-1px -1px 1px black);
+  filter: invert(1) sepia(1) saturate(4) drop-shadow(-1px -1px 1px #205C65);
   color: transparent;
-
 }
 .designprocesscontainer{
   width: 50%;
