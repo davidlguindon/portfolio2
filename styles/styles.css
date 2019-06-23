@@ -1,3 +1,4 @@
+
 html{
   position: relative;
   min-height: 100%;
@@ -814,16 +815,16 @@ padding: 15px;
 }
 table{
   font-size: 12px;
-  /* border: 2px solid #104E8B; */
   font-family: Arial, Helvetica, sans-serif;
 }
 table td {
   padding: 4px;
   margin: 3px;
   border: 1px solid #CCC;
+  vertical-align: middle;
 }
 table th {
-  background-color: #104E8B;
+  background-color: #205C65;
   color: #FFF;
   font-weight: bold;
 }
@@ -834,11 +835,11 @@ background-color:#666666;
 color: white;
 }
 tr:hover{
-    border: 2px solid green;
+    outline: 2px solid #205C65;
+    outline-offset: -2px;
 }
 .tableborder{
-height: 100%;
-border-radius: 10px;
-overflow:hidden;
-border: 2px solid #104E8B;
+border-radius: 5px;
+overflow-x: hidden;
+  border: 1px solid #205C65;
 }
