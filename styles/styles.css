@@ -122,7 +122,7 @@ header .aligncenter{
   resize:horizontal;
   min-width: 690px;
   overflow: auto;
-  border: 1px black solid;
+  border: 5px #205C65 solid;
   box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
   display: grid;
   grid-template-columns: 30% 70%;
@@ -137,17 +137,18 @@ header .aligncenter{
 .projectpicture{
   height: 300px;
   background-color: #205C65;
-  background-image: url(../assets/projectswish.png) , url(../assets/racecar.jpg);
+  background-image: url(../assets/projectswish.png) , url(../assets/desertparadigm.png);
   background-repeat: no-repeat;
-  background-position: left, bottom;
+  background-position: left, 0% 25%;
   background-size: contain , cover;
+/* box-shadow: inset -8px 0 35px rgba(32,92,101),inset 0 8px 35px rgba(32,92,101),inset 0 -8px 35px rgba(32,92,101); */
 }
 .projectpicture2{
   height: 300px;
-  background-image: url(../assets/projectswish.png) , url(../assets/wall.jpeg);
+  background-image: url(../assets/projectswish.png) , url(../assets/blocjams.png);
   background-repeat: no-repeat;
   background-size: contain , cover;
-
+/* box-shadow: inset -8px 0 35px rgba(32,92,101),inset 0 8px 35px rgba(32,92,101),inset 0 -8px 35px rgba(32,92,101); */
 }
 .projectpicture3{
   height: 300px;
@@ -225,7 +226,7 @@ p {
   text-shadow: 2px 2px 4px #000000;
   transform: rotate(-30deg);
   position: relative;
-  left: 25%;
+  left: 23%;
 
 }
 .designprocess4 h2{
@@ -235,11 +236,8 @@ p {
   text-align: center;
   line-height: 120%;
   line-height: 1.2;
-
-
   /* color: white;
   mix-blend-mode: exclusion; */
-
   background-image:url(../assets/designprocess/finalprototype.jpg);
   background-size:cover;
   background-repeat: no-repeat;
@@ -302,7 +300,8 @@ p {
   -moz-transition: max-height 1s, width .35s;
   -ms-transition: max-height 1s, width .35s;
   -o-transition: max-height 1s, width .35s;
-  transition: max-height 1s, width .35s border-radius 1s;;
+  transition: max-height 1s, width .35s border-radius 1s;
+
 }
 #designprocessbutton:checked ~ .designprocesscontainer{
   width: 95%;
@@ -320,7 +319,7 @@ p {
   -moz-transition: max-height 5s, width 2s;
   -ms-transition: max-height 5s, width 2s;
   -o-transition: max-height 5s, width 2s;
-  transition: max-height 15s, width 2s;
+  transition: max-height 5s, width 2s;
 }
 
 #designprocessbutton2:checked ~ .designprocesscontainer2{
@@ -339,7 +338,7 @@ p {
   -moz-transition: max-height 5s, width 2s;
   -ms-transition: max-height 5s, width 2s;
   -o-transition: max-height 5s, width 2s;
-  transition: max-height1 5s, width 2s;
+  transition: max-height 5s, width 2s;
 }
 #designprocessbutton3:checked ~ .designprocesscontainer3{
   width: 95%;
@@ -357,7 +356,7 @@ p {
   -moz-transition: max-height 5s, width 2s;
   -ms-transition: max-height 5s, width 2s;
   -o-transition: max-height 5s, width 2s;
-  transition: max-height 15s, width 2s;
+  transition: max-height 5s, width 2s;
 }
 #designprocessbutton4:checked ~ .designprocesscontainer4{
   width: 95%;
@@ -375,7 +374,7 @@ p {
   -moz-transition: max-height 5s, width 2s;
   -ms-transition: max-height 5s, width 2s;
   -o-transition: max-height 5s, width 2s;
-  transition: max-height 15s, width 2s;
+  transition: max-height 5s, width 2s;
 }
 .designprocess{
   width: 50%;
@@ -384,7 +383,14 @@ p {
   align-items: center;
   justify-content: center;
   border: 1px black solid;
-  box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow:
+      3px 3px rgba(128,128,128,1),
+      4px 4px rgba(118,118,118,1),
+      5px 5px rgba(108,108,108,1),
+      6px 6px rgba(98,98,98,1),
+      7px 7px rgba(88,88,88,1),
+      8px 8px rgba(78,78,78,1),
+      14px 14px 6px -1px rgba(128,128,128,1);
   background-image:url(../assets/discoveryandresearch2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -393,11 +399,11 @@ p {
   z-index: 1;
   filter: grayscale(0%);
   border-radius: 10px 10px 10px 10px;
-  -webkit-transition: max-height 1s, width .35s, border-radius 1s;
-  -moz-transition: max-height 1s, width .35s, border-radius 1s;
-  -ms-transition: max-height 1s, width .35s, border-radius 1s;
-  -o-transition: max-height 1s, width .35s, border-radius 1s;
-  transition: max-height 1s, width .35s, border-radius 1s;
+  -webkit-transition: max-height 1s, width .35s, border-radius 1s, box-shadow 2s 1s;
+  -moz-transition: max-height 1s, width .35s, border-radius 1s, box-shadow 2s 1s;
+  -ms-transition: max-height 1s, width .35s, border-radius 1s, box-shadow 2s 1s;
+  -o-transition: max-height 1s, width .35s, border-radius 1s, box-shadow 2s 1s;
+  transition: max-height 1s, width .35s, border-radius 1s, box-shadow 2s 1s;
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -409,7 +415,14 @@ p {
   align-items: center;
   justify-content: center;
   border: 1px black solid;
-  box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow:
+      3px 3px rgba(128,128,128,1),
+      4px 4px rgba(118,118,118,1),
+      5px 5px rgba(108,108,108,1),
+      6px 6px rgba(98,98,98,1),
+      7px 7px rgba(88,88,88,1),
+      8px 8px rgba(78,78,78,1),
+      14px 14px 6px -1px rgba(128,128,128,1);
   background-image:url(../assets/wall.jpeg);
   background-repeat: no-repeat;
   background-position: center;
@@ -417,11 +430,11 @@ p {
   cursor:pointer;
   z-index: 1;
   border-radius: 10px 10px 10px 10px;
-  -webkit-transition: max-height 1s, width .35s, border-radius 1s;
-  -moz-transition: max-height 1s, width .35s, border-radius 1s;
-  -ms-transition: max-height 1s, width .35s, border-radius 1s;
-  -o-transition: max-height 1s, width .35s, border-radius 1s;
-  transition: max-height 1s, width .35s, border-radius 1s;
+  -webkit-transition: max-height 1s, width .35s, border-radius 1s, box-shadow 2s 1s;
+  -moz-transition: max-height 1s, width .35s, border-radius 1s, box-shadow 2s 1s;
+  -ms-transition: max-height 1s, width .35s, border-radius 1s, box-shadow 2s 1s;
+  -o-transition: max-height 1s, width .35s, border-radius 1s, box-shadow 2s 1s;
+  transition: max-height 1s, width .35s, border-radius 1s, box-shadow 2s 1s;
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -432,7 +445,14 @@ p {
   align-items: center;
   justify-content: center;
   border: 1px black solid;
-  box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow:
+      3px 3px rgba(128,128,128,1),
+      4px 4px rgba(118,118,118,1),
+      5px 5px rgba(108,108,108,1),
+      6px 6px rgba(98,98,98,1),
+      7px 7px rgba(88,88,88,1),
+      8px 8px rgba(78,78,78,1),
+      14px 14px 6px -1px rgba(128,128,128,1);
   background-image:url(../assets/visualdesign.jpg);
   background-size:cover;
   background-repeat: no-repeat;
@@ -440,11 +460,11 @@ p {
   cursor:pointer;
   z-index: 1;
   border-radius: 10px 10px 10px 10px;
-  -webkit-transition: max-height 1s, width .35s, border-radius 1s;
-  -moz-transition: max-height 1s, width .35s, border-radius 1s;
-  -ms-transition: max-height 1s, width .35s, border-radius 1s;
-  -o-transition: max-height 1s, width .35s, border-radius 1s;
-  transition: max-height 1s, width .35s, border-radius 1s;
+  -webkit-transition: max-height 1s, width .35s, border-radius 1s, box-shadow 2s 1s;
+  -moz-transition: max-height 1s, width .35s, border-radius 1s, box-shadow 2s 1s;
+  -ms-transition: max-height 1s, width .35s, border-radius 1s, box-shadow 2s 1s;
+  -o-transition: max-height 1s, width .35s, border-radius 1s, box-shadow 2s 1s;
+  transition: max-height 1s, width .35s, border-radius 1s, box-shadow 2s 1s;
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -456,7 +476,14 @@ p {
   align-items: center;
   justify-content: center;
   border: 1px black solid;
-  box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow:
+      3px 3px rgba(128,128,128,1),
+      4px 4px rgba(118,118,118,1),
+      5px 5px rgba(108,108,108,1),
+      6px 6px rgba(98,98,98,1),
+      7px 7px rgba(88,88,88,1),
+      8px 8px rgba(78,78,78,1),
+      14px 14px 6px -1px rgba(128,128,128,1);
   background-image:url(../assets/finalprototype.jpg);
   background-size:cover;
   background-repeat: no-repeat;
@@ -464,11 +491,11 @@ p {
   cursor:pointer;
   z-index: 1;
   border-radius: 10px 10px 10px 10px;
-  -webkit-transition: max-height 1s, width .35s, border-radius 1;
-  -moz-transition: max-height 1s, width .35s, border-radius 1s;
-  -ms-transition: max-height 1s, width .35s, border-radius 1s;
-  -o-transition: max-height 1s, width .35s, border-radius 1s;
-  transition: max-height 1s, width .35s, border-radius 1s;
+  -webkit-transition: max-height 1s, width .35s, border-radius 1s, box-shadow 2s 1s;
+  -moz-transition: max-height 1s, width .35s, border-radius 1s, box-shadow 2s 1s;
+  -ms-transition: max-height 1s, width .35s, border-radius 1s, box-shadow 2s 1s;
+  -o-transition: max-height 1s, width .35s, border-radius 1s, box-shadow 2s 1s;
+  transition: max-height 1s, width .35s, border-radius 1s, box-shadow 2s 1s;
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -516,37 +543,37 @@ p {
   top: 29px;
 }
 #designprocessbutton:checked + label{
-  /* transition: width 2s, height 5s, transform 2s;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 50px; */
-  width: 95%;
-  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  width: 95.01%;
+  -webkit-transition: width 2s, height 5s, -webkit-transform 2s;
   transition: width 2s, height 5s, transform 2s;
   margin: 0 auto;
-  margin-top: 50px;
   border-radius: 10px 10px 0px 0px;
+  box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
+  margin-top: 50px;
 }
 #designprocessbutton2:checked + label{
   width: 95.01%;
-  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  -webkit-transition: width 2s, height 5s, -webkit-transform 2s;
   transition: width 2s, height 5s, transform 2s;
   margin: 0 auto;
   border-radius: 10px 10px 0px 0px;
+  box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
   margin-top: 50px;
 }
 #designprocessbutton3:checked + label{
   width: 95.01%;
-  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  -webkit-transition: width 2s, height 5s, -webkit-transform 2s;
   transition: width 2s, height 5s, transform 2s;
+  box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
   margin: 0 auto;
   margin-top: 50px;
   border-radius: 10px 10px 0px 0px;
 }
 #designprocessbutton4:checked + label{
   width: 95.01%;
-  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  -webkit-transition: width 2s, height 5s, -webkit-transform 2s;
   transition: width 2s, height 5s, transform 2s;
+  box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
   margin: 0 auto;
   margin-top: 50px;
   border-radius: 10px 10px 0px 0px;
@@ -699,13 +726,6 @@ input:checked ~ .tab-content {
   color: white;
   text-shadow: 4px 4px 4px black;
 }
-
-/* .hero{
-display: flex;
-justify-content: center;
-align-items: center;
-} */
-
 .herobox{
   width: 35%;
   height: 100px;
@@ -754,8 +774,14 @@ align-items: center;
   }
 }
 .personacontainer{
-  border: 2px solid black;
+  border: 2px solid #205C65;
+border-radius: 5px;
   padding:5%;
+background-color: #DDDDDD;
+}
+.personacontainer li{
+display: block;
+line-height: 1.5;
 }
 .personacontainer h2{
   color: inherit;
@@ -842,4 +868,71 @@ tr:hover{
   border-radius: 5px;
   overflow-x: hidden;
   border: 1px solid #205C65;
+}
+.spacer{
+height: 100px;
+}
+.problemsolution{
+display: grid;
+grid-template-columns: auto auto;
+height: 300px;
+}
+.problemsolution h3{
+color: black;
+margin: 0 auto;
+margin-top: 25px;
+width: 80%;
+}
+.problem{
+background-color: #E2CFC7;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.problem h1{
+margin: 0 auto;
+}
+.solution{
+background-color: #EDD8D1;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.solution h1{
+margin: 0 auto;
+}
+.summary{
+/* height: 350px; */
+background-color: gray;
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding-top: 100px;
+padding-bottom: 100px;
+}
+.summary h3{
+color: black;
+width: 50%;
+margin: 0 auto;
+margin-top: 25px;
+}
+.summary h1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+margin: 0 auto;
+}
+.contentheader{
+  background-color: #205C65;
+color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentheader h1{
+margin:0;
+}
+.reflection h1{
+margin:0;
 }
