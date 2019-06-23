@@ -240,15 +240,15 @@ p {
   /* color: white;
   mix-blend-mode: exclusion; */
 
-  /* background-image:url(../assets/finalprototype.jpg);
+  background-image:url(../assets/designprocess/finalprototype.jpg);
   background-size:cover;
   background-repeat: no-repeat;
-  background-position: center; */
+  background-position: center;
   background: inherit;
   width: 100%;
   background-clip: text;
   -webkit-background-clip: text;
-  filter: invert(1) grayscale(1) drop-shadow(0px 0px 1px black);
+  filter: invert(1) sepia(1) drop-shadow(-1px -1px 1px black);
   color: transparent;
 
 }
@@ -777,11 +777,12 @@ align-items: center;
   margin-right: 25px;
   font-size: calc(0px + 1.5vw);
   background-color: white;
-  max-height: 650px;
+  max-height: calc(650px + 20%);
+  max-height: 100%;
   display:grid;
   grid-template-columns: 1fr 9fr;
   align-items: center;
-overflow: hidden;
+  overflow: hidden;
   grid-row-gap: 35px;
 }
 .tab-content ul li{
@@ -811,7 +812,7 @@ overflow: hidden;
 
 }
 th{
-padding: 15px;
+  padding: 15px;
 }
 table{
   font-size: 12px;
@@ -831,15 +832,15 @@ table th {
 .tableFirstrow{
 }
 .tableSecondrow{
-background-color:#666666;
-color: white;
+  background-color:#666666;
+  color: white;
 }
 tr:hover{
-    outline: 2px solid #205C65;
-    outline-offset: -2px;
+  outline: 2px solid #205C65;
+  outline-offset: -2px;
 }
 .tableborder{
-border-radius: 5px;
-overflow-x: hidden;
+  border-radius: 5px;
+  overflow-x: hidden;
   border: 1px solid #205C65;
 }
