@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <title>David Guindon | Projects</title>
+<script src="Scripts\script.js"></script>
 <script src="https://kit.fontawesome.com/7b9eef7080.js"></script>
 <link rel="stylesheet" type="text/css" href="/styles/reset.css">
 <link rel="stylesheet" type="text/css" href="/styles/styles.css">
 <body class='nohighlight'>
+  <script src="Scripts\script.js"></script>
   <header>
     <ul class='alignleft'>
       <a class='personallogo' href="index.html"><img src="assets\personallogo.png" width='85px' height='100%' alt="PersonalLogo"></a>
@@ -16,8 +18,29 @@
       <li><a href="index.html" style='color:#efc988;'>Projects</a></li>
       <li><a href="designprocess.html">Design Process</a></li>
       <li><a href="biography.html">Biography</a></li>
-      <li><a href="biography.html">Resume</a></li>
-      <li><a href="biography.html">Contact</a></li>
+      <li><a href="modal.html">Resume</a></li>
+      <li><a id='myBtn' onclick='moogle()'>Contact</a></li>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Leave me a Message</h2>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="subject">Message</label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                <input type="submit" value="Send" <a href="mailcontact.php" class='projectcardbutton contactbutton'>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </ul>
   </header>
   <div class="hero">
@@ -28,8 +51,8 @@
   <div class="projectcard">
     <div class="projectdesc">
       <h2>Desert Paradigm</h2>
-      <h3>Economic Spreadsheet for Black Desert</h3>
-      <h3>UX/UI Designer  |  March 15 2019  |  7 Weeks</h3>
+      <h3>Economic Spreadsheet for a Videogame</h3>
+      <h3>UX/UI Designer  |  March 15 2019</h3>
       <a href="desertparadigm.html" class="projectcardbutton">Case Study</a>
       <a href="" class="projectcardbutton prototypebutton">Prototype</a>
     </div>
@@ -67,5 +90,6 @@
       <li>© 2019 David Guindon</li>
     </ul>
   </footer>
+  <script src="Scripts\script.js"></script>
 </body>
 </html>
