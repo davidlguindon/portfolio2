@@ -1,58 +1,21 @@
 <?php
-       // from the form
-       $name = trim(strip_tags($_POST['firstname']));
-       $lastname = trim(strip_tags($_POST['lastname']));
-       $message = htmlentities($_POST['message']);
+$for = 'Bond_J_0o7@hotmail.com';
+$title = 'Sending email from PHP';
+$message = '<html>'.
+        '<head> <title> Email with HTML </title> </head>'.
+        '<body> <h1> Email with HTML </h1>'.
+        'This is an email that is sent in HTML format.'
+    '<hr>'.
+    'Sent by my program in PHP'.
+    '</body>'.
+    '</html>';
+$headers = 'MIME-Version: 1.0'. "\ r \ n";
+$headers .= 'Content-type: text / html; charset = utf-8 '. "\ r \ n";
+$headers .= 'From: Name1 Name 2 <Bond_J_0o7@hotmail.com>';
+$sent = mail ($for, $title, $message, $headers);
 
-       // set here
-       $subject = "Contact form submitted!";
-       $to = 'Bond_J_0o7@hotmail.com';
-
-       $body = <<<HTML
-$message
-HTML;
-
-       $headers = "From: $lastname\r\n";
-       $headers .= "Content-type: text/html\r\n";
-
-       // send the email
-       mail($to, $subject, $body, $headers);
-
-       // redirect afterwords, if needed
-       echo "The email message was sent.";
-?>
-
-
-
-
-<?php
-function IsInjected($str)
-{
-    $injections = array('(\n+)',
-           '(\r+)',
-           '(\t+)',
-           '(%0A+)',
-           '(%0D+)',
-           '(%08+)',
-           '(%09+)'
-           );
-
-    $inject = join('|', $injections);
-    $inject = "/$inject/i";
-
-    if(preg_match($inject,$str))
-    {
-      return true;
-    }
-    else
-    {
-      return false;
-    }
-}
-
-if(IsInjected($visitor_email))
-{
-    echo "Bad email value!";
-    exit;
-}
+if ($sent)
+    echo 'Email sent correctly';
+else
+    echo 'Error in sending the email';
 ?>
