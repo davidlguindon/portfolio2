@@ -3,7 +3,7 @@
 This first bit sets the email address that you want the form to be submitted to.
 You will need to change this value to a valid email address that you can access.
 */
-$webmaster_email = "Bond_J_0o7@hotmail.com";
+$webmaster_email = "bond_j_0o7@hotmail.com";
 
 /*
 This bit sets the URLs of the supporting pages.
@@ -20,9 +20,9 @@ If you add a form field, you will need to add it here.
 $email_address = $_REQUEST['email_address'] ;
 $comments = $_REQUEST['comments'] ;
 $first_name = $_REQUEST['first_name'] ;
-$msg =
-"First Name: " . $first_name . "\r\n" .
-"Email: " . $email_address . "\r\n" .
+$msg = 
+"First Name: " . $first_name . "\r\n" . 
+"Email: " . $email_address . "\r\n" . 
 "Comments: " . $comments ;
 
 /*
@@ -58,7 +58,7 @@ elseif (empty($first_name) || empty($email_address)) {
 header( "Location: $error_page" );
 }
 
-/*
+/* 
 If email injection is detected, redirect to the error page.
 If you add a form field, you should add it here.
 */

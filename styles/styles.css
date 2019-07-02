@@ -635,7 +635,7 @@ footer li{
   color: white;
 }
 
- .tab input {
+.tab input {
   position: absolute;
   opacity: 0;
   z-index: -1;
@@ -1031,9 +1031,9 @@ tr:hover{
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
-border-radius: 5px;
-display: grid;
-text-align: left;
+  border-radius: 5px;
+  display: grid;
+  text-align: left;
 }
 
 /* Add Animation */
@@ -1066,7 +1066,7 @@ text-align: left;
   padding: 10px 16px;
   background-color: #205C65;
   color: white;
-text-align: center;
+  text-align: center;
 }
 
 /* .modal-body {
@@ -1090,7 +1090,6 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -1107,7 +1106,7 @@ input[type=submit]:hover {
   padding: 20px;
 }
 .container form{
-padding: 0px;
+  padding: 0px;
   display: grid;
   text-align: left;
 }
@@ -1140,5 +1139,18 @@ padding: 0px;
   width: auto;
   text-align: center;
   left: auto;
-top: 0px;
+  top: 0px;
+}
+.contactbutton:hover {
+  background:-moz-linear-gradient(top, #415989 5%, #2e466e 100%);
+  background:-webkit-linear-gradient(top, #415989 5%, #2e466e 100%);
+  background:-o-linear-gradient(top, #415989 5%, #2e466e 100%);
+  background:-ms-linear-gradient(top, #415989 5%, #2e466e 100%);
+  background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#415989', endColorstr='#2e466e',GradientType=0);
+  background-color:#415989;
+}
+.contactbutton:active {
+  position:relative;
+  top: 2px;
 }
