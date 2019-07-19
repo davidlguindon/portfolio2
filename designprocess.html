@@ -9,7 +9,7 @@
   <header>
     <ul class='alignleft'>
       <a class='personallogo' href="index.html"><img src="assets\personallogo.png" width='85px' height='100%' alt="PersonalLogo"></a>
-      &nbsp &nbsp | &nbsp &nbsp David Guindon
+      &nbsp &nbsp | &nbsp &nbsp <h5>David Guindon</h5>
     </ul>
     <ul class='aligncenter'>
     </ul>
@@ -17,7 +17,7 @@
       <li><a href="index.html">Projects</a></li>
       <li><a href="designprocess.html" style='color:#efc988;'>Design Process</a></li>
       <li><a href="biography.html">Biography</a></li>
-      <li><a href="biography.html">Resume</a></li>
+      <li><a href="assets\Resume.pdf">Resume</a></li>
       <li><a id='myBtn' onclick='moogle()'>Contact</a></li>
       <div id="myModal" class="modal">
         <div class="modal-content">
@@ -33,14 +33,13 @@
                 <label for="contact">Contact Info</label>
                 <input type="text" id="contact" name="contact" placeholder="Any contact style is fine by me..">
                 <label for="subject">Message</label>
-                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                <textarea id="message" name="message" placeholder="Write your message here.." style="height:200px"></textarea>
                 <input type="submit" value="Send" class='contactbutton'>
               </form>
             </div>
           </div>
         </div>
       </div>
-    </ul>
     </ul>
   </header>
   <div class="hero">
@@ -377,7 +376,29 @@
     <ul class = aligncenter>
       <a href="https://github.com/davidlguindon"><i class="fab fa-github-square"></i></a>
       <a href="https://www.linkedin.com/in/davidguindon"><i class="fab fa-linkedin"></i></a>
-      <a href="contact.html"><i class="fas fa-envelope-square"></i></a>
+      <a><i onclick='moogle()' class="fas fa-envelope-square"></i>
+        <div id="myModal1" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Leave me a Message</h2>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <form action="https://www.enformed.io/ozy9gwcx " method="POST" >
+                  <label for="fname">First Name</label>
+                  <input type="text" id="name" name="Name" placeholder="Your name..">
+                  <label for="contact">Contact Info</label>
+                  <input type="text" id="contact" name="contact" placeholder="Any contact style is fine by me..">
+                  <label for="subject">Message</label>
+                  <textarea id="message" name="message" placeholder="Write your message here.." style="height:200px"></textarea>
+                  <input type="submit" value="Send" class='contactbutton'>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
     </ul>
     <ul class='alignright'>
       <li>© 2019 David Guindon</li>
