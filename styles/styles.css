@@ -695,7 +695,7 @@ footer li{
 .tab-content {
   max-height: 0;
   padding: 0 1em;
-  color: #2c3e50;
+  color: #333333;
   background: white;
   transition: all 0.75s;
 }
@@ -1153,4 +1153,7 @@ input[type=submit]:hover {
 .contactbutton:active {
   position:relative;
   top: 2px;
+}
+.tab-content ul{
+font-family: 'Roboto Slab', serif;
 }
