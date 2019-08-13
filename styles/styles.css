@@ -893,6 +893,9 @@ tr:hover{
   grid-template-columns: auto auto;
   height: 300px;
 }
+.problemsolution h1{
+font-family: 'Roboto Slab', serif;
+}
 .problemsolution h3{
   color: black;
   margin: 0 auto;
@@ -920,7 +923,9 @@ tr:hover{
 }
 .content{
   /* height: 350px; */
-  background-color: #E3ECF1;
+  /* background-color: #E3ECF1; */
+  color: #2d2d2d;
+  font-family: 'Roboto Slab', serif;
   display: flex;
   justify-content: center;
   align-items:  center;
@@ -930,9 +935,10 @@ tr:hover{
 }
 .content h3{
   color: black;
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
   margin-top: 25px;
+  margin-bottom: 50px;
   line-height: 1.7;
 }
 .content h1{
@@ -972,6 +978,7 @@ tr:hover{
   color: black;
   font-weight: bold;
   margin-bottom: 10px;
+font-family: 'Roboto Slab', serif;
 }
 .casestudybutton{
   -moz-box-shadow:inset 0px 1px 0px 0px #23395e;
@@ -1155,5 +1162,9 @@ input[type=submit]:hover {
   top: 2px;
 }
 .tab-content ul{
-font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', serif;
+}
+.biography h1 {
+  margin-top: 50px;
+  margin-bottom: 35px;
 }

@@ -3,6 +3,7 @@
 <title>David Guindon | Design Process</title>
 <script src="https://kit.fontawesome.com/7b9eef7080.js"></script>
 <script src="Scripts\script.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/styles/reset.css">
 <link rel="stylesheet" type="text/css" href="/styles/styles.css">
 <body class='nohighlight' style='margin-bottom:75px;'>
@@ -17,18 +18,39 @@
       <li><a href="index.html">Projects</a></li>
       <li><a href="designprocess.html" style='color:#efc988;'>Design Process</a></li>
       <li><a href="biography.html">Biography</a></li>
-      <li><a href="biography.html">Resume</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="assets\Resume.pdf">Resume</a></li>
+      <li><a id='myBtn' onclick='moogle()'>Contact</a></li>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Leave me a Message</h2>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <form action="https://www.enformed.io/ozy9gwcx " method="POST" >
+                <label for="fname">First Name</label>
+                <input type="text" id="name" name="Name" placeholder="Your name..">
+                <label for="contact">Contact Info</label>
+                <input type="text" id="contact" name="contact" placeholder="Any contact style is fine by me..">
+                <label for="subject">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here.." style="height:200px"></textarea>
+                <input type="submit" value="Send" class='contactbutton'>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </ul>
   </header>
   <div class="spacer"></div>
   <div class="designprocesshero">
     <div class="content" style='padding-bottom:0px;'><img src="assets\desertparadigmlogo.png" alt=""></div>
     <div class="content content1"><h1>Summary</h1><h3>The goal of this project was to create a way for users of Black Desert Online to be able to find profitable items to produce without much effort.</h3>
-      <a href="desertparadigm.html" class="casestudybutton projectcardbutton">Deliverables</a>
+      <a href="https://drive.google.com/drive/folders/10Ha1-FyDeytFd9zP_3ae7386Q0bHhzWy?usp=sharing" class="casestudybutton projectcardbutton">Deliverables</a>
       <div class="casestudycontentgrid">
         <div class=""><h2>Roles</h2><h3>Research</h3><h3>UX/UI Design</h3><h3>Product Design</h3><h3>Branding & Identity</h3></div>
-        <div class=""><h2>Deliverables</h2><h3>User Surveys</h3><h3>User Personas</h3><h3>Competitive Analysis</h3><h3>User Stories</h3><h3>User Flows</h3><h3>Wireframes</h3><h3>Mockups</h3><h3>User Testing</h3><h3>Prototypes</h3><h3>Branding</h3><h3>Design System</h3></div>
+        <div class=""><h2>Deliverables</h2><h3>User Surveys</h3><h3>User Personas</h3><h3>Competitive Analysis</h3><h3>User Stories</h3><h3>User Flows</h3><h3>Wireframes</h3><h3>Mockups</h3><h3>User Testing</h3><h3>Prototypes</h3><h3>Branding</h3><h3>Content Strategy</h3><h3>Site Map</h3><h3>Usability Testing</h3><h3>Prefrence Tests</h3></div>
         <div class=""><h2>Tools</h2><h3>Figma</h3><h3>Sketch</h3><h3>InVision</h3><h3>Usability Hub</h3><h3>Draw.io</h3><h3>Atom</h3><h3>Github</h3><h3>Codepen</h3><h3>and others...</h3></div>
         <div class=""><h2>Duration</h2><h3>7 Weeks</h3></div>
       </div>
@@ -38,12 +60,12 @@
       <div class="solution"><h1>Solution</h1><h3>Desert Paradigm allows users to imput their personal data into a spreadsheet and find the most profitable item for them to create given the current market. This can be done even though their is no public API available This is because users are able to audit out of date items and update their information, then share it with other users.</h3></div>
     </div>
   </div>
-  <div class="contentheader"><h1>Content</h1></div>
+  <!-- <div class="contentheader"><h1>Content</h1></div> -->
   <div class="content">
-    <h1>Content</h1><h3>The most difficult part of this task was creating a form that would easily allow cross refrencing items and creation methods.  Their are hundreds of variables to consider when trying to figure out the best item to create, so we had to </h3></div>
-    <div class="contentheader"><h1>Reflection</h1></div>
+    <h1>Content</h1><h3>The most difficult part of this task was creating a form that would easily allow cross referencing items and creation methods.  There are hundreds of variables to consider when trying to figure out the best item to create, and we had to figure out a way to organize them in a way that would make sense to the user, and programmers alike. We also had to try to minimize the amount of user input by auto filling in as many variables as possible.  Another consideration was that not all users were interested in the same data, so we had to find a way to show as much important data to the user as possible on a single to the user as possible, while keeping the need for them to customize to a minimum. </h3></div>
+    <!-- <div class="contentheader"><h1>Reflection</h1></div> -->
     <div class="content">
-      <h1>Reflection</h1><h3>Black Desert Online has an economic system that has very low profit margins on elastic goods, this leads to it being difficult to know what to produce as a new user.  To compound this problem, when someone does find a profitable item to produce, they do not share it, because the market can not handle many users producing the same good.</h3>
+      <h1>Reflection</h1><h3>This project was an exercise for me to learn and solidify my design process, it was created for myself and I was not planning on using it for a portfolio piece, so the audience of many of my documents are not what I would have liked.  While designing it I made it in a way that I could complete the whole project on my own and would like to finish and publish the site in my spare time.  My two largest regrets on the project as it stands currently are that I did not design the site to have full functionality on mobile, roughly half of the features are cut out, and if I was going to do it again I would design mobile first.  The reason I did not is because the game the site is intended for high end gaming computers. Not having the full functionality on mobile still bothers me because with better planning I could have incorporated it easily.  My second regret is that I have yet to find a way to show item data in a way that all my testers easily understood.  Each iteration was getting better, but I decided to end the project before everything was ironed out to my satisfaction. In my last trial I did not even take the time to test the contrast ratio of my new color coded design.  Overall I had a very fun time building this project, and would appreciate it if someone who is looking at it keeps in mind that I was focused on speed and learning the design process more than fine tuning and making a project I would actually send to a client.</h3>
     </div>
     <footer>
       <ul class='alignleft'>
@@ -57,5 +79,6 @@
         <li>© 2019 David Guindon</li>
       </ul>
     </footer>
+<script src="Scripts\script.js"></script>
   </body>
   </html>
