@@ -204,6 +204,13 @@ p {
   margin-left: 25%;
   margin-right: 25%;
 }
+ .biography p{
+  text-align: center;
+  margin-top: 18px;
+  margin-left: 25%;
+  margin-right: 25%;
+line-height: 1.75;
+}
 .designprocess h2{
   font-size: 48px;
   color: white;
