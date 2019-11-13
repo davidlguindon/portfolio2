@@ -729,7 +729,7 @@ input:checked + .tab-label::after {
 }
 
 input:checked ~ .tab-content {
-  max-height: 130vh;
+  max-height: 230vh;
   padding: 1em;
 }
 .hero h1{
