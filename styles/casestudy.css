@@ -1,67 +1,80 @@
-$scroll-factor : .5;
 
-$header-height : 50px;
-$image : "https://pbs.twimg.com/media/B2XTRwtCAAEnqlP.jpg:large";
-
-@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900,500italic,400italic,100italic,900italic,300italic,700italic,800italic);
-
-* { box-sizing: border-box; margin: 0; padding: 0; border: 0; }
-
-main {
-  height: 150vh;
-  max-height: 100%;
-  overflow-x: hidden;
-  perspective: 1px;
-  perspective-origin: center top;
-  transform-style: preserve-3d;
-  padding: 0 40px;
-  font: 36px/1.6 Alegreya Sans, serif;
-background-color: blue;
-  background-image: url(../assets/dock.jpg);
-}
-
-header {
-  height: 80vh;
-  background: url($image);
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  vertical-align: top;
-  transform-origin: center top;
-  transform:
-    translateZ(-#{$scroll-factor * 2}px)
-    scale(1 + $scroll-factor * 2);
-}
 
 section {
-  min-height: 200vh;
-  background: white;
-  transform: translateZ(0);
-  padding: 10px 0;
+width: 100%;
 }
-
-h1 {
-  font-size: 30px;
-  font-weight: 400;
-  padding: 10px 20px;
+.one {
+  /* background: tomato; */
+width: 100%;
 }
-
-p {
-  font-size: 18px;
-  font-size: 300;
-  padding: 0 20px;
+.two {
+  /* background: teal; */
+width: 100%;
 }
-
-a {
-  text-decoration: none;
-  color: dodgerblue;
+.three {
+  /* background: orange; */
+width: 100%;
 }
-
-
-
-
-html, body { height: 100%; }
-
-body {
-  background: url(..\assets\desertparadigm\desertbackground.jpg);
+.four {
+  /* background: green; */
+width: 100%;
+}
+.two .right-half {
+  /* background: #ddd; */
+}
+.four .right-half {
+  /* background: #ddd; */
+}
+.right-half{
+  -webkit-overflow-scrolling: touch;
+position: relative;
+left: 50vw;
+width: 50%;
+}
+.left-half{
+float: left;
+  height: 100vh;
+/* background-color: pink; */
+position: sticky;
+left: 0;
+top: 100px;
+transform: translateX(-50vw);
+display: grid;
+padding:0px;
+}
+.left-half content{
+margin:auto;
+}
+.content{
+padding: 0px;;
+}
+.pictureexample{
+background: url(../assets/bench.jpeg);
+background-repeat: no-repeat;
+background-size: contain;
+height: 500px;
+background-position: center;
+margin:auto;
+}
+.picturecontainer{
+height: 100vh;
+margin: auto;
+transform: translateY(25%);
+}
+.designprocesshero{
+background: url(../assets/desertparadigm/desertbackground.jpg);
+background-attachment: fixed;
+background-position: top;
+background-size: cover;
+height: 100vh;
+}
+@media only screen and (max-width: 1000px) {
+  .content1 h1 {
+color:white;
+text-shadow: 2px 2px 4px #000000;
+  }
+  .content1 h3 {
+color:white;
+text-shadow: 2px 2px 4px #000000;
+  }
 }

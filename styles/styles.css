@@ -1177,7 +1177,10 @@ input[type=submit]:hover {
   margin-bottom: 35px;
 }
 .content img{
+margin-top: 150px;
+margin-bottom: 50px;
 text-align: right;
+transform: scale(1.5);
 }
 .contentgrid {
 display: grid;
