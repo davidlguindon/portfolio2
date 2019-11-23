@@ -2,10 +2,15 @@
 
 section {
 width: 100%;
+/* background: lightblue; */
+display: grid;
+grid-template-columns: 1fr 1fr;
 }
 .one {
   /* background: tomato; */
 width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr;
 }
 .two {
   /* background: teal; */
@@ -26,21 +31,27 @@ width: 100%;
   /* background: #ddd; */
 }
 .right-half{
-  -webkit-overflow-scrolling: touch;
-position: relative;
-left: 50vw;
-width: 50%;
+  /* -webkit-overflow-scrolling: touch; */
+/* position: relative; */
+/* left: 50vw; */
+/* width: 50%; */
+/* background:pink; */
+grid-column: 2;
+/* transform: translateX(50vw); */
 }
 .left-half{
-float: left;
+/* float: left; */
   height: 100vh;
-/* background-color: pink; */
+/* background-color: orange; */
 position: sticky;
 left: 0;
 top: 100px;
-transform: translateX(-50vw);
+/* transform: translateX(-50vw); */
 display: grid;
 padding:0px;
+
+
+grid-column: 1;
 }
 .left-half content{
 margin:auto;
@@ -56,17 +67,237 @@ height: 500px;
 background-position: center;
 margin:auto;
 }
-.picturecontainer{
-height: 100vh;
+.pictureexample{
+background: url(../assets/bench.jpeg);
+background-repeat: no-repeat;
+background-size: contain;
+height: 500px;
+background-position: center;
+margin:auto;
+}
+.rightHeightContainer{
+/* height: 100vh;*/
+min-height: calc(100vh - 100px);
 margin: auto;
-transform: translateY(25%);
+/* border: solid red 5px; */
+display: grid;
 }
 .designprocesshero{
 background: url(../assets/desertparadigm/desertbackground.jpg);
 background-attachment: fixed;
 background-position: top;
 background-size: cover;
-height: 100vh;
+height: calc(100vh - 100px);
+/* animation: 1s ease-out 0s 1 slidedown; */
+}
+
+.DR0{
+background: url(../assets/desertparadigm/DR/SWOTAnalysisBDOPlanner.png);
+background-repeat: no-repeat;
+background-size: contain;
+height: 500px;
+width: 80%;
+background-position: center;
+margin:auto;
+}
+.DR1{
+background: url(../assets/desertparadigm/DR/SurveyResults0.png);
+background-repeat: no-repeat;
+background-size: contain;
+height: 500px;
+width: 80%;
+background-position: center;
+margin:auto;
+border: 2px solid #205C65;
+width:80%;
+border-radius: 5px;
+}
+.DR2{
+background: url(../assets/desertparadigm/DR/SurveyResults1.png);
+background-repeat: no-repeat;
+background-size: contain;
+height: 500px;
+background-position: center;
+margin:auto;
+/* border: 2px solid #205C65; */
+width:80%;
+border-radius: 5px;
+}
+.IA0{
+background: url(../assets/desertparadigm/IA/UserFlowDesertParadigmMedianMarketData.png);
+background-repeat: no-repeat;
+background-size: contain;
+height: 500px;
+background-position: center;
+margin:auto;
+border: 2px solid #205C65;
+width:80%;
+border-radius: 5px;
+}
+.IA1{
+background: url(../assets/desertparadigm/IA/LandingPage.png);
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 80vh;
+background-position: top;
+margin:auto;
+border: 2px solid #205C65;
+width:80%;
+border-radius: 5px;
+}
+.IA2{
+background: url(../assets/desertparadigm/IA/Alchemy.png);
+background-repeat: no-repeat;
+background-size: contain;
+height: 500px;
+background-size: cover;
+background-position: top;
+margin:auto;
+border: 2px solid #205C65;
+width:80%;
+border-radius: 5px;
+}
+.IA3{
+background: url(../assets/desertparadigm/IA/Worker.png);
+background-repeat: no-repeat;
+background-size: contain;
+height: 500px;
+background-position: center;
+margin:auto;
+border: 2px solid #205C65;
+width:80%;
+border-radius: 5px;
+}
+.VD0{
+background: url(../assets/desertparadigm/VD/StartingOut.jpg);
+background-repeat: no-repeat;
+background-size: contain;
+min-height: 50vh;
+background-size: cover;
+background-position: top;
+margin:auto;
+border: 2px solid #205C65;
+width:80%;
+border-radius: 5px;
+}
+.VD1{
+background: url(../assets/desertparadigm/VD/LogoExamples.jpg);
+background-repeat: no-repeat;
+background-size: contain;
+height: 500px;
+background-position: center;
+margin:auto;
+border: 2px solid #205C65;
+width:80%;
+border-radius: 5px;
+}
+.VD2{
+background: url(../assets/desertparadigm/VD/Moodboard2.jpg);
+background-repeat: no-repeat;
+background-size: contain;
+height: 500px;
+background-position: center;
+margin:auto;
+/* border: 2px solid #205C65; */
+width:80%;
+border-radius: 5px;
+}
+.VD3{
+background: url(../assets/desertparadigm/VD/ColorPalette.png);
+background-repeat: no-repeat;
+background-size: contain;
+height: 500px;
+background-position: center;
+margin:auto;
+border: 2px solid #205C65;
+width:80%;
+border-radius: 5px;
+}
+.VD4{
+background: url(../assets/desertparadigm/VD/HFMockup0.png);
+background-repeat: no-repeat;
+background-size: contain;
+height: 500px;
+background-position: center;
+margin:auto;
+/* border: 2px solid #205C65; */
+width:80%;
+border-radius: 5px;
+}
+.VD5{
+background: url(../assets/desertparadigm/VD/HFMockup1.png);
+background-repeat: no-repeat;
+background-size: contain;
+height: 500px;
+background-position: center;
+margin:auto;
+/* border: 2px solid #205C65; */
+width:80%;
+border-radius: 5px;
+}
+.VD6{
+background: url(../assets/desertparadigm/VD/HFMockup2.png);
+background-repeat: no-repeat;
+background-size: contain;
+height: 500px;
+background-position: center;
+margin:auto;
+/* border: 2px solid #205C65; */
+width:80%;
+border-radius: 5px;
+}
+.PT0{
+background: url(../assets/desertparadigm/PT/PrototypeLanding.jpg);
+background-repeat: no-repeat;
+background-size: contain;
+height: 500px;
+background-position: center;
+margin:auto;
+border: 2px solid #205C65;
+width:80%;
+border-radius: 5px;
+}
+.PT1{
+background: url(../assets/desertparadigm/PT/preferencetesting.png);
+background-repeat: no-repeat;
+background-size: contain;
+height: 500px;
+background-position: center;
+margin:auto;
+border: 2px solid #205C65;
+width:80%;
+border-radius: 5px;
+}
+.PT2{
+background: url(../assets/desertparadigm/PT/desertparadigmlogo.png);
+background-repeat: no-repeat;
+background-size: contain;
+height: 500px;
+background-position: center;
+margin:auto;
+border: 2px solid #205C65;
+width:80%;
+border-radius: 5px;
+}
+
+.personacontainer{
+width: 80%;
+margin: 0 auto;
+/* height: calc(80vh - 100px); */
+min-height:  calc(80vh - 100px);
+margin-top: 10%;
+margin-bottom: 10%;
+}
+.tableborder{
+  width: 80%;
+  margin: 0 auto;
+  /* height: calc(80vh - 100px); */
+  min-height:  calc(80vh - 100px);
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.rightBorder{
+border: 2px solid #205c65;
 }
 @media only screen and (max-width: 1000px) {
   .content1 h1 {
