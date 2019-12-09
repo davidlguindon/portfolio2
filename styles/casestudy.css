@@ -41,7 +41,8 @@ grid-column: 2;
 }
 .left-half{
 /* float: left; */
-  height: 100vh;
+  height: calc(100vh - 100px);
+overflow-y: hidden;
 /* background-color: orange; */
 position: sticky;
 left: 0;
@@ -253,7 +254,7 @@ background-size: contain;
 height: 500px;
 background-position: center;
 margin:auto;
-border: 2px solid #205C65;
+/* border: 2px solid #205C65; */
 width:80%;
 border-radius: 5px;
 }
@@ -275,7 +276,7 @@ background-size: contain;
 height: 500px;
 background-position: center;
 margin:auto;
-border: 2px solid #205C65;
+/* border: 2px solid #205C65; */
 width:80%;
 border-radius: 5px;
 }
@@ -298,6 +299,10 @@ margin-bottom: 10%;
 }
 .rightBorder{
 border: 2px solid #205c65;
+}
+.four .rightHeightContainer{
+/* display: block; */
+
 }
 @media only screen and (max-width: 1000px) {
   .content1 h1 {
