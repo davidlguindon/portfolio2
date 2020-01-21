@@ -1194,7 +1194,7 @@ transform: scale(1.5);
 display: grid;
 grid-template-columns: 1fr 1fr;
 }
-@media (max-width: 600px) {
+@media (max-width: 1400px) {
   footer{
     white-space: normal;
   }
