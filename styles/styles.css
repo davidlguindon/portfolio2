@@ -1211,9 +1211,9 @@ grid-gap: 75px;
     grid-template-columns: 1fr;
   }
 .problem{
-min-height: 100vh;
+min-height: calc(100vh - 100px);
 }
 .solution{
-min-height: 100vh;
+min-height: calc(100vh - 100px);
 }
 }
