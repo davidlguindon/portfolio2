@@ -795,6 +795,14 @@ input:checked ~ .tab-content {
   footer{
     white-space: normal;
   }
+  .casestudycontentgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+  }
 }
 .personacontainer{
   border: 2px solid #205C65;
@@ -1185,4 +1193,27 @@ transform: scale(1.5);
 .contentgrid {
 display: grid;
 grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 768px) {
+  footer{
+    white-space: normal;
+  }
+  .casestudycontentgrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+grid-gap: 75px;
+  }
+  .problemsolution{
+    grid-template-columns: 1fr;
+  }
+.problem{
+min-height: 100vh;
+}
+.solution{
+min-height: 100vh;
+}
 }
