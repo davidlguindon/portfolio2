@@ -207,9 +207,13 @@ p {
  .biography p{
   text-align: center;
   margin-top: 18px;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 33%;
+  margin-right: 33%;
+  margin-bottom: 20px;
+font-size: 1em;
 line-height: 1.75;
+
+
 }
 .designprocess h2{
   font-size: 48px;
@@ -1209,8 +1213,10 @@ grid-gap: 75px;
   }
   .problemsolution{
     grid-template-columns: 1fr;
+font-size: 125%
   }
 .problem{
+margin-top: 50px;
 padding-top: 50px;
 padding-bottom: 50px;
 }
