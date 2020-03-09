@@ -209,6 +209,7 @@ p {
   margin-top: 18px;
   margin-left: 33%;
   margin-right: 33%;
+min-width: 320px;
   margin-bottom: 20px;
 font-size: 1em;
 line-height: 1.75;
@@ -1223,5 +1224,9 @@ padding-bottom: 50px;
 .solution{
   padding-top: 50px;
   padding-bottom: 50px;
+}
+.biography p{
+margin-left: 5%;
+margin-right: 5%;
 }
 }
