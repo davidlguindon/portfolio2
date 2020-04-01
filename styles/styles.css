@@ -696,6 +696,7 @@ footer li{
   font-weight: bold;
   cursor: pointer;
   /* Icon */
+font-size: 1em;
 }
 
 .tab-label:hover {
