@@ -91,6 +91,15 @@ background-size: cover;
 height: calc(100vh - 100px);
 /* animation: 1s ease-out 0s 1 slidedown; */
 }
+.designprocesshero h1{
+margin-left: 33%;
+margin-right: 30%;
+text-align: left;
+font-size: 32px;
+text-indent: 30px;
+line-height: 1.6;
+
+}
 
 .DR0{
 background: url(../assets/desertparadigm/DR/SWOTAnalysisBDOPlanner.png);
@@ -310,13 +319,28 @@ position: relative;
 top: -60px;
 
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1250px) {
   .content1 h1 {
 color:white;
 text-shadow: 2px 2px 4px #000000;
+font-size: 24px;
   }
   .content1 h3 {
 color:white;
 text-shadow: 2px 2px 4px #000000;
   }
+}
+@media only screen and (max-width: 1000px) {
+  .content1 h1 {
+color:white;
+text-shadow: 2px 2px 4px #000000;
+display: none;
+  }
+  .content1 h3 {
+color:white;
+text-shadow: 2px 2px 4px #000000;
+  }
+}
+body{
+margin-top: 0px;
 }

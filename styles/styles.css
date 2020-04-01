@@ -4,6 +4,7 @@ html{
   min-height: 100%;
 }
 body{
+margin-top:250px;
   margin-bottom: 125px;
 }
 header li {
@@ -59,7 +60,7 @@ header{
   align-items: center;
   background-color: #205C65;
   position: fixed;
-  margin-top: -100px;
+  top: 0px;
   width: 100%;
   z-index: 3;
 }
@@ -120,18 +121,18 @@ header .aligncenter{
   margin-bottom: 50px;
   height: 300px;
   resize:horizontal;
-  min-width: 690px;
+  min-width: 961px;
   overflow: auto;
   border: 5px #205C65 solid;
   box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 50% 50%;
   background-color: #205C65;
 }
 .projectdesc{
   height: 300px;
   position: relative;
-  left: 2px;
+  left: -10%;
   background-color: #205C65;
 }
 .projectpicture{
@@ -163,6 +164,7 @@ h1{
   font-size: 36px;
   text-align: center;
   margin-top: 18px;
+font-family: Roboto Slab;
 }
 .projectdesc h2 {
   margin-top: 40px;
@@ -170,6 +172,9 @@ h1{
   position: relative;
   left: 20%;
   white-space: nowrap;
+font-size: 48px;
+/* font-size: 3em; */
+margin-bottom: 15px;
 }
 .projectdesc h3 {
   position: relative;
@@ -182,7 +187,7 @@ h1{
 }
 h2{
   color: #ffffff;
-  /* font-family: Roboto; */
+  font-family: Roboto slab;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -192,20 +197,19 @@ h2{
 h3{
   color: #ffffff;
   text-align: center;
-  /* font-family: Roboto; */
+  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
 }
 p {
-  text-align: center;
+  text-align: left;
   margin-top: 18px;
   margin-left: 25%;
   margin-right: 25%;
 }
  .biography p{
-  text-align: center;
   margin-top: 18px;
   margin-left: 33%;
   margin-right: 33%;
@@ -213,7 +217,9 @@ min-width: 320px;
   margin-bottom: 20px;
 font-size: 1em;
 line-height: 1.75;
-
+font-family: roboto;
+text-indent: 50px;
+color:#333333;
 
 }
 .designprocess h2{
@@ -545,7 +551,7 @@ inset 0px 0px 0px 10px red;
   border:1px solid #1f2f47;
   cursor:pointer;
   color:#ffffff;
-  /* font-family:Roboto; */
+  font-family:Roboto;
   font-size:16px;
   font-weight:bold;
   padding:16px 0px;
@@ -553,7 +559,7 @@ inset 0px 0px 0px 10px red;
   text-shadow:0px 1px 0px #263666;
   display:block;
   position: relative;
-  top: 30px;
+  top: 20px;
   left: 20%;
   margin-bottom: 20px;
 }
@@ -568,7 +574,7 @@ inset 0px 0px 0px 10px red;
 }
 .projectcardbutton:active {
   position:relative;
-  top: 29px;
+  top: 22px;
 }
 #designprocessbutton:checked + label{
   width: 95.01%;
@@ -746,7 +752,7 @@ input:checked ~ .tab-content {
   text-shadow: 4px 4px 4px black;
   margin: 20px;
 }
-.hero h2{
+.herobox h2{
   font-size: 2vw;
   display: flex;
   justify-content: center;
@@ -923,6 +929,8 @@ font-family: 'Roboto Slab', serif;
   margin-top: 25px;
   width: 80%;
   line-height: 1.7;
+text-align: left;
+text-indent: 30px;
 }
 .problem{
   background-color: #E2CFC7;
@@ -955,11 +963,13 @@ font-family: 'Roboto Slab', serif;
   padding-bottom: 100px;
 }
 .content h3{
-  color: black;
+  color:#333333;
+text-align: left;
+text-indent: 30px;
   width: 60%;
   margin: 0 auto;
   margin-top: 25px;
-  margin-bottom: 50px;
+  /* margin-bottom: 10px; */
   line-height: 1.7;
 }
 .content h1{
@@ -1018,7 +1028,7 @@ font-family: 'Roboto Slab', serif;
   border:1px solid #1f2f47;
   cursor:pointer;
   color:#ffffff;
-  /* font-family:Roboto; */
+  font-family:Roboto;
   font-size:16px;
   font-weight:bold;
   padding:16px 0px;
@@ -1156,7 +1166,7 @@ input[type=submit]:hover {
   border:1px solid #1f2f47;
   cursor:pointer;
   color:#ffffff;
-  /* font-family:Roboto; */
+  font-family:Roboto;
   font-size:16px;
   font-weight:bold;
   padding:16px 0px;
