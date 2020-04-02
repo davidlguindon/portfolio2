@@ -698,6 +698,9 @@ footer li{
   /* Icon */
 font-size: 1.7em;
 }
+.tab-content{
+font-size: 1em;
+}
 
 .tab-label:hover {
   background: #205c65;
