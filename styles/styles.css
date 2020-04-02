@@ -192,7 +192,6 @@ h2{
   font-weight: bold;
   font-size: 24px;
   line-height: 35px;
-
 }
 h3{
   color: #ffffff;
@@ -696,10 +695,6 @@ footer li{
   font-weight: bold;
   cursor: pointer;
   /* Icon */
-font-size: 1.7em;
-}
-.tab-content{
-font-size: 1em;
 }
 
 .tab-label:hover {
@@ -1242,10 +1237,5 @@ padding-bottom: 50px;
 .biography p{
 margin-left: 5%;
 margin-right: 5%;
-}
-  .tab-content img{
-display: none;
-}
-  .tab-content{
 }
 }
