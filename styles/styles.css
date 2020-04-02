@@ -696,7 +696,7 @@ footer li{
   font-weight: bold;
   cursor: pointer;
   /* Icon */
-font-size: 1em;
+font-size: 1.7em;
 }
 
 .tab-label:hover {
@@ -1239,5 +1239,10 @@ padding-bottom: 50px;
 .biography p{
 margin-left: 5%;
 margin-right: 5%;
+}
+  .tab-content img{
+display: none;
+}
+  .tab-content{
 }
 }
