@@ -5,7 +5,7 @@ html{
 }
 body{
 margin-top:250px;
-  margin-bottom: 125px;
+  margin-bottom: 75px;
 }
 header li {
   display: inline;
@@ -917,7 +917,6 @@ tr:hover{
   display: grid;
   grid-template-columns: auto auto;
   height: 300px;
-margin-bottom: 100px;
 }
 .problemsolution h1{
 font-family: 'Roboto Slab', serif;
