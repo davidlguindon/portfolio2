@@ -90,7 +90,7 @@ background: url(../assets/desertparadigm/desertbackground.jpg);
 background-attachment: fixed;
 background-position: top;
 background-size: cover;
-height: calc(100vh - 100px);
+min-height: calc(100vh - 100px);
 /* animation: 1s ease-out 0s 1 slidedown; */
 }
 .designprocesshero h1{

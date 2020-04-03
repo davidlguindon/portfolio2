@@ -215,8 +215,8 @@ p {
 min-width: 320px;
   margin-bottom: 20px;
 font-size: 1em;
-line-height: 1.75;
-font-family: roboto;
+line-height: 1.6;
+font-family: Roboto;
 text-indent: 50px;
 color:#333333;
 
@@ -915,8 +915,9 @@ tr:hover{
 }
 .problemsolution{
   display: grid;
-  grid-template-columns: auto auto;
-  height: 300px;
+  grid-template-columns: 1fr 1fr;
+  min-height: 300px;
+/* border: 3px blue solid; */
 }
 .problemsolution h1{
 font-family: 'Roboto Slab', serif;
@@ -1207,6 +1208,13 @@ transform: scale(1.5);
 display: grid;
 grid-template-columns: 1fr 1fr;
 }
+
+@media (max-width: 950px) {
+  .biography p{
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+}
 @media (max-width: 1400px) {
   footer{
     white-space: normal;
@@ -1232,9 +1240,5 @@ padding-bottom: 50px;
 .solution{
   padding-top: 50px;
   padding-bottom: 50px;
-}
-.biography p{
-margin-left: 5%;
-margin-right: 5%;
 }
 }
