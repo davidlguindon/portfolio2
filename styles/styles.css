@@ -1212,6 +1212,17 @@ input[type=submit]:hover {
     margin-right: 5%;
   }
 }
+@media (max-width: 1025px) {
+  .tab-content{
+display: block;
+text-align: center;
+  }
+  .tab-content ul{
+margin-right: 0px;
+margin-bottom: 25px;
+font-size: 1em;
+  }
+}
 @media (max-width: 1400px) {
   footer{
     white-space: normal;
