@@ -63,6 +63,8 @@ header{
   top: 0px;
   width: 100%;
   z-index: 3;
+  font-family: Roboto Slab;
+
 }
 header ul{
   font-size: 20px;
@@ -114,29 +116,41 @@ header .aligncenter{
   display: grid;
 }
 .projectcard{
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  height: 300px;
-  resize:horizontal;
-  min-width: 961px;
+  width: 50%;
+  height: 200px;
+  /* resize:horizontal; */
+  /* min-width: 961px; */
+  min-width: 710px;
   overflow: auto;
-  border: 5px #205C65 solid;
   box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.25);
   display: grid;
   grid-template-columns: 50% 50%;
+  grid-auto-rows: 65fr 45fr;
   background-color: #205C65;
+  margin:50px auto;
+}
+.projectcard ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.projectbuttons{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  grid-column: span 2;
+
 }
 .projectdesc{
-  height: 300px;
+  /* height: 300px; */
   position: relative;
   left: -10%;
+  /* background-color: #f3f6f8; */
   background-color: #205C65;
+  grid-row: span 2;
 }
 .projectpicture{
-  height: 300px;
+  /* height: 300px; */
   background-color: #205C65;
   background-image: url(../assets/projectswish.png) , url(../assets/desertparadigm.png);
   background-repeat: no-repeat;
@@ -145,7 +159,7 @@ header .aligncenter{
   /* box-shadow: inset -8px 0 35px rgba(32,92,101),inset 0 8px 35px rgba(32,92,101),inset 0 -8px 35px rgba(32,92,101); */
 }
 .projectpicture2{
-  height: 300px;
+  /* height: 300px; */
   background-image: url(../assets/projectswish.png) , url(../assets/blocjams.png);
   background-repeat: no-repeat;
   background-size: contain , cover;
@@ -174,12 +188,12 @@ h1{
   white-space: nowrap;
   font-size: 48px;
   /* font-size: 3em; */
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 .projectdesc h3 {
   position: relative;
   left: 20%;
-  margin-top: 5px;
+  margin-top: 10px;
   white-space: nowrap;
 }
 .projectdesc a {
@@ -217,7 +231,7 @@ p {
   font-size: 1em;
   line-height: 1.6;
   font-family: Roboto;
-  text-indent: 50px;
+  /* text-indent: 50px; */
   color:#333333;
 }
 .designprocess h2{
@@ -543,9 +557,7 @@ inset 0px 0px 0px 10px red;
   background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e466e', endColorstr='#415989',GradientType=0);
   background-color:#2e466e;
-  -moz-border-radius:3px;
-  -webkit-border-radius:3px;
-  border-radius:3px;
+  border-radius:20px 0px 0px 20px;
   border:1px solid #1f2f47;
   cursor:pointer;
   color:#ffffff;
@@ -555,11 +567,8 @@ inset 0px 0px 0px 10px red;
   padding:16px 0px;
   text-decoration: none;
   text-shadow:0px 1px 0px #263666;
-  display:block;
-  position: relative;
-  top: 20px;
-  left: 20%;
-  margin-bottom: 20px;
+  width: 55%;
+  text-align: center;
 }
 .projectcardbutton:hover {
   background:-moz-linear-gradient(top, #415989 5%, #2e466e 100%);
@@ -572,7 +581,7 @@ inset 0px 0px 0px 10px red;
 }
 .projectcardbutton:active {
   position:relative;
-  top: 22px;
+  top: 2px;
 }
 #designprocessbutton:checked + label{
   width: 95.01%;
@@ -751,7 +760,7 @@ input:checked ~ .tab-content {
   margin: 20px;
 }
 .herobox h2{
-  font-size: 2vw;
+  font-size: 1.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1213,14 +1222,18 @@ input[type=submit]:hover {
   }
 }
 @media (max-width: 1025px) {
+  /* .biography p{
+  margin-left: 5%;
+  margin-right: 5%;
+  } */
   .tab-content{
-display: block;
-text-align: center;
+    display: block;
+    text-align: center;
   }
   .tab-content ul{
-margin-right: 0px;
-margin-bottom: 25px;
-font-size: 2em;
+    margin-right: 0px;
+    margin-bottom: 25px;
+    font-size: 2em;
   }
 }
 @media (max-width: 1400px) {
