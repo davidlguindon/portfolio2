@@ -760,13 +760,13 @@ input:checked ~ .tab-content {
   margin: 20px;
 }
 .herobox h2{
-  font-size: 16px;
+  font-size: 2.2vw;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   text-shadow: 4px 4px 4px black;
-  margin: 5px 15px;
+  margin: 25px 15px;
 }
 .herobox{
   /* height: 100px; */
@@ -1241,6 +1241,9 @@ display: none;
     margin-bottom: 25px;
     font-size: 2em;
   }
+.projectcard{
+width: 100%;
+}
 }
 @media (max-width: 1400px) {
   footer{
