@@ -760,16 +760,16 @@ input:checked ~ .tab-content {
   margin: 20px;
 }
 .herobox h2{
-  font-size: 1.5vw;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   text-shadow: 4px 4px 4px black;
+  margin: 5px 15px;
 }
 .herobox{
-  width: 35%;
-  height: 100px;
+  /* height: 100px; */
   border-top: none;
   background-color: #205C65;
   opacity: .8;
@@ -1220,6 +1220,12 @@ input[type=submit]:hover {
     margin-left: 5%;
     margin-right: 5%;
   }
+.mobileon{
+display: none;
+}
+.mobileoff{
+display: none;
+}
 }
 @media (max-width: 1025px) {
   /* .biography p{
