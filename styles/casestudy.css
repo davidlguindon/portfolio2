@@ -86,10 +86,13 @@ align-items: center;
 /* background-color: purple; */
 }
 .designprocesshero{
-background: url(../assets/desertparadigm/desertbackground.jpg);
+/* background: url(../assets/desertparadigm/desertbackground.jpg); */
+background: url(../assets/desertparadigmlogo.png);
+background-color: #2C2C33;
 background-attachment: fixed;
-background-position: top;
-background-size: cover;
+background-position: center;
+background-size: 50%;
+background-repeat: no-repeat;
 min-height: calc(100vh - 100px);
 /* animation: 1s ease-out 0s 1 slidedown; */
 }
@@ -112,7 +115,7 @@ width: 80%;
 /* border: 2px solid #205C65; */
 border-radius: 5px;
 background-position: center;
-margin:auto;
+/* margin:auto; */
 }
 .DR1{
 background: url(../assets/desertparadigm/DR/SurveyResults0.png);
@@ -122,7 +125,7 @@ background-size: cover;
 min-height: 70vh;
 width: 80%;
 background-position: center;
-margin:auto;
+/* margin:auto; */
 border: 2px solid #205C65;
 width:80%;
 border-radius: 5px;
@@ -133,7 +136,7 @@ background-repeat: no-repeat;
 background-size: cover;
 height: 500px;
 background-position: center;
-margin:auto;
+/* margin:auto; */
 border: 2px solid #205C65;
 width:80%;
 border-radius: 5px;
@@ -145,7 +148,7 @@ background-size: cover;
 /* height: 500px; */
 min-height: 70vh;
 background-position: center;
-margin:auto;
+/* margin:auto; */
 border: 2px solid #205C65;
 width:80%;
 border-radius: 5px;
@@ -156,7 +159,7 @@ background-repeat: no-repeat;
 background-size: cover;
 min-height: 70vh;
 background-position: top;
-margin:auto;
+/* margin:auto; */
 border: 2px solid #205C65;
 width:80%;
 border-radius: 5px;
@@ -168,7 +171,7 @@ background-size: contain;
 height: 500px;
 background-size: cover;
 background-position: top;
-margin:auto;
+/* margin:auto; */
 border: 2px solid #205C65;
 width:80%;
 border-radius: 5px;
@@ -179,7 +182,7 @@ background-repeat: no-repeat;
 background-size: cover;
 height: 536px;
 background-position: center;
-margin:auto;
+/* margin:auto; */
 border: 2px solid #205C65;
 width:80%;
 border-radius: 5px;
@@ -191,7 +194,7 @@ background-size: contain;
 min-height: 50vh;
 background-size: cover;
 background-position: top;
-margin:auto;
+/* margin:auto; */
 border: 2px solid #205C65;
 width:80%;
 border-radius: 5px;
@@ -199,14 +202,15 @@ border-radius: 5px;
 .VD1{
 background: url(../assets/desertparadigm/VD/LogoExamples.jpg);
 background-repeat: no-repeat;
-background-size: cover;
+background-size: contain;
 height: 300px;
 background-position: center;
-margin:auto;
+/* margin:auto; */
 border: 2px solid #205C65;
-margin-left: 25px;
-margin-right: 25px;
+/* margin-left: 25px; */
+/* margin-right: 25px; */
 border-radius: 10px;
+width: 80%;
 }
 .VD2{
 background: url(../assets/desertparadigm/VD/Moodboard2.jpg);
@@ -214,12 +218,13 @@ background-repeat: no-repeat;
 background-size: cover;
 height: 582px;
 background-position: center;
-margin:auto;
+/* margin:auto; */
 border: 2px solid #205C65;
 /* width:80%; */
 border-radius: 5px;
-margin-right: 5%;
-margin-left: 5%;
+/* margin-right: 5%; */
+/* margin-left: 5%; */
+width: 80%;
 }
 .VD3{
 background: url(../assets/desertparadigm/VD/ColorPalette.png);
@@ -227,7 +232,7 @@ background-repeat: no-repeat;
 background-size: contain;
 height: 536px;
 background-position: center;
-margin:auto;
+/* margin:auto; */
 border: 2px solid #205C65;
 width:80%;
 border-radius: 5px;
@@ -238,7 +243,7 @@ background-repeat: no-repeat;
 background-size: cover;
 height: 536px;
 background-position: center;
-margin:auto;
+/* margin:auto; */
 border: 2px solid #205C65;
 width:80%;
 border-radius: 5px;
@@ -249,7 +254,7 @@ background-repeat: no-repeat;
 background-size: cover;
 height: 536px;
 background-position: center;
-margin:auto;
+/* margin:auto; */
 border: 2px solid #205C65;
 width:80%;
 border-radius: 5px;
@@ -260,7 +265,7 @@ background-repeat: no-repeat;
 background-size: cover;
 height: 536px;
 background-position: center;
-margin:auto;
+/* margin:auto; */
 border: 2px solid #205C65;
 width:80%;
 border-radius: 5px;
@@ -271,7 +276,7 @@ background-repeat: no-repeat;
 background-size: contain;
 height: 800px;
 background-position: center;
-margin:auto;
+/* margin:auto; */
 /* border: 5px solid #205C65; */
 width:80%;
 border-radius: 5px;
@@ -282,7 +287,7 @@ background-repeat: no-repeat;
 background-size: cover;
 height: 393px;
 background-position: center;
-margin:auto;
+/* margin:auto; */
 border: 2px solid #205C65;
 width:80%;
 border-radius: 10px;
@@ -293,7 +298,7 @@ background-repeat: no-repeat;
 background-size: contain;
 height: 500px;
 background-position: center;
-margin:auto;
+/* margin:auto; */
 /* border: 2px solid #205C65; */
 width:80%;
 border-radius: 5px;
@@ -301,18 +306,20 @@ border-radius: 5px;
 
 .personacontainer{
 width: 80%;
-margin: 0 auto;
+/* margin: 0 auto; */
 /* height: calc(80vh - 100px); */
 min-height:  calc(80vh - 100px);
-margin-top: 10%;
-margin-bottom: 10%;
+/* max-height:  calc(80vh - 200px); */
+/* margin-top: 10%; */
+/* margin-bottom: 10%; */
+overflow: hidden;
 }
 .tableborder{
   width: 80%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* height: calc(80vh - 100px); */
   /* min-height:  calc(80vh - 100px); */
-  margin-top: 10%;
+  /* margin-top: 10%; */
   /* margin-bottom: 10%; */
 }
 .rightBorder{
@@ -362,17 +369,18 @@ background-color: #205c65;
 border-radius: 25px;
 margin-right: 10%; */
 }
-.PictureTitle{
+/* .PictureTitle{
 display: grid;
 grid-template-columns: 1fr auto 1fr;
-}
-.projectswish{
+} */
+/* .projectswish{
 background-image:url(../assets/projectswish.png);
 background-repeat: no-repeat;
 background-size: contain;
-}
-.PictureTitleName{
-background-color: #205c65;
+} */
+.PictureTitleName h2{
+/* background-color: #205c65; */
+color: #3c3c3c;
 }
 .hflip{
 transform: scaleX(-1);

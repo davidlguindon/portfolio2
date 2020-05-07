@@ -825,7 +825,7 @@ input:checked ~ .tab-content {
 .personacontainer{
   border: 2px solid #205C65;
   border-radius: 5px;
-  padding:5%;
+  padding:25px;
   background-color: #DDDDDD;
 }
 .personacontainer li{
@@ -959,7 +959,7 @@ tr:hover{
 .content{
   /* height: 350px; */
   /* background-color: #E3ECF1; */
-  color: #2d2d2d;
+  color: #3c3c3c;
   font-family: 'Roboto Slab', serif;
   display: flex;
   justify-content: center;
