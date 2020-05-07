@@ -10,7 +10,6 @@ grid-template-columns: 1fr 1fr;
   /* background: tomato; */
 width: 100%;
 display: grid;
-grid-template-columns: 1fr 1fr;
 }
 .two {
   /* background: teal; */
@@ -347,9 +346,24 @@ font-size: 24px;
 color:white;
 text-shadow: 2px 2px 4px #000000;
   }
+.right-half{
+display: none;
+}
+.content{
+margin-bottom: 100px;
+}
+.one{
+margin-top: 100px;
+}
+.two{
+margin-bottom:100px;
+}
+section{
+grid-template-columns:1fr;
+}
 }
 @media only screen and (max-width: 1000px) {
-  .content1 h1 {
+.content1 h1 {
 color:white;
 text-shadow: 2px 2px 4px #000000;
 display: none;
