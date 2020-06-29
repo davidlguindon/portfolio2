@@ -7,9 +7,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/styles/reset.css">
 <link rel="stylesheet" type="text/css" href="/styles/styles.css">
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <body class='nohighlight' style='margin-top:0px;'>
   <script src="Scripts\script.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+jQuery('.toggle-nav').click(function(e) {
+  jQuery(this).toggleClass('active');
+  jQuery('.menu ul').toggleClass('active');
+
+  e.preventDefault();
+});
+});
+</script>
   <header>
     <ul class='alignleft'>
       <a class='personallogo' href="index.html"><img src="assets\personallogo.png" width='85px' height='100%' alt="PersonalLogo"></a>
@@ -52,76 +62,60 @@
     </div>
   </div>
   <!-- <div class="herobox">
-    <h2>Read about my&nbsp<a href="index.html">projects</a>&nbspbelow</h2>
-  </div> -->
-  <div class="projectcard">
-    <div class="projectdesc">
-      <h2>Desert Paradigm</h2>
-      <h3>A 3rd Party Economic Planner for a Popular Videogame</h3>
-      <h3>UX/UI Designer &nbsp | &nbsp March 15 2019 &nbsp | &nbsp 7 Weeks</h3>
-    </div>
-    <div class="projectpicture"></div>
-    <!-- <div class="projectbuttons"> -->
-<!-- <ul>
-<a href="https://www.figma.com/proto/BgddHq2Vnb6b6M1C9eqWxqm2/UX-Intensive-Clickable-Prototype-2?node-id=2%3A2669&viewport=920%2C626%2C0.04535767436027527&scaling=min-zoom" class="projectcardbutton prototypebutton">Prototype</a>
+  <h2>Read about my&nbsp<a href="index.html">projects</a>&nbspbelow</h2>
+</div> -->
+<div class="projectcard">
+  <div class="projectdesc">
+    <h2>Desert Paradigm</h2>
+    <h3>A 3rd Party Economic Planner for a Popular Videogame</h3>
+    <h3>UX/UI Designer &nbsp | &nbsp March 15 2019 &nbsp | &nbsp 7 Weeks</h3>
+  </div>
+  <div class="projectpicture"></div>
+  <!-- <div class="projectbuttons"> -->
+  <!-- <ul>
+  <a href="https://www.figma.com/proto/BgddHq2Vnb6b6M1C9eqWxqm2/UX-Intensive-Clickable-Prototype-2?node-id=2%3A2669&viewport=920%2C626%2C0.04535767436027527&scaling=min-zoom" class="projectcardbutton prototypebutton">Prototype</a>
 </ul> -->
 <ul><a href="desertparadigm.html" class="projectcardbutton">Case Study</a></ul>
-    <!-- </div> -->
-  </div>
-  <div class="projectcard">
-    <div class="projectdesc">
-      <h2>Bloc Jams</h2>
-      <h3>A Web Based Media Player</h3>
-      <h3>Developer &nbsp | &nbsp April 22 2019 &nbsp | &nbsp 1 Week</h3>
-      <!-- <a href="https://github.com/davidlguindon/bloc-jams-jquery" class="projectcardbutton">Learn More</a> -->
-    </div>
-    <div class="projectpicture2"></div>
-    <ul><a href="https://davidsmediaplayer.netlify.com/" class="projectcardbutton prototypebutton">Visit Website</a></ul>
-  </div>
-  <!-- <div class="projectcard">
+<!-- </div> -->
+</div>
+<div class="projectcard">
   <div class="projectdesc">
-  <h2>Project Name</h2>
-  <h3>Five Word Project Description</h3>
-  <h3>Role  |  Date  |  Duration</h3>
-  <a href="" class="projectcardbutton">Case Study</a>
-  <a href="" class="projectcardbutton prototypebutton">Prototype</a>
+    <h2>Bloc Jams</h2>
+    <h3>A Web Based Media Player</h3>
+    <h3>Developer &nbsp | &nbsp April 22 2019 &nbsp | &nbsp 1 Week</h3>
+    <!-- <a href="https://github.com/davidlguindon/bloc-jams-jquery" class="projectcardbutton">Learn More</a> -->
+  </div>
+  <div class="projectpicture2"></div>
+  <ul><a href="https://davidsmediaplayer.netlify.com/" class="projectcardbutton prototypebutton">Visit Website</a></ul>
+</div>
+<!-- <div class="projectcard">
+<div class="projectdesc">
+<h2>Project Name</h2>
+<h3>Five Word Project Description</h3>
+<h3>Role  |  Date  |  Duration</h3>
+<a href="" class="projectcardbutton">Case Study</a>
+<a href="" class="projectcardbutton prototypebutton">Prototype</a>
 </div>
 <div class="projectpicture3"></div>
 </div> -->
 <footer>
-  <ul class='alignleft'>
-  </ul>
-  <ul class = aligncenter>
+
+  <div class="alignleft">
     <a href="https://github.com/davidlguindon"><i class="fab fa-github-square"></i></a>
     <a href="https://www.linkedin.com/in/davidguindon"><i class="fab fa-linkedin"></i></a>
-    <a><i onclick='moogle()' class="fas fa-envelope-square"></i>
-      <div id="myModal1" class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close">&times;</span>
-            <h2>Leave me a Message</h2>
-          </div>
-          <div class="modal-body">
-            <div class="container">
-              <form action="https://www.enformed.io/ozy9gwcx " method="POST" >
-                <label for="fname">First Name</label>
-                <input type="text" id="name" name="Name" placeholder="Your name..">
-                <label for="contact">Contact Info</label>
-                <input type="text" id="contact" name="contact" placeholder="Any contact style is fine by me..">
-                <label for="subject">Message</label>
-                <textarea id="message" name="message" placeholder="Write your message here.." style="height:200px"></textarea>
-                <input type="submit" value="Send" class='contactbutton'>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </a>
-  </ul>
-  <ul class='alignright'>
-    <li>© 2019 David Guindon</li>
-  </ul>
+    <a><i onclick='moogle()' class="fas fa-envelope-square"></i></a>
+    </div>
 </footer>
 <script src="Scripts\script.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+jQuery('.toggle-nav').click(function(e) {
+  jQuery(this).toggleClass('active');
+  jQuery('.menu ul').toggleClass('active');
+
+  e.preventDefault();
+});
+});
+</script>
 </body>
 </html>
