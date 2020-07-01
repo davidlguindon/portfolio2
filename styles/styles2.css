@@ -1,26 +1,7 @@
-.cyan{
-  background-color: cyan;
-}
-.yellow{
-  background-color: yellow;
-}
-.pink{
-  background-color: pink;
-}
-.lightgreen{
-  background-color: lightgreen;
-}
-.gray{
-  background-color: gray;
-}
-.redborder{
-  border:red 3px solid;
-}
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400|Source+Sans+Pro:400');
-
 html{
-  font-size: 100%;
+  font-size: 125%;
   } /*16px*/
+
   body{
     display: grid;
     grid-template-areas:
@@ -189,12 +170,12 @@ margin-right: 5%;
     }
     .section1 .picture{
       display: inline-block;
-      height: 80vh;
       flex: 1;
       background-image: url(../assets/DesertParadigmMenu.png);
       background-position: left;
-      background-size:contain;
+      background-size:600px;
       background-repeat: no-repeat;
+min-height: 600px;
     }
     .serviceContainer{
       grid-template-areas:
@@ -280,7 +261,6 @@ margin-right: 5%;
   	margin:0px 50px 0px 0px;
   	float:left;
   	list-style:none;
-  	font-size:17px;
   }
 
   .menu li:last-child {
@@ -360,7 +340,6 @@ margin-right: 5%;
   		display:inline-block;
   		text-shadow:0px 1px 0px rgba(0,0,0,0.5);
   		color:#777;
-  		font-size:20px;
   		transition:color linear 0.15s;
 text-decoration:none;
   	}
