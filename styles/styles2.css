@@ -1,5 +1,5 @@
 html{
-  font-size: 125%;
+  font-size: 150%;
   } /*16px*/
 
   body{
@@ -203,6 +203,9 @@ html{
     }
     .section1{
       background-image: linear-gradient(90deg, #A9AFB5, #A9AFB5 25%, #ffffff);
+    }
+    .section2 h5{
+      text-align: center;
     }
     .section3{
       display: flex;
