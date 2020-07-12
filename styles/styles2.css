@@ -194,6 +194,10 @@ small, .text_small {
   display: none;
 }
 
+.aspectRatioContainerInner {
+  display: none;
+}
+
 @media (min-width: 576px) {
   .sectionPadding {
     padding: 140px 5%;
@@ -577,21 +581,32 @@ small, .text_small {
 .toggle-nav {
   display: none;
 }
-
+ul > h4{
+  margin: 0px;
+}
 /*----- Menu -----*/
 @media screen and (min-width: 860px) {
   .menu {
-    padding: 25px 5%;
+    padding: 0px 5%;
     background: #ffffff;
     border-bottom: 1px solid black;
     position: sticky;
     top: 0;
     z-index: 2;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
+.menu img {
+  position: relative;
+  top: -17px;
+}
+
 .menu ul {
-  display: inline-block;
+  /* display: inline-block; */
+      display: flex;
+      margin: auto 0;
 }
 
 .menu li {
