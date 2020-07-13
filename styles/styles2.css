@@ -173,7 +173,9 @@ small, .text_small {
 .title {
   grid-area: title;
 }
-
+.hidden{
+  display: none;
+}
 .serviceContainer {
   display: grid;
   grid-area: serviceContainer;
@@ -377,6 +379,11 @@ small, .text_small {
   .principlesContainer {
     width: 45%;
   }
+  .hidden{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -482,7 +489,7 @@ width: 500px;
 .toggle-nav {
   display: none;
 }
-ul > h4{
+div > h4{
   margin: 0px;
 }
 /*----- Menu -----*/
@@ -506,9 +513,8 @@ top: 20px;
   height: 100px;
 }
 
-.menu ul {
-  /* display: inline-block; */
-      display: flex;
+.menu div {
+  display: inline-block;
       margin: auto 0;
 }
 
@@ -523,7 +529,6 @@ top: 20px;
 }
 
 .menu a {
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
   color: #777;
   transition: color linear 0.15s;
 }

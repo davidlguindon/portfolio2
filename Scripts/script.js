@@ -106,8 +106,16 @@ function animateIcons () {
   var elements = document.getElementById('bulbOn');
 };
 
-$(".serviceContainer").mouseover(function(){
-  var elements = document.getElementById('bulbOn');
+$("#bulbSVG").mouseover(function(){
+  var elements = document.getElementById('bulbOn1');
+  elements.beginElement();
+});
+$("#monitorSVG").mouseover(function(){
+  var elements = document.getElementById('monitorOn1');
+  elements.beginElement();
+});
+$("#houseSVG").mouseover(function(){
+  var elements = document.getElementById('houseOn1');
   elements.beginElement();
 });
 
