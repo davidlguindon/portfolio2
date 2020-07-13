@@ -61,7 +61,7 @@ small, .text_small {
 }
 
 .section1 {
-  /* padding: 40px 15px; */
+  padding: 40px 15px;
   grid-area: section1;
   user-select: none;
   display: flex;
@@ -174,7 +174,7 @@ small, .text_small {
 .title {
   grid-area: title;
 }
-.hidden{
+.hiddenMobile{
   display: none;
 }
 .serviceContainer {
@@ -380,7 +380,7 @@ small, .text_small {
   .principlesContainer {
     width: 45%;
   }
-  .hidden{
+  .hiddenMobile{
     display: flex;
     justify-content: space-between;
     margin: auto 0;
@@ -515,7 +515,6 @@ top: 20px;
 }
 
 .menu div {
-  display: inline-block;
       margin: auto 0;
 }
 
@@ -570,6 +569,7 @@ top: 20px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
     border-radius: 3px;
     background: #303030;
+    width: max-content;
   }
 
   .menu ul:after {

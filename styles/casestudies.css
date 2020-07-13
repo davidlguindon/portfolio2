@@ -54,7 +54,7 @@
   display: none;
 }
 .projectCard{
-  margin: 25px 15px;;
+  margin: 25px 15px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -141,12 +141,11 @@
   }
   .projectCard{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    'projectPicture'
-    'projectName'
-    'type'
-    'summary';
+    'projectName projectPicture'
+    'type projectPicture'
+    'summary projectPicture';
   }
 }
 
