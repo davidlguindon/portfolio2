@@ -1,0 +1,177 @@
+.caseStudyGrid {
+  display: grid;
+  grid-template-columns:1fr;
+  grid-template-areas:
+    'resilApp'
+    'thisPortfolio'
+    'oldPortfolio'
+    'liteSku'
+    'desertParadigm'
+    'busyBus'
+    'blocJams'
+    'fate';
+}
+
+.caseStudyGrid>div {
+  border: 5px solid gray;
+  min-height: 500px;
+}
+.caseStudyGrid>div>div {
+  border: 5px solid blue;
+  min-height: 100px;
+}
+.projectPicture{
+  grid-area: projectPicture;
+}
+.oldPortfolio{
+  grid-area: oldPortfolio;
+}
+.liteSku{
+  grid-area: liteSku;
+}
+.desertParadigm{
+  grid-area: desertParadigm;
+}
+.busyBus{
+  grid-area: busyBus;
+}
+.blocJams{
+  grid-area: blocJams;
+}
+.thisPortfolio{
+  grid-area: thisPortfolio;
+}
+.projectName{
+  grid-area: projectName;
+}
+.summary{
+  grid-area: summary;
+}
+.type{
+  grid-area: type;
+}
+.projectPicture{
+  display: none;
+}
+.projectCard{
+  margin: 25px 15px;;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  'projectName'
+  'type'
+  'summary';
+}
+.introduction {
+  min-height: 900px;
+  border: 5px solid red;
+}
+.closingStatement{
+  min-height: 600px;
+  border: 5px solid purple;
+}
+@media (min-width: 576px) {
+  .caseStudyGrid {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-areas:
+      'resilApp'
+      'thisPortfolio'
+      'oldPortfolio'
+      'liteSku'
+      'desertParadigm'
+      'busyBus'
+      'blocJams'
+      'fate';
+  }
+
+  .projectCard{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'projectName'
+    'type'
+    'summary';
+  }
+}
+
+@media (min-width: 768px) {
+  .caseStudyGrid {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-gap: 25px;
+    grid-template-areas:
+      'resilApp'
+      'thisPortfolio'
+      'oldPortfolio'
+      'liteSku'
+      'desertParadigm'
+      'busyBus'
+      'blocJams'
+      'fate';
+  }
+  .projectPicture{
+    display: inline-block;
+  }
+  .projectCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'projectName projectPicture'
+    'projectName projectPicture'
+    'type projectPicture'
+    'summary summary';
+  }
+}
+
+@media (min-width: 1024px) {
+  .caseStudyGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    grid-template-areas:
+      '. resilApp resilApp'
+      'thisPortfolio thisPortfolio .'
+      '. oldPortfolio oldPortfolio'
+      'liteSku liteSku .'
+      '. desertParadigm desertParadigm'
+      'busyBus busyBus .'
+      '. blocJams blocJams'
+      'fate fate .';
+  }
+  .projectCard{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'projectPicture'
+    'projectName'
+    'type'
+    'summary';
+  }
+}
+
+@media (min-width: 1400px) {
+  .caseStudyGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    grid-template-areas:
+      '. resilApp resilApp'
+      'thisPortfolio thisPortfolio .'
+      '. oldPortfolio oldPortfolio'
+      'liteSku liteSku .'
+      '. desertParadigm desertParadigm'
+      'busyBus busyBus .'
+      '. blocJams blocJams'
+      'fate fate .';
+  }
+  .projectCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'summary projectPicture'
+    'summary projectName'
+    'summary type'
+    ;
+  }
+}
