@@ -228,7 +228,7 @@ small, .text_small {
   .section1 {
     display: flex;
     /* background-image: linear-gradient(90deg, #ffffff 35%, #A9AFB5E0, #A9AFB5); */
-    background-image: linear-gradient(90deg, #ffffff 35%, #C7CAD5, #C7CAD5);
+    background-image: linear-gradient(90deg, #ffffff 5%, #C7CAD5, #C7CAD5);
     justify-content: space-around;
   }
   .section1 h3 {
@@ -397,6 +397,7 @@ small, .text_small {
   .section1 .content {
     width: 500px;
     display: inline-block;
+    margin-right: 30px;
   }
 
   .section1 .picture {

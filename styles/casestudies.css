@@ -136,6 +136,9 @@
 }
 
 @media (min-width: 768px) {
+  .projectName{
+    margin-left: 25px;
+  }
   .projectName h2{
     margin: 24px 0 0 0;
     font-size: 2.441em;
