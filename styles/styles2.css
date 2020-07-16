@@ -10,15 +10,22 @@ body {
   line-height: 1.65;
   color: #333333;
 }
-.bodygrid{
+
+.bodygrid {
   display: grid;
   grid-template-areas:
     'nav'
-    'section2'
     'section1'
+    'section2'
     'section3'
     'section5'
     'section4';
+}
+.myPicture{
+  width: 300px;
+}
+.myPicture h4{
+color: #4A7365;
 }
 p {
   margin-bottom: 1.15rem;
@@ -65,12 +72,15 @@ small, .text_small {
   grid-area: section1;
   user-select: none;
   display: flex;
+  /* margin-top: 50px; */
 }
 
 .section1 .hvcenter {
   flex: .8;
 }
-
+.section1 .content{
+  display: none;
+}
 .home {
   display: flex;
   background-image: url(../assets/personallogo.png);
@@ -157,9 +167,6 @@ small, .text_small {
 
 .picture {
   grid-area: picture;
-  /* width: 110px;
-    height: 80px;
-    border: 2px solid blue; */
   text-align: left;
 }
 
@@ -174,9 +181,11 @@ small, .text_small {
 .title {
   grid-area: title;
 }
-.hiddenMobile{
+
+.hiddenMobile {
   display: none;
 }
+
 .serviceContainer {
   display: grid;
   grid-area: serviceContainer;
@@ -208,23 +217,20 @@ small, .text_small {
       'picture header'
       'picture body';
     justify-content: flex-start;
+    grid-column-gap: 30px;
   }
-
-  .picture {
-    margin: auto 15px auto auto;
+  .myPicture{
+    margin: auto;
   }
 }
 
 @media (min-width: 768px) {
-  .picture {
-    margin: auto 15px auto auto;
-  }
-
   .section1 {
     display: flex;
-    background-image: linear-gradient(90deg, #ffffff 35%, #A9AFB5E0, #A9AFB5);
+    /* background-image: linear-gradient(90deg, #ffffff 35%, #A9AFB5E0, #A9AFB5); */
+    background-image: linear-gradient(90deg, #ffffff 35%, #C7CAD5, #C7CAD5);
+    justify-content: space-around;
   }
-
   .section1 h3 {
     font-size: calc(100vw/25);
     margin: 0 0 1.05rem;
@@ -234,9 +240,11 @@ small, .text_small {
   .section1 .body {
     width: 500px;
   }
+
   .screen1 {
     grid-area: screen1;
   }
+
   .screen1>div {
     visibility: hidden;
     opacity: 0;
@@ -359,18 +367,11 @@ small, .text_small {
     width: 470px;
   }
 
-  /* .rel {
-    position: relative;
-  } */
-
   .serviceContainer {
     grid-template-areas:
       'picture header'
       'picture body';
   }
-
-  .principlesContainer .picture {}
-
   .section3 .horizontal {
     display: flex;
     flex-wrap: wrap;
@@ -380,30 +381,30 @@ small, .text_small {
   .principlesContainer {
     width: 45%;
   }
-  .hiddenMobile{
-    display: flex;
-    justify-content: space-between;
-    margin: auto 0;
-  }
 }
 
 @media (min-width: 1024px) {
+  .hiddenMobile {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .horizontal {
     display: flex;
     justify-content: space-between;
   }
-.section1 .content{
-  flex: .55;
-  margin: 0 auto;
-}
+
+  .section1 .content {
+    width: 500px;
+    display: inline-block;
+  }
+
   .section1 .picture {
-width: 500px;
-    margin: auto;
+    width: 700px;
   }
 
   .aspectRatioContainer {
     position: relative;
-    align-self: flex-end;
     width: 100%;
     padding-top: 82.22%;
     background-image: url(../assets/davidsDesk.jpg);
@@ -459,16 +460,12 @@ width: 500px;
   .principlesContainer {
     width: 45%;
   }
-
-  .picture {
-    margin: auto;
-  }
-
   .serviceContainer .picture {
     position: relative;
     top: 50%;
     transform: scale(1.5);
     height: calc(150px * 1.5);
+    margin:  auto;
   }
 
   .serviceContainer {
@@ -490,9 +487,14 @@ width: 500px;
 .toggle-nav {
   display: none;
 }
-div > h4{
+
+div>h4 {
   margin: 0px;
 }
+.hiddenMobile h5 {
+  margin: 0px;
+}
+
 /*----- Menu -----*/
 @media screen and (min-width: 860px) {
   .menu {
@@ -508,18 +510,18 @@ div > h4{
 
 .menu img {
   position: absolute;
-top: 20px;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   height: 100px;
 }
 
 .menu div {
-      margin: auto 0;
+  margin: auto 0;
 }
 
 .menu li {
-  margin: 0px 50px 0px 0px;
+  margin: 0px 20px 0px 0px;
   float: left;
   list-style: none;
 }
@@ -535,7 +537,7 @@ top: 20px;
 
 .menu a:hover, .menu .current-item a {
   text-decoration: none;
-  color: #66a992;
+  color: #4A7365;
 }
 
 /*----- Responsive -----*/
