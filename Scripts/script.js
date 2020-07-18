@@ -129,7 +129,7 @@ $(document).mousemove( function(e) {
 });
 $(".section2").mouseover(function(){
   var elements = document.getElementById('bulbOn');
-   setTimeout(function(){ elements.beginElement(); }, 2000);
+   setTimeout(function(){ elements.beginElement(); }, 1100);
   // $('#testid').css({'top':mouseY,'left':mouseX}).fadeIn('slow');
   // $('#testid').css({'top':mouseY,'left':mouseX}).fadeIn('slow');
   console.log(mouseY,'test',mouseX);
