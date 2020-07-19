@@ -2,34 +2,34 @@ $(".toggle-nav").click(function(){
   $(".menu ul").toggleClass('active');
 });
 
-// function UnSelectAll() {
-//   var items = document.getElementsByClassName('uncheck');
-//   for (var i = 0; i < items.length; i++) {
-//     if (items[i].type == 'checkbox')
-//     items[i].checked = false;
-//   }
-// }
-// function UnSelectAll2() {
-//   var items = document.getElementsByClassName('uncheck2');
-//   for (var i = 0; i < items.length; i++) {
-//     if (items[i].type == 'checkbox')
-//     items[i].checked = false;
-//   }
-// }
-// function UnSelectAll3() {
-//   var items = document.getElementsByClassName('uncheck3');
-//   for (var i = 0; i < items.length; i++) {
-//     if (items[i].type == 'checkbox')
-//     items[i].checked = false;
-//   }
-// }
-// function UnSelectAll4() {
-//   var items = document.getElementsByClassName('uncheck4');
-//   for (var i = 0; i < items.length; i++) {
-//     if (items[i].type == 'checkbox')
-//     items[i].checked = false;
-//   }
-// }
+function UnSelectAll() {
+  var items = document.getElementsByClassName('uncheck');
+  for (var i = 0; i < items.length; i++) {
+    if (items[i].type == 'checkbox')
+    items[i].checked = false;
+  }
+}
+function UnSelectAll2() {
+  var items = document.getElementsByClassName('uncheck2');
+  for (var i = 0; i < items.length; i++) {
+    if (items[i].type == 'checkbox')
+    items[i].checked = false;
+  }
+}
+function UnSelectAll3() {
+  var items = document.getElementsByClassName('uncheck3');
+  for (var i = 0; i < items.length; i++) {
+    if (items[i].type == 'checkbox')
+    items[i].checked = false;
+  }
+}
+function UnSelectAll4() {
+  var items = document.getElementsByClassName('uncheck4');
+  for (var i = 0; i < items.length; i++) {
+    if (items[i].type == 'checkbox')
+    items[i].checked = false;
+  }
+}
 // Get the modal
 // var modal = document.getElementById("myModal");
 //
@@ -129,7 +129,7 @@ $(document).mousemove( function(e) {
 });
 $(".section2").mouseover(function(){
   var elements = document.getElementById('bulbOn');
-   setTimeout(function(){ elements.beginElement(); }, 1100);
+   setTimeout(function(){ elements.beginElement(); }, 500);
   // $('#testid').css({'top':mouseY,'left':mouseX}).fadeIn('slow');
   // $('#testid').css({'top':mouseY,'left':mouseX}).fadeIn('slow');
   console.log(mouseY,'test',mouseX);

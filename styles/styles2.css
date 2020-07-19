@@ -10,7 +10,6 @@ body {
   line-height: 1.65;
   color: #333333;
 }
-
 .bodygrid {
   display: grid;
   grid-template-areas:
@@ -23,6 +22,7 @@ body {
 }
 .myPicture{
   width: 300px;
+  margin: auto;
 }
 .myPicture h4{
 color: #4A7365;
@@ -133,7 +133,6 @@ small, .text_small {
 .section5 {
   background-color: #4A7365;
   color: #ffffff;
-  display: none;
   text-align: center;
   position: sticky;
   top: 1rem;
@@ -141,7 +140,7 @@ small, .text_small {
 
 .section5 h1 {
   color: #ffffff;
-  margin-bottom: 50px;
+margin: 44px 25px 50px 25px;
 }
 
 .section5 ul {
@@ -149,6 +148,9 @@ small, .text_small {
   width: inherit;
   flex: 1;
   justify-content: space-around;
+  flex-direction: column;
+  margin: 0 25px;
+  padding-bottom: calc(44px - 25px);
 }
 
 .section5 a {
@@ -159,10 +161,12 @@ small, .text_small {
   user-select: none;
   min-width: 220px;
   border-radius: 3px;
+  margin-bottom: 25px;
 }
 
 .hvcenter {
   margin: auto;
+  padding-top: 44px;
 }
 
 .picture {
@@ -184,6 +188,13 @@ small, .text_small {
 
 .hiddenMobile {
   display: none;
+  height: 100px
+  top: 20px;
+}
+.visibleMobile {
+  display: flex;
+  height: 100px;
+  top: -10px;
 }
 
 .serviceContainer {
@@ -381,12 +392,18 @@ small, .text_small {
   .principlesContainer {
     width: 45%;
   }
+  .section5 ul{
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1024px) {
   .hiddenMobile {
     display: flex;
     justify-content: space-between;
+  }
+  .visibleMobile {
+    display: none;
   }
 
   .horizontal {
@@ -511,7 +528,6 @@ div>h4 {
 
 .menu img {
   position: absolute;
-  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   height: 100px;

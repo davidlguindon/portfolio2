@@ -60,6 +60,8 @@
   background-size: cover;
 }
 .projectCard{
+  transition: transform 200ms ease 0s;
+  transform: scale(1);
   background-image: url(../assets/casestudyCardBackground2.jpg);
   background-position: center;
   background-size: cover;
@@ -70,6 +72,10 @@
   grid-template-areas:
   'projectName'
   'projectPicture';
+}
+.projectCard:hover{
+  transition: transform 200ms ease 0s;
+  transform: scale(1.01);
 }
 .summary{
   display: none;

@@ -1,0 +1,54 @@
+.articleAndCaseStudy{
+  display: grid;
+  grid-template-columns: 360px auto;
+  grid-template-areas:
+  'article caseStudyContainer';
+}
+.articleAndCaseStudy>div{
+  border: 5px solid red;
+  min-height: 1000px;
+}
+.PersonaCard{
+  list-style-type: none;
+  background-color: lightblue;
+  width: 360px;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  justify-content: flex-start;
+  font-size: 16px;
+  padding: 25px;
+  margin: 50px;
+  border-radius: 25px;
+}
+.PersonaCard .InfoList{
+  margin-left: 25px;
+  line-height: 1.4;
+}
+.PersonaCard .Bio{
+  flex: 1;
+}
+.PersonaCard .Picture svg{
+display: flex;
+  margin: auto;
+}
+.PersonaCard h4{
+margin-bottom: 6px;
+}
+.PersonaCard h5{
+  margin:0;
+}
+.caseStudyContainer .FlexContainer{
+  display: flex;
+  margin-bottom: 25px;
+}
+.Goals{
+  margin-bottom: 25px;
+}
+.Bio{
+  margin-bottom: 25px;
+}
+.PersonaGrid{
+  display: flex;
+  flex-wrap: wrap;
+
+}
