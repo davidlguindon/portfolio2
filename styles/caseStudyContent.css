@@ -3,7 +3,11 @@
   grid-template-columns: 360px auto;
   grid-template-areas:
     'article caseStudyContainer';
-background-color: #D9DADF;
+  background-color: #D9DADF;
+}
+
+.menu {
+  position: relative;
 }
 
 .articleAndCaseStudy>div {
@@ -26,6 +30,55 @@ background-color: #D9DADF;
   display: flex;
 }
 
+.article footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  min-height: 90vh;
+  align-items: center;
+  margin-bottom: 44px;
+}
+
+footer ul {
+  width: 100%;
+}
+
+footer ul a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  /* background-color: #C7CAD5; */
+  /* background-color: #eaeaea; */
+  /* width: 100%; */
+  color: #4A7365;
+  transition: color linear 0.15s;
+  font-size: 22px;
+  text-align: left;
+  margin: 15px auto;
+  padding: 8px 0 8px 100px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+transition: all 0.3s cubic-bezier(.25,.8,.25,1); */
+}
+
+a:hover {
+  /* text-decoration: none; */
+  color: white;
+  background-color: #333333;
+  transition: color linear 0.15s;
+}
+
+footer img {
+  display: flex;
+  margin: 0 auto 44px auto;
+  width: 75%;
+}
+footer sub{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
 .article section {
   position: sticky;
   bottom: 0;
@@ -36,6 +89,7 @@ background-color: #D9DADF;
   /* margin-right: */
   margin: 50px 0 0 0;
 }
+
 .article .subhead {
   /* margin: 0 0 50px 0; */
   border-top: 1px solid black;
@@ -48,10 +102,12 @@ background-color: #D9DADF;
   text-indent: 1em;
   margin: 0;
 }
+
 .article small {
   font-style: italic;
   font-size: 100%;
 }
+
 .subhead::first-letter {
   font-size: 570%;
   line-height: 80%;
@@ -62,7 +118,7 @@ background-color: #D9DADF;
 
 .PersonaCard {
   list-style-type: none;
-  background-color: lightblue;
+  background-color: #75CEB4;
   width: 360px;
   /* display: flex; */
   /* flex-wrap: wrap; */
@@ -94,59 +150,69 @@ background-color: #D9DADF;
 .PersonaCard h5 {
   margin: 0;
 }
-.mobileContainer{
-transform: scale(.7);
+
+.mobileContainer {
+  transform: scale(.7);
   padding: 40px 15px 20px 15px;
   background-color: gray;
   width: 360px;
   border-radius: 45px;
 }
-.mobileContainer .topExtras{
-  display:  flex;
+
+.mobileContainer .topExtras {
+  display: flex;
   justify-content: space-around;
   padding-bottom: 20px;
   align-items: center;
 }
-.mobileContainer .topExtras .light{
+
+.mobileContainer .topExtras .light {
   width: 20px;
   height: 20px;
   background-color: darkgray;
   border-radius: 25px;
   opacity: .1;
 }
-.mobileContainer .topExtras .speaker{
+
+.mobileContainer .topExtras .speaker {
   width: 75px;
   height: 7px;
   background-color: white;
   border-radius: 15px;
   opacity: .2;
 }
-.mobileContainer .topExtras .camra{
-width: 15px;
-height: 15px;
-background-color: black;
-border-radius: 25px;
-opacity: .05;
+
+.mobileContainer .topExtras .camra {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 25px;
+  opacity: .05;
 }
+
 .mobileContainer .bottomExtras {
   padding-top: 5px;
 }
-.mobileContainer .bottomExtras .unlock{
-display: flex;
-margin: auto;
-background-color: darkgray;
-border-radius: 5px;
-width: 30px;
-height: 30px;
+
+.mobileContainer .bottomExtras .unlock {
+  display: flex;
+  margin: auto;
+  background-color: darkgray;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
 }
-.caseStudyContainer p{
+
+.caseStudyContainer p {
   margin: 100px 200px;
 }
+
 .caseStudyContainer h3 {
   height: 200px;
   width: 70%;
   margin: auto;
 }
+
 .caseStudyContainer .picture {
   display: flex;
   flex-direction: column;
@@ -156,9 +222,10 @@ height: 30px;
   display: flex;
   justify-content: space-between;
 }
+
 .caseStudyContainer .hero .text {
-width: 50%;
-margin: auto;
+  width: 50%;
+  margin: auto;
 }
 
 .caseStudyContainer .hero img {
@@ -239,3 +306,13 @@ tr:hover {
 .spacer {
   height: 100px;
 }
+
+@media (min-width: 576px) {
+  
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1400px) {}
