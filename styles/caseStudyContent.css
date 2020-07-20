@@ -64,9 +64,12 @@ transition: all 0.3s cubic-bezier(.25,.8,.25,1); */
 
 a:hover {
   /* text-decoration: none; */
+  transition: color linear 0.15s;
+}
+footer a:hover {
+  /* text-decoration: none; */
   color: white;
   background-color: #333333;
-  transition: color linear 0.15s;
 }
 
 footer img {
@@ -307,9 +310,7 @@ tr:hover {
   height: 100px;
 }
 
-@media (min-width: 576px) {
-  
-}
+@media (min-width: 576px) {}
 
 @media (min-width: 768px) {}
 
