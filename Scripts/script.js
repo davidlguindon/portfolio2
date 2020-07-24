@@ -102,10 +102,6 @@ function UnSelectAll4() {
 //   }
 // }
 
-function animateIcons () {
-  var elements = document.getElementById('bulbOn');
-};
-
 $("#bulbSVG").mouseover(function(){
   var elements = document.getElementById('bulbOn1');
   elements.beginElement();
@@ -125,7 +121,7 @@ $(document).mousemove( function(e) {
    mouseX = e.pageX;
    mouseY = e.pageY;
    // console.log(mouseX mouseY);
-   console.log('mouseworking');
+   // console.log('mouseworking');
 });
 $(".section2").mouseover(function(){
   var elements = document.getElementById('bulbOn');
@@ -134,3 +130,48 @@ $(".section2").mouseover(function(){
   // $('#testid').css({'top':mouseY,'left':mouseX}).fadeIn('slow');
   console.log(mouseY,'test',mouseX);
 });
+
+$(document).ready(function(){
+let options = {
+  // root: document.querySelector('#scrollArea'),
+  // rootMargin: '0px',
+  threshold: .1
+}
+let observer = new IntersectionObserver(callback, options);
+document.querySelectorAll('section').forEach(container => {
+  observer.observe(container);
+})
+function callback(entries, observer){
+  entries.forEach((item, i) => {
+    if(item.isIntersecting){
+ sectionRefrence = (item.target.classList);
+      var activeSection = document.querySelectorAll( '.' + sectionRefrence);
+      activeSection[0].classList.add('active');
+      // console.log('Watching: ', activeSection);
+    }
+    if(item.intersectionRatio < .1){
+ sectionRefrence = (item.target.classList);
+      var activeSection = document.querySelectorAll( '.' + sectionRefrence);
+      activeSection[0].classList.remove('active');
+    }
+    // else{
+    //   var activeSection = document.querySelectorAll( '.' + sectionRefrence);
+    //   activeSection[0].classList.remove('active');
+    // };
+  });
+
+}
+// let callback = (entries, observer) => {
+//   entries.forEach(entry => {
+//     // Each entry describes an intersection change for one observed
+//     // target element:
+//     //   entry.boundingClientRect
+//     //   entry.intersectionRatio
+//     //   entry.intersectionRect
+//     //   entry.isIntersecting
+//     //   entry.rootBounds
+//     //   entry.target
+//     //   entry.time
+//   });
+// };
+})

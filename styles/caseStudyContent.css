@@ -1,27 +1,29 @@
 .articleAndCaseStudy {
   display: grid;
-  grid-template-columns: 360px auto;
+  grid-template-columns: 1fr 4fr 1fr;
   grid-template-areas:
-    'article caseStudyContainer';
+    'locationViewer caseStudyContainer .';
   background-color: #D9DADF;
 }
-
+section{
+  min-height: 100vh;
+}
 .menu {
   position: relative;
 }
 
-.articleAndCaseStudy>div {
+/* .articleAndCaseStudy>div {
   padding: 0 20px;
+} */
+.underline {
+  text-decoration: underline;
 }
 
-.article {
-  /* margin: 0 10px; */
-  text-align: justify;
+.article p {
+  text-align: left;
   text-justify: inter-word;
   hyphens: auto;
   font-size: 16px;
-  border-right: 1px solid black;
-  padding: 0 20px;
   line-height: 1.3;
 }
 
@@ -29,43 +31,90 @@
   position: sticky;
   display: flex;
 }
+.locationViewer {
+  z-index: 2;
+  display: flex;
+  position: sticky;
+  top: 0px;
+  height: 80px;
+  font-size: 16px;
+  background-color: white;
+  flex-wrap: wrap;
+  padding: 0 25px 0 25px;
+  color: #4A7365;
+  text-decoration: none;
+  font-size: 100%;
+  overflow: hidden;
+}
+
+.locationViewer a {
+  display: none;
+}
+
+.locationViewer .active {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.locationViewer .active {
+  display flex;
+}
+
+.locationViewer .circle {
+  display: none;
+  background-color: gray;
+  width: 20px;
+  height: 20px;
+  border-radius: 65px;
+  margin: 25px 15px 25px 0px;
+}
+
+.locationViewer .active>.circle {
+  display: block;
+  background-color: #4b8a77;
+  width: 30px;
+  height: 30px;
+  border-radius: 65px;
+  margin: 25px 15px 25px 0px;
+  text-align: center;
+  font-size: .8rem;
+  color: white;
+  line-height: 30px;
+}
 
 .article footer {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
-  min-height: 90vh;
   align-items: center;
   margin-bottom: 44px;
 }
 
 footer ul {
-  width: 100%;
+  text-align: center;
 }
 
 footer ul a {
   text-decoration: none;
-  display: flex;
-  flex-direction: column;
+  display: block;
   background-color: white;
-  /* background-color: #C7CAD5; */
-  /* background-color: #eaeaea; */
-  /* width: 100%; */
   color: #4A7365;
   transition: color linear 0.15s;
   font-size: 22px;
   text-align: left;
   margin: 15px auto;
-  padding: 8px 0 8px 100px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-transition: all 0.3s cubic-bezier(.25,.8,.25,1); */
+  padding: 8px 70px 8px 70px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
 }
 
 a:hover {
   /* text-decoration: none; */
   transition: color linear 0.15s;
 }
+
 footer a:hover {
   /* text-decoration: none; */
   color: white;
@@ -77,12 +126,15 @@ footer img {
   margin: 0 auto 44px auto;
   width: 75%;
 }
-footer sub{
+
+footer sub {
   position: absolute;
   bottom: 10px;
-  left: 0;
+  right: 0;
 }
+
 .article section {
+  margin:0 15px 0 15px;
   position: sticky;
   bottom: 0;
   align-self: flex-end;
@@ -90,13 +142,14 @@ footer sub{
 
 .article h1 {
   /* margin-right: */
-  margin: 50px 0 0 0;
+  font-size: 45px;
+  margin: 50px 20px 0 20px;
 }
 
 .article .subhead {
   /* margin: 0 0 50px 0; */
   border-top: 1px solid black;
-  margin-top: 25px;
+  margin-top: 10px;
   padding-top: 20px;
   text-indent: 0;
 }
@@ -108,7 +161,9 @@ footer sub{
 
 .article small {
   font-style: italic;
-  font-size: 100%;
+  margin-left: 20px;
+  font-size: .8rem;
+  ;
 }
 
 .subhead::first-letter {
@@ -155,65 +210,59 @@ footer sub{
 }
 
 .mobileContainer {
-  transform: scale(.7);
-  padding: 40px 15px 20px 15px;
+  /* transform: scale(1.5); */
+  padding: 17px 12px 13px 12px;
   background-color: gray;
-  width: 360px;
-  border-radius: 45px;
+  width: calc(180px * 1);
+  border-radius: 30px;
 }
 
 .mobileContainer .topExtras {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   align-items: center;
 }
 
 .mobileContainer .topExtras .light {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background-color: darkgray;
   border-radius: 25px;
-  opacity: .1;
+  opacity: .15;
 }
 
 .mobileContainer .topExtras .speaker {
-  width: 75px;
-  height: 7px;
+  width: 40px;
+  height: 5px;
   background-color: white;
   border-radius: 15px;
   opacity: .2;
 }
 
 .mobileContainer .topExtras .camra {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   background-color: black;
   border-radius: 25px;
   opacity: .05;
 }
 
 .mobileContainer .bottomExtras {
-  padding-top: 5px;
+  padding-top: 0px;
 }
 
 .mobileContainer .bottomExtras .unlock {
   display: flex;
   margin: auto;
   background-color: darkgray;
-  border-radius: 5px;
-  width: 30px;
-  height: 30px;
+  border-radius: 4px;
+  width: 23px;
+  height: 23px;
 }
 
 .caseStudyContainer p {
-  margin: 100px 200px;
-}
-
-.caseStudyContainer h3 {
-  height: 200px;
-  width: 70%;
-  margin: auto;
+  margin: 100px 0;
 }
 
 .caseStudyContainer .picture {
@@ -221,19 +270,20 @@ footer sub{
   flex-direction: column;
 }
 
-.caseStudyContainer .hero {
+.caseStudyContainer .Introduction {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding-top: 100px;
 }
 
-.caseStudyContainer .hero .text {
+.caseStudyContainer .Introduction .text {
   width: 50%;
-  margin: auto;
+  margin: auto 0;
 }
 
-.caseStudyContainer .hero img {
-  width: 360px;
-  height: 640px;
+.caseStudyContainer .Introduction img {
+  width: calc(360px * .5);
+  height: calc(640px * .5);
 }
 
 .caseStudyContainer .FlexContainer {
@@ -242,7 +292,7 @@ footer sub{
 }
 
 .caseStudyContainer img {
-  width: 90%;
+  width: 100%;
 }
 
 .caseStudyContainer sub {
@@ -310,10 +360,290 @@ tr:hover {
   height: 100px;
 }
 
-@media (min-width: 576px) {}
+@media (min-width: 1px) {
+  footer img {
+    display: none;
+  }
 
-@media (min-width: 768px) {}
+  .PersonaCard .FlexContainer .InfoList {
+    margin: 0;
+  }
 
-@media (min-width: 1024px) {}
+  .PersonaCard .Picture {
+    display: none;
+    margin: 0;
+  }
 
-@media (min-width: 1400px) {}
+  .PersonaCard {
+    margin: 0 0 50px 0;
+    width: 100%;
+  }
+
+  .article small {
+    margin: 0;
+  }
+
+  .article h1 {
+    margin: 50px 0 0 0;
+  }
+
+  .article {
+    position: relative;
+  }
+
+  .caseStudyContainer {
+    /* word-wrap: break-word; */
+  }
+
+  .caseStudyContainer .Introduction .text {
+    width: 100%;
+  }
+
+  .caseStudyContainer .Introduction {
+    min-height: 100vh;
+    display: block;
+  }
+
+  .caseStudyContainer .mobileContainer {
+    /* display:none; */
+    margin: 100px auto;
+  }
+
+  .caseStudyContainer h3 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 25px;
+  }
+
+  .caseStudyContainer h1 {
+    font-size: 72px;
+  }
+
+  .articleAndCaseStudy {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'locationViewer'
+      'caseStudyContainer'
+      'article';
+    background-color: #D9DADF;
+  }
+
+  .caseStudyContainer {
+    margin: 0 10px;
+    ;
+  }
+
+  @media (min-width: 576px) {
+    .locationViewer{
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+    .article {
+      position: relative;
+      width: 360px;
+      margin: auto;
+    }
+
+    .PersonaCard .Picture {
+      display: block;
+      margin: 0 20px 0 0;
+    }
+
+    .PersonaCard {
+      margin: 25px 25px 50px 25px;
+      width: 360px;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .locationViewer {
+      position: fixed;
+      width:calc(100% - 50px);
+      top: 0px;
+      height: 80px;
+      display: flex;
+      position: sticky;
+      top: 0px;
+      height: auto;
+      font-size: 16px;
+      background-color: white;
+      flex-wrap: wrap;
+      color: #4A7365;
+      text-decoration: none;
+      font-size: 100%;
+      overflow: hidden;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .locationViewer a {
+      margin:0 10px;
+      display: flex;
+      flex-direction: column;
+      font-size: 18px;
+      line-height: calc(20px * 1.6);
+      color: #777777;
+      text-align: center;
+      justify-content:  center;
+    }
+
+    .locationViewer .active {
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .locationViewer .active {
+      display flex;
+    }
+
+    .locationViewer .circle {
+      display: block;
+      background-color: lightgray;
+      color:lightgray;
+      text-decoration: inherit;
+      width: 30px;
+      height: 30px;
+      border-radius: 65px;
+      margin: 10px auto 0 auto;
+      text-align:center;
+      font-size: .8rem;
+      line-height: 30px;
+    }
+
+    .locationViewer .active>.circle {
+      margin: 10px auto 0 auto;
+      display: block;
+      background-color: #4b8a77;
+      width: 30px;
+      height: 30px;
+      border-radius: 65px;
+      text-align: center;
+      font-size: .8rem;
+      color: white;
+      line-height: 30px;
+    }
+
+
+    .article {
+      position: relative;
+      width: 600px;
+    }
+
+    .caseStudyContainer p {
+      margin: 100px 50px 100px 50px;
+    }
+
+    .PersonaCard .FlexContainer .InfoList {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .locationViewer {
+z-index: 0;
+      display: flex;
+      position: fixed;
+      width:calc(100% - 50px);
+      top: 0px;
+      height: 80px;
+      font-size: 16px;
+      background-color: white;
+      flex-wrap: wrap;
+      color: #4A7365;
+      text-decoration: none;
+      font-size: 100%;
+      overflow: hidden;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .caseStudyContainer .picture {
+      width: 950px;
+      height: auto;
+      margin: auto;
+    }
+
+    .caseStudyContainer p {
+      width: 70%;
+      margin: 100px auto;
+      /* padding-bottom: 100px; */
+      /* padding-top:100px; */
+    }
+
+    .caseStudyContainer .Introduction .mobileContainer {
+      margin: auto;
+    }
+
+    .caseStudyContainer .Introduction .text {
+      width: 50%;
+    }
+
+    .caseStudyContainer .Introduction {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .article footer {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .article footer {
+      display: flex;
+    }
+
+    .caseStudyContainer p {
+      width: 750px;
+    }
+
+    .caseStudyContainer .Introduction .text {
+      width: 30%;
+    }
+
+    /* footer img {
+      display: block;
+    } */
+
+    /* .article {
+      /* position: sticky;
+    top:0; */
+      height: 100%;
+      width: 340px;
+      margin-right: 20px;
+    } */
+
+    .article section {}
+
+    .locationViewer {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* .articleAndCaseStudy {
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      grid-template-rows: auto auto;
+      grid-template-areas:
+        'locationViewer loactionViewer'
+        'caseStudyContainer article';
+      background-color: #D9DADF;
+    } */
+
+    .PersonaGrid {
+      width: 80%;
+      margin: auto;
+    }
+
+    .locationViewer {
+      position: fixed;
+    }
+
+    section {
+      min-height: 100vh;
+    }
+  }

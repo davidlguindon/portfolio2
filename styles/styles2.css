@@ -20,6 +20,12 @@ body {
     'section5'
     'section4';
 }
+.menu{
+  z-index: 2;
+}
+.menu ul{
+  margin: auto 0;
+}
 .myPicture{
   width: 300px;
   margin: auto;
@@ -194,9 +200,12 @@ margin: 44px 25px 50px 25px;
   top: 20px;
 }
 .visibleMobile {
-  display: flex;
+  display: block;
   height: 100px;
   top: -10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .serviceContainer {
@@ -522,7 +531,6 @@ div>h4 {
     background: #ffffff;
     position: sticky;
     top: 0;
-    z-index: 2;
     display: flex;
     justify-content: space-between;
   }
