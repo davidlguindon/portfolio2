@@ -76,6 +76,7 @@
 .projectCard:hover{
   transition: transform 200ms ease 0s;
   transform: scale(1.01);
+  cursor: pointer;
 }
 .summary{
   display: none;
