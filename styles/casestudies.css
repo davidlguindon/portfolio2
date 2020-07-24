@@ -62,6 +62,7 @@
 .projectCard{
   transition: transform 200ms ease 0s;
   transform: scale(1);
+  background-color: #333333;
   background-image: url(../assets/casestudyCardBackground2.jpg);
   background-position: center;
   background-size: cover;

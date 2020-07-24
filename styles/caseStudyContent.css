@@ -463,11 +463,7 @@ tr:hover {
       'article';
   }
 
-  .caseStudyContainer {
-    margin: 0 10px;
-    ;
-  }
-
+}
   @media (min-width: 576px) {
     .locationViewer{
       flex-direction: column;
@@ -515,7 +511,6 @@ tr:hover {
     }
 
     .locationViewer a {
-      margin:0 10px;
       display: flex;
       flex-direction: column;
       font-size: 18px;
@@ -581,6 +576,9 @@ tr:hover {
   }
 
   @media (min-width: 1024px) {
+    .locationViewer a {
+      margin:0 10px;
+    }
     .locationViewer {
       display: flex;
       position: fixed;
