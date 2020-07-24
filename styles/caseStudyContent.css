@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 4fr 1fr;
   grid-template-areas:
     'locationViewer caseStudyContainer .';
-  background-color: #D9DADF;
+  /* background-color: #D9DADF; */
 }
 section{
   min-height: 100vh;
@@ -11,7 +11,14 @@ section{
 .menu {
   position: relative;
 }
-
+.gridContainer{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 20px;
+  margin: 10px;
+}
 /* .articleAndCaseStudy>div {
   padding: 0 20px;
 } */
@@ -208,7 +215,33 @@ footer sub {
 .PersonaCard h5 {
   margin: 0;
 }
-
+.laptopContainer .laptopScreen img{
+position: absolute;
+top: 0px;
+left:0px;
+/* max-width: calc(100% - 20px); */
+}
+.laptopContainer{
+  width: 100%;
+}
+.laptopScreen{
+  position: relative;
+  padding-top: 56.25%;
+  background-color: #333333;
+  overflow: hidden;
+}
+.laptopKeyboard{
+  width: 100%;
+  height: 20px;
+  border-radius: 0 0 15px 15px;
+  background-color: #333333;
+}
+.laptopMonitor{
+  border-radius: 15px 15px 0 0 ;
+  margin: 0 60px;
+  padding: 20px 20px 35px 20px;
+  background-color: #333333;
+}
 .mobileContainer {
   /* transform: scale(1.5); */
   padding: 17px 12px 13px 12px;
@@ -289,6 +322,8 @@ footer sub {
 .caseStudyContainer .FlexContainer {
   display: flex;
   margin-bottom: 25px;
+  align-items: center;
+  position:relative;
 }
 
 .caseStudyContainer img {
@@ -400,7 +435,7 @@ tr:hover {
   }
 
   .caseStudyContainer .Introduction {
-    min-height: 100vh;
+    min-height: calc(100vh - 84px);
     display: block;
   }
 
@@ -426,7 +461,6 @@ tr:hover {
       'locationViewer'
       'caseStudyContainer'
       'article';
-    background-color: #D9DADF;
   }
 
   .caseStudyContainer {
@@ -457,7 +491,9 @@ tr:hover {
   }
 
   @media (min-width: 768px) {
-
+.gridContainer{
+  grid-template-columns: 1fr  4fr;
+}
     .locationViewer {
       position: fixed;
       width:calc(100% - 50px);
@@ -541,11 +577,11 @@ tr:hover {
     .PersonaCard .FlexContainer .InfoList {
       margin: 0;
     }
+
   }
 
   @media (min-width: 1024px) {
     .locationViewer {
-z-index: 0;
       display: flex;
       position: fixed;
       width:calc(100% - 50px);
@@ -570,12 +606,11 @@ z-index: 0;
     .caseStudyContainer p {
       width: 70%;
       margin: 100px auto;
-      /* padding-bottom: 100px; */
-      /* padding-top:100px; */
+  text-align: center;
     }
 
     .caseStudyContainer .Introduction .mobileContainer {
-      margin: auto;
+      margin: auto 100px;
     }
 
     .caseStudyContainer .Introduction .text {
@@ -584,7 +619,7 @@ z-index: 0;
 
     .caseStudyContainer .Introduction {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
     }
 
     .article footer {
@@ -601,41 +636,19 @@ z-index: 0;
       width: 750px;
     }
 
+    .caseStudyContainer .Introduction{
+      padding-top: 0;
+    }
     .caseStudyContainer .Introduction .text {
       width: 30%;
     }
-
-    /* footer img {
-      display: block;
-    } */
-
-    /* .article {
-      /* position: sticky;
-    top:0; */
-      height: 100%;
-      width: 340px;
-      margin-right: 20px;
-    } */
-
-    .article section {}
 
     .locationViewer {
       display: flex;
       justify-content: center;
     }
-
-    /* .articleAndCaseStudy {
-      display: grid;
-      grid-template-columns: 1fr 360px;
-      grid-template-rows: auto auto;
-      grid-template-areas:
-        'locationViewer loactionViewer'
-        'caseStudyContainer article';
-      background-color: #D9DADF;
-    } */
-
     .PersonaGrid {
-      width: 80%;
+      width: 70%;
       margin: auto;
     }
 

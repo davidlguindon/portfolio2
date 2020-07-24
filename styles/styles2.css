@@ -21,7 +21,7 @@ body {
     'section4';
 }
 .menu{
-  z-index: 2;
+  z-index: 3;
 }
 .menu ul{
   margin: auto 0;
