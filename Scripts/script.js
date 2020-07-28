@@ -102,18 +102,18 @@ function UnSelectAll4() {
 //   }
 // }
 
-$("#bulbSVG").mouseover(function(){
-  var elements = document.getElementById('bulbOn1');
-  elements.beginElement();
-});
-$("#monitorSVG").mouseover(function(){
-  var elements = document.getElementById('monitorOn1');
-  elements.beginElement();
-});
-$("#houseSVG").mouseover(function(){
-  var elements = document.getElementById('houseOn1');
-  elements.beginElement();
-});
+// $("#bulbSVG").mouseover(function(){
+//   var elements = document.getElementById('bulbOn1');
+//   elements.beginElement();
+// });
+// $("#monitorSVG").mouseover(function(){
+//   var elements = document.getElementById('monitorOn1');
+//   elements.beginElement();
+// });
+// $("#houseSVG").mouseover(function(){
+//   var elements = document.getElementById('houseOn1');
+//   elements.beginElement();
+// });
 
 var mouseX;
 var mouseY;
@@ -123,13 +123,48 @@ $(document).mousemove( function(e) {
    // console.log(mouseX mouseY);
    // console.log('mouseworking');
 });
-$(".section2").mouseover(function(){
-  var elements = document.getElementById('bulbOn');
-   setTimeout(function(){ elements.beginElement(); }, 500);
-  // $('#testid').css({'top':mouseY,'left':mouseX}).fadeIn('slow');
-  // $('#testid').css({'top':mouseY,'left':mouseX}).fadeIn('slow');
-  console.log(mouseY,'test',mouseX);
-});
+// $(".section2").mouseover(function(){
+//   var elements = document.getElementById('bulbOn');
+//    setTimeout(function(){ elements.beginElement(); }, 500);
+//   // $('#testid').css({'top':mouseY,'left':mouseX}).fadeIn('slow');
+//   // $('#testid').css({'top':mouseY,'left':mouseX}).fadeIn('slow');
+//   console.log(mouseY,'test',mouseX);
+// });
+$(document).ready(function(){
+let options = {
+  // root: document.querySelector('#scrollArea'),
+  // rootMargin: '0px',
+  threshold: 1
+}
+let observer = new IntersectionObserver(callback, options);
+
+document.querySelectorAll('#bulbSVG').forEach(container => {
+  observer.observe(container);
+})
+function callback(entries, observer){
+  entries.forEach((item, i) => {
+    if(item.isIntersecting){
+      console.log('container activated', item.intersectionRatio);
+        var elements = document.getElementById('bulbOn');
+    setTimeout(function(){ elements.beginElement(); }, 00);
+    }
+  });
+
+}
+// let callback = (entries, observer) => {
+//   entries.forEach(entry => {
+//     // Each entry describes an intersection change for one observed
+//     // target element:
+//     //   entry.boundingClientRect
+//     //   entry.intersectionRatio
+//     //   entry.intersectionRect
+//     //   entry.isIntersecting
+//     //   entry.rootBounds
+//     //   entry.target
+//     //   entry.time
+//   });
+// };
+})
 
 $(document).ready(function(){
 let options = {
@@ -138,6 +173,7 @@ let options = {
   threshold: .1
 }
 let observer = new IntersectionObserver(callback, options);
+
 document.querySelectorAll('section').forEach(container => {
   observer.observe(container);
 })

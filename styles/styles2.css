@@ -24,11 +24,11 @@ body {
   z-index: 3;
 }
 .menu ul{
-  margin: auto 0;
+  margin: auto 25px;
 }
 .myPicture{
   width: 300px;
-  margin: auto;
+  margin: auto 25px auto 0;
 }
 .myPicture h4{
 color: #4A7365;
@@ -80,7 +80,7 @@ small, .text_small {
   grid-area: section1;
   user-select: none;
   display: flex;
-  /* margin-top: 50px; */
+  justify-content: center;
 }
 
 .section1 .hvcenter {
@@ -241,20 +241,22 @@ margin: 44px 25px 50px 25px;
     justify-content: flex-start;
     grid-column-gap: 30px;
   }
-  .myPicture{
-    margin: auto;
-  }
 }
 
 @media (min-width: 768px) {
+  .hiddenMobile {
+    display: flex;
+    justify-content: space-between;
+  }
   .section1 {
     display: flex;
     /* background-image: linear-gradient(90deg, #ffffff 35%, #A9AFB5E0, #A9AFB5); */
+    /* background-image: linear-gradient(90deg, #C7CAD5 25%, #C7CAD5, #ffffff); */
     background-image: linear-gradient(90deg, #ffffff 5%, #C7CAD5, #C7CAD5);
     justify-content: space-around;
   }
   .section1 h3 {
-    font-size: calc(100vw/25);
+    font-size: 76px;
     margin: 0 0 1.05rem;
     /* text-shadow: 2px 2px 4px #000000 */
   }
@@ -409,9 +411,8 @@ margin: 44px 25px 50px 25px;
 }
 
 @media (min-width: 1024px) {
-  .hiddenMobile {
-    display: flex;
-    justify-content: space-between;
+  .section1 .body {
+    width: auto;
   }
   .visibleMobile {
     display: none;
@@ -423,9 +424,9 @@ margin: 44px 25px 50px 25px;
   }
 
   .section1 .content {
-    width: 500px;
+margin: 0 auto;
+    width: 615px;
     display: inline-block;
-    margin-right: 30px;
   }
 
   .section1 .picture {
@@ -527,9 +528,8 @@ div>h4 {
 /*----- Menu -----*/
 @media screen and (min-width: 860px) {
   .menu {
-    padding: 20px 5%;
     background: #ffffff;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -537,9 +537,7 @@ div>h4 {
 }
 
 .menu img {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+float: right;
   height: 100px;
 }
 
@@ -583,7 +581,7 @@ div>h4 {
 @media screen and (max-width: 860px) {
   .menu {
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
   }
 
   .menu ul.active {
@@ -592,13 +590,14 @@ div>h4 {
 
   .menu ul {
     position: absolute;
-    top: 120%;
-    left: 0px;
+    top: 100%;
+    left: -15px;
     padding: 10px 18px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
     border-radius: 3px;
-    background: #303030;
+    background: white;
     width: max-content;
+    border: 1px solid black;
   }
 
   .menu ul:after {
@@ -625,7 +624,7 @@ div>h4 {
   }
 
   .toggle-nav {
-    padding: 20px;
+    padding: 30px;
     float: left;
     display: inline-block;
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);

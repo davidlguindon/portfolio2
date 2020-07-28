@@ -5,6 +5,9 @@
     'locationViewer caseStudyContainer .';
   /* background-color: #D9DADF; */
 }
+article{
+  margin-bottom: 100px;
+}
 section{
   min-height: 100vh;
 }
@@ -629,7 +632,10 @@ tr:hover {
     .article footer {
       display: flex;
     }
-
+footer ul{
+  display: block;
+margin: 0 auto;
+}
     .caseStudyContainer p {
       width: 750px;
     }
