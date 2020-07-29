@@ -5,6 +5,15 @@
     'locationViewer caseStudyContainer .';
   /* background-color: #D9DADF; */
 }
+.twoPictureRow{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.twoPictureRow>div{
+  display: flex;
+  flex-direction: column;
+}
 article{
   margin-bottom: 100px;
 }
@@ -491,7 +500,7 @@ tr:hover {
 
   @media (min-width: 768px) {
 .gridContainer{
-  grid-template-columns: 1fr  4fr;
+  grid-template-columns: 1fr  2fr;
 }
     .locationViewer {
       position: fixed;

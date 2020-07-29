@@ -12,7 +12,16 @@
     'blocJams'
     'fate';
 }
-
+.liteSku .projectPicture{
+    background-image: url(../assets/LiteSku/liteSkuMobileMockup.png);
+}
+.twoPictureRow{
+  display: flex;
+  justify-content: space-around;
+}
+.twoPictureRow>.picture{
+  width: inherit;
+}
 .caseStudyGrid>div {
   /* border: 5px solid gray; */
   min-height: 500px;
@@ -268,3 +277,14 @@
     margin-bottom: 25px;
   }
 }
+
+
+entries.forEach((item, i) => {
+  if(item.intersectionRatio > .111){
+    var elements = document.getElementById('bulbOn');
+    console.log('elementcheck ', elements);
+     // setTimeout(function(){ elements.beginElement(); }, 100);
+     elements.beginElement();
+     console.log('activated ', item.intersectionRatio );
+
+  }
