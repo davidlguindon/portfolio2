@@ -537,8 +537,7 @@ div>h4 {
 }
 
 .menu img {
-float: right;
-  height: 100px;
+  height: 70px;
 }
 
 .menu div {
@@ -590,7 +589,7 @@ float: right;
 
   .menu ul {
     position: absolute;
-    top: 100%;
+    top: 100px;
     left: -15px;
     padding: 10px 18px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);

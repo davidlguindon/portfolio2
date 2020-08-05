@@ -5,10 +5,48 @@
     'locationViewer caseStudyContainer .';
   /* background-color: #D9DADF; */
 }
+.contentScreenScroll:hover > img
+{
+-moz-animation: border-bounce 3000ms linear;
+-webkit-animation: border-bounce 3000ms linear;
+}
+@-moz-keyframes border-bounce {
+  0%   { margin-top: -10;  }
+  25%  { margin-top: -50px; }
+  50%  { margin-top: -100px;  }
+  75%  { margin-top: -50px;  }
+  100% { margin-top: -0px;  }
+}
+@-webkit-keyframes border-bounce {
+  0%   { margin-top: -10px;  }
+  25%  { margin-top: -50px; }
+  50%  { margin-top: -100px;  }
+  75%  { margin-top: -50px;  }
+  100% { margin-top: -0px;  }
+}
 .twoPictureRow{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
+  align-items: flex-start;
+}
+figcaption{
+  position:relative;
+  top: -28px;
+}
+.twoPictureRow figure{
+  margin: 25px;
+  /* border: 2px solid lightgray; */
+  border-radius: 5px;
+}
+.twoPictureRow > div{
+  margin: 25px;
+}
+.twoPictureRow figure img{
+width:30vw;
+min-width: 350px;
+height: 100%;
+object-fit: contain;
 }
 .twoPictureRow>div{
   display: flex;
@@ -234,7 +272,9 @@ left:0px;
 /* max-width: calc(100% - 20px); */
 }
 .laptopContainer{
-  width: 100%;
+  width: 40vw;
+  margin: auto;
+  min-width: 600px;
 }
 .laptopScreen{
   position: relative;
@@ -253,6 +293,18 @@ left:0px;
   margin: 0 60px;
   padding: 20px 20px 35px 20px;
   background-color: #333333;
+}
+.mobileContainer .mobileScreen img{
+position: absolute;
+top: 0px;
+left:0px;
+/* max-width: calc(100% - 20px); */
+}
+.mobileScreen{
+  position: relative;
+  padding-top: 177.7%;
+  background-color: #333333;
+  overflow: hidden;
 }
 .mobileContainer {
   /* transform: scale(1.5); */
@@ -294,7 +346,7 @@ left:0px;
 }
 
 .mobileContainer .bottomExtras {
-  padding-top: 0px;
+  padding-top: 10px;
 }
 
 .mobileContainer .bottomExtras .unlock {
@@ -326,10 +378,10 @@ left:0px;
   margin: auto 0;
 }
 
-.caseStudyContainer .Introduction img {
+/* .caseStudyContainer .Introduction img {
   width: calc(360px * .5);
   height: calc(640px * .5);
-}
+} */
 
 .caseStudyContainer .FlexContainer {
   display: flex;
@@ -349,7 +401,7 @@ left:0px;
 .PersonaGrid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .Goals {
@@ -458,7 +510,7 @@ tr:hover {
 
   .caseStudyContainer h3 {
     text-align: center;
-    margin-top: 250px;
+    margin-top: 100px;
     margin-bottom: 25px;
   }
 
@@ -616,7 +668,7 @@ tr:hover {
     .caseStudyContainer p {
       width: 70%;
       margin: 100px auto;
-  text-align: center;
+  text-align: left;
     }
 
     .caseStudyContainer .Introduction .mobileContainer {
