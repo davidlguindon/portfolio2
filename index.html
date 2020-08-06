@@ -1,121 +1,298 @@
-<!DOCTYPE html>
-<html>
-<title>David Guindon | Projects</title>
-<script src="Scripts\script.js"></script>
-<script src="https://kit.fontawesome.com/7b9eef7080.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="/styles/reset.css">
-<link rel="stylesheet" type="text/css" href="/styles/styles.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<body class='nohighlight' style='margin-top:0px;'>
-  <script src="Scripts\script.js"></script>
-<script type="text/javascript">
-jQuery(document).ready(function() {
-jQuery('.toggle-nav').click(function(e) {
-  jQuery(this).toggleClass('active');
-  jQuery('.menu ul').toggleClass('active');
+<!doctype html>
 
-  e.preventDefault();
-});
-});
-</script>
-  <header>
-    <ul class='alignleft'>
-      <a class='personallogo' href="index.html"><img src="assets\personallogo.png" width='85px' height='100%' alt="PersonalLogo"></a>
-      &nbsp &nbsp | &nbsp &nbsp <h5>David Guindon</h5>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio - David Guindon</title>
+  <meta name="description" content="David Guindon's Portfolio">
+  <meta name="author" content="David Guindon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="/styles/styles2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="assets\personallogo.jpg" />
+  <link rel="icon" href="assets\personallogo.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class='bodygrid'>
+  <!-- Navigation -->
+  <nav class="menu hero">
+    <ul class="active">
+      <li class="current-item"><a href="index.html">Profile</a></li>
+      <li><a href="casestudies.html">Case Studies</a></li>
+      <li><a href="assets\David Guindon Resume.doc">Resume</a></li>
     </ul>
-    <ul class='aligncenter'>
-    </ul>
-    <ul class='alignright'>
-      <li><a href="index.html" style='color:#efc988;'>Projects</a></li>
-      <!-- <li><a href="designprocess.html">Design Process</a></li> -->
-      <li><a href="biography.html">Biography</a></li>
-      <li><a href="assets\Resume.pdf">Resume</a></li>
-      <li><a id='myBtn' onclick='moogle()'>Contact</a></li>
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close">&times;</span>
-            <h2>Leave me a Message</h2>
-          </div>
-          <div class="modal-body">
-            <div class="container">
-              <form action="https://www.enformed.io/ozy9gwcx " method="POST" >
-                <label for="fname">First Name</label>
-                <input type="text" id="name" name="Name" placeholder="Your name..">
-                <label for="contact">Contact Info</label>
-                <input type="text" id="contact" name="contact" placeholder="Any contact style is fine by me..">
-                <label for="subject">Message</label>
-                <textarea id="message" name="message" placeholder="Write your message here.." style="height:200px"></textarea>
-                <input type="submit" value="Send" class='contactbutton'>
-              </form>
-            </div>
-          </div>
+    <!-- <div class="active hiddenMobile">
+      <h5>Based in West Michigan</h5>
+    </div> -->
+    <a class="toggle-nav" href="#">&#9776;</a>
+    <img src="assets\headerlogo4.png" alt="Personal Logo" class='hiddenMobile'>
+  </nav>
+  <!-- First Section -->
+  <section class='section1'>
+    <!-- <div class="myPicture">
+      <img src="assets\DavidsPicture.jpg" alt="Davids Picture" style='height: 300px; width: 300px;'>
+      <h4>David Guindon</h4>
+      <small>&nbsp 2 years in UX Design <br> &nbsp 5 years in Other Design Industries <br>15 years in Managment</small>
+  </div> -->
+  <!-- <div class="content">
+    <div class="text1">
+      <div class=''>
+        <h3>Better design,<br> Better experiences.</h3>
+      </div>
+      <div class="body">As a designer and developer, I understand the perfect user interface should look good and work even better.  Alongside others, I help users get what they want, uncover problems, and solve them.  In short, I create bolder online experiences.</div>
+    </div>
+  </div> -->
+  <div class="businessCards">
+  <div class="light"></div>
+  <div class="card front">
+    <div class="logo"></div>
+    <div class="front-text">DAVID GUINDON</div>
+  </div>
+  <div class="card back">
+    <div class="left">
+      <!-- <div class="name-text">DAVID GUINDON</div>
+      <div class="role-text">UX DESIGNER</div> -->
+    </div>
+    <div class="right">
+      <div>SEEKING AN E-COMMERCE BASED <br> UX DESIGN ROLE IN WEST MICHIGAN</div>
+    </div>
+  </div>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<clipPath id='testsvg'>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M44.6209 89.9997C30.6427 89.9997 19.6568 85.8196 11.663 77.4593C3.88767 69.3524 0 58.522 0 44.9682C0 31.4566 3.88767 20.6474 11.663 12.5404C19.6568 4.18014 30.6427 0 44.6209 0H59.6872L68.4056 26.8508V53.4556L80.6614 49.0131L73.3398 26.605L64.7161 0H91.146V3.73679C89.9229 4.24348 88.7654 4.66571 87.6733 5.0035C86.5813 5.34129 85.6203 5.74242 84.7903 6.20688C84.1296 6.56338 83.585 7.01916 83.1567 7.57423L105.782 76.9526L101.785 89.9997H94.0532L83.5521 57.8603L68.4056 63.3507V78.346C68.4056 79.6933 68.6336 80.8307 69.0896 81.7582C69.5409 82.4434 70.1086 83.0161 70.7927 83.4762C71.7101 84.0673 72.7366 84.5529 73.8723 84.9329C74.3919 85.0817 74.9115 85.251 75.4311 85.4408C76.1301 85.6741 76.846 85.9481 77.5787 86.2629V89.9997H44.6209ZM44.4243 4.75016C41.1482 4.75016 37.8065 5.38352 34.3993 6.65023C23.7847 10.6615 18.4774 23.4341 18.4774 44.9682C18.4774 59.7887 20.8799 70.3657 25.6848 76.6993C28.0437 79.7816 30.9485 81.9772 34.3993 83.2862C37.8065 84.5529 40.9953 85.1862 43.9656 85.1862C46.936 85.1862 49.2948 85.0807 51.0421 84.8695V5.06684C49.8627 4.85572 47.6567 4.75016 44.4243 4.75016Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M155.379 0.000282748C169.357 0.000282748 180.343 4.18042 188.337 12.5407C196.112 20.6477 200 31.4569 200 44.9685C200 58.5223 196.112 69.3526 188.337 77.4596C180.343 85.8199 169.357 90 155.379 90L118.1 89.9997V86.2629C119.148 85.7562 120.175 85.334 121.18 84.9962C122.228 84.6584 123.167 84.2573 123.997 83.7928C125.875 82.7373 126.815 80.9216 126.815 78.346V9.05697H126.552L108.337 68.6557L104.864 57.572L120.941 5.05975L120.769 5.0035C119.765 4.66571 118.738 4.24348 117.69 3.73679V0L155.379 0.000282748ZM155.576 4.75044C158.852 4.75044 162.193 5.3838 165.601 6.65051C176.215 10.6618 181.523 23.4344 181.523 44.9685C181.523 59.789 179.12 70.366 174.315 76.6996C171.956 79.7819 169.052 81.9775 165.601 83.2864C162.193 84.5532 159.005 85.1865 156.034 85.1865C153.064 85.1865 150.705 85.0809 148.958 84.8698V85.0156L148.896 84.9962C147.804 84.6584 146.843 84.2573 146.013 83.7928C144.134 82.7795 143.195 80.9639 143.195 78.346V10.6404C143.195 8.40251 144.112 6.81912 145.947 5.8902C146.777 5.51019 147.716 5.19351 148.765 4.94017L148.958 4.88446V5.06712C150.137 4.856 152.343 4.75044 155.576 4.75044Z" fill="black"/>
+</clipPath>
+</svg>
+</div>
+  </section>
+  <!-- Second Section -->
+  <div class='section2 sectionPadding'>
+    <div class="title">
+      <h2>Service Spectrum</h2>
+    </div>
+    <div class="horizontal">
+      <div class="serviceContainer" id='bulbSVG'>
+        <!-- Picture, Header, Body -->
+        <div class="picture">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+            <path class="lightbulb-bulb" fill="#FFFFFF"
+              d="M40 78h20a2 2 0 0 0 2-2v-6c0-1.63.84-3.67 2-4.83l.33-.33A33.75 33.75 0 0 1 58 67.05V65a31.97 31.97 0 0 0 24-31 32 32 0 1 0-40 31v2.06a33.74 33.74 0 0 1-6.33-2.2l.33.32c1.16 1.16 2 3.2 2 4.84v6c0 1.1.9 1.99 2 1.99z">
+              <animate attributeName='fill' dur='3s' to='#FFC31F' fill='freeze' begin='bulbOn.begin'/>
+              <!-- <animate attributeName='fill' dur='500ms' to='#FFFFFF' fill='freeze' begin='bulbOn.end + 500ms' /> -->
+              <!-- <animate attributeName='fill' dur='250ms' to='#FFC31F' fill='freeze' begin='indefinite' restart="whenNotActive" min='5s' id='bulbOn1'/>
+              <animate attributeName='fill' dur='250ms' to='#FFFFFF' fill='freeze' begin='bulbOn1.end'/> -->
+            </path>
+            <path class="lightbulb-screw" fill="#66a992"
+              d="M40 79v4a2 2 0 1 0 0 4v2a2 2 0 1 0 0 4v1c0 1.1.8 2.4 1.8 2.9l4.4 2.2c1 .5 2.7.9 3.8.9 1.11 0 2.8-.4 3.8-.9l4.4-2.2c1-.5 1.8-1.8 1.8-2.9v-1a2 2 0 1 0 0-4v-2a2 2 0 1 0 0-4v-4H40z">
+              <animate attributeName='fill' dur='1s' to='#DFDDD9' fill='freeze' begin='bulbOn.begin' />
+              <!-- <animate attributeName='fill' dur='500ms' to='#66a992' fill='freeze' begin='bulbOn.end + 500ms' /> -->
+              <!-- <animate attributeName='fill' dur='250ms' to='#DFDDD9' fill='freeze' begin='bulbon1.begin' restart="whenNotActive" min='5s'/>
+              <animate attributeName='fill' dur='250ms' to='#66a992' fill='freeze' begin='bulbOn1.end' /> -->
+            </path>
+            <path class="lightbulb-source" fill="#66a992" d="M52 52h.5a1.5 1.5 0 1 0 0-3h-5a1.5 1.5 0 1 0 0 3h.5v8.54A4 4 0 0 0 46 64V79h8V64a4 4 0 0 0-2-3.47V52z">
+              <animate attributeName='fill' dur='800ms' to='#CF9503' fill='freeze' begin='indefinite + 3s' id='bulbOn' restart='never'/>
+              <animate attributeName='fill' dur='2200ms' to='#DFDDD9' fill='freeze' begin='bulbOn.end' id='bulbOff'/>
+              <!-- <animate attributeName='fill' dur='250ms' to='#CF9503' fill='freeze' begin='indefinite' restart="whenNotActive" min='5s'/>
+              <animate attributeName='fill' dur='250ms' to='#66a992' fill='freeze' begin='bulbOn1.end' /> -->
+            </path>
+            <path class="shadows" fill="#000000"
+              d="M76.35 55.49a34.2 34.2 0 0 1-3.77 3.93l-7.16 7.16A5.57 5.57 0 0 0 64 70.01v.24A27.87 27.87 0 0 1 50 74c-5.1 0-9.88-1.36-14-3.75v-.24c0-1.11-.63-2.64-1.42-3.43l-7.16-7.16a34.2 34.2 0 0 1-3.77-3.93A27.81 27.81 0 0 1 22.28 50a31.99 31.99 0 0 0 55.44 0c-.28 1.89-.74 3.72-1.37 5.48zM42 80h16v2H42v-2zm0 7h16v1H42v-1zm0 6h16v1H42v-1z"
+              opacity=".2"></path>
+            <path class="outline" fill="#4A4A4A" fill-rule="nonzero"
+              d="M64 70v6a4 4 0 0 1-4 4v3a2 2 0 1 1 0 4v2a2 2 0 1 1 0 4v1c0 1.1-.8 2.4-1.8 2.9l-4.4 2.2c-1 .5-2.69.9-3.8.9-1.1 0-2.8-.4-3.8-.9l-4.4-2.2c-1-.5-1.8-1.8-1.8-2.9v-1a2 2 0 1 1 0-4v-2a2 2 0 1 1 0-4v-3a4 4 0 0 1-4-4v-6c0-1.1-.63-2.63-1.42-3.42l-7.16-7.16a34 34 0 1 1 45.16 0l-7.16 7.16A5.57 5.57 0 0 0 64 70.01zm-24 8h6V68L36 32h3v1h-1.68L46 64.26V64a4 4 0 0 1 2-3.47V52h-.5a1.5 1.5 0 0 1 0-3h5a1.5 1.5 0 0 1 0 3H52v8.54A4 4 0 0 1 54 64v.26L62.68 33H61v-1h3L54 68v10h6a2 2 0 0 0 2-2v-6c0-1.63.84-3.67 2-4.83l.33-.33A33.75 33.75 0 0 1 58 67.05V65a31.97 31.97 0 0 0 24-31 32 32 0 1 0-40 31v2.06a33.74 33.74 0 0 1-6.33-2.2l.33.32c1.16 1.16 2 3.2 2 4.84v6c0 1.1.9 1.99 2 1.99zM24.95 46.52A28 28 0 0 1 50 6v1a27 27 0 0 0-24.15 39.08l-.9.44zM41 33.56c-.28.14-.64.21-.99.21v-1c.2 0 .4-.03.55-.1L43 31.44a2.43 2.43 0 0 1 1.98 0l2.46 1.23c.29.14.81.14 1.1 0L51 31.44a2.43 2.43 0 0 1 1.98 0l2.46 1.23c.29.14.81.14 1.1 0L59 31.44c.28-.14.63-.21.99-.21v1c-.2 0-.4.03-.55.1L57 33.56c-.56.29-1.42.29-1.98 0l-2.46-1.23c-.29-.14-.81-.14-1.1 0L49 33.56c-.56.29-1.42.29-1.98 0l-2.46-1.23c-.29-.14-.81-.14-1.1 0L41 33.56zM39 91a1 1 0 0 0 1 1h20a1 1 0 1 0 0-2H40a1 1 0 0 0-1 1zm0-6a1 1 0 0 0 1 1h20a1 1 0 1 0 0-2H40a1 1 0 0 0-1 1zm3-2h16v-3H42v3zm7-5h2V64a1 1 0 1 0-2 0v14zm4-14a3 3 0 1 0-6 0v14h1V64a2 2 0 1 1 4 0v14h1V64zm-2-3.87V52h-2v8.13a4.01 4.01 0 0 1 2 0zM47.5 50a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm-.4 47.31c.72.36 2.1.69 2.9.69.8 0 2.18-.33 2.9-.69l.63-.31h-7.06l.63.31zM58 89v-2H42v2h16zm-16 4v1c0 .35.37.95.69 1.1l1.78.9h11.06l1.78-.9c.32-.15.69-.75.69-1.1v-1H42z">
+            </path>
+          </svg>
+        </div>
+        <div class="header">
+          <h5>Design</h5>
+        </div>
+        <div class="body">
+          This is where problem solving meets visual impact. I’ll unite products and users, design and experiences.
         </div>
       </div>
-    </ul>
-  </header>
-  <div class="hero">
-    <div class="herobox">
-      <h2>UX&nbsp <a href="designprocess.html">designer</a>&nbsp based in West Michigan</h2>
+      <div class="serviceContainer" id='monitorSVG'>
+        <!-- Picture, Header, Body -->
+        <div class="picture">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+            <animateTransform attributeName="transform"
+             type="scale"
+             additive="sum"
+             from="1 1"
+             to="1.05 1.05"
+             begin="bulbOff.end + 500ms"
+             dur="500ms"
+             repeatCount="never"
+        />
+            <animateTransform attributeName="transform"
+             type="scale"
+             additive="sum"
+             to="1 1"
+             from="1.05 1.05"
+             begin="bulbOff.end + 1000ms"
+             dur="500ms"
+             repeatCount="never"
+        />
+            <rect class="monitor-edge" width="98" height="78" x="1" y="11" fill="#66a992" rx="5">
+              <!-- <animate attributeName='fill' dur='500ms' to='#FFC31F' fill='freeze' begin='bulbOff.end' restart='never' id='monitorOn' restart="whenNotActive"/>
+              <animate attributeName='fill' dur='500ms' to='#1A6790' fill='freeze' begin='bulbOff.end' id='monitorOn' restart="whenNotActive"/> -->
+              <animate attributeName='fill' dur='500ms' to='#ffc31f' fill='freeze' begin='bulbOff.end + 500ms' id='monitorOn' restart="whenNotActive"/>
+              <animate attributeName='fill' dur='500ms' to='#1A6790' fill='freeze' begin='monitorOn.end' id='monitorOff' restart="whenNotActive"/>
+              <!-- <animate attributeName='fill' dur='250ms' to='#1A6790' fill='freeze' begin='indefinite' restart="whenNotActive" min='5s' id='monitorOn1' />
+              <animate attributeName='fill' dur='250ms' to='#66a992' fill='freeze' begin='monitorOn1.end' /> -->
+            </rect>
+            <rect class="monitor-screen" width="86" height="66" x="7" y="17" fill="#FFFFFF">
+              <animate attributeName='fill' dur='4000ms' to='#D6D6D6' fill='freeze' begin='bulbOn.end' restart="whenNotActive"/>
+              <!-- <animate attributeName='fill' dur='500ms' to='#FFFFFF' fill='freeze' begin='monitorOn.end + 1s' restart="whenNotActive"/> -->
+              <!-- <animate attributeName='fill' dur='250ms' to='#D6D6D6' fill='freeze' begin='monitorOn1.begin' restart="whenNotActive" min='5s'/>
+              <animate attributeName='fill' dur='250ms' to='#FFFFFF' fill='freeze' begin='monitorOn1.end' restart="whenNotActive"/> -->
+            </rect>
+            <rect class="shadows" width="86" height="5" x="7" y="17" fill="#000000" opacity=".2">
+              <animate attributeName='fill' dur='4000ms' to='#D6D6D6' fill='freeze' begin='bulbOn.end' restart="whenNotActive"/>
+              <!-- <animate attributeName='fill' dur='500ms' to='#FFFFFF' fill='freeze' begin='monitorOn.end + 1s' restart="whenNotActive"/> -->
+              <!-- <animate attributeName='fill' dur='250ms' to='#D6D6D6' fill='freeze' begin='monitorOn1.begin' restart="whenNotActive" min='5s'/>
+              <animate attributeName='fill' dur='250ms' to='#FFFFFF' fill='freeze' begin='monitorOn1.end' restart="whenNotActive"/> -->
+            </rect>
+            <path class="outline" fill="#4A4A4A" fill-rule="nonzero"
+              d="M0 16a6 6 0 0 1 6-6h88a6 6 0 0 1 6 6v68a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6V16zm6-4a4 4 0 0 0-4 4v68a4 4 0 0 0 4 4h88a4 4 0 0 0 4-4V16a4 4 0 0 0-4-4H6zm0 6c0-1.1.9-2 2-2h84a2 2 0 0 1 2 2v64a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V18zm2 0v31h1V19h15v-1H8zm17 1h16v-1H25v1zm16 1H25v27.59l1-1L28.41 49h2L32 50.59l1.06-1.06L37 23.26l.99 6.6 3 19.98.01.08V20zm1 31.76L43.38 49h3.2L53 42.59l5 5V20H42v31.76zm-1 6.48l-.48.96-.5-3.04-1-6.01L37 36.75l-2.06 13.72L32 53.41 29.59 51h-2L26 49.41l-1 1V80h16V58.24zM42 80h16V50.41l-5-5L47.41 51h-2.8L42 56.24V80zm-1 1H25v1h16v-1zm1 1h16v-1H42v1zm0-63h16v-1H42v1zm17 0h16v-1H59v1zm0 1v28.59l.41.41h4L67 52.59 70.59 49h1.8L75 43.76V20H59zm0 31v29h16V48.24L73.62 51h-2.2L67 55.41 62.59 51H59zm16 30H59v1h16v-1zm1-35.24L77.62 49H90V20H76v25.76zM76 80h14V51H76.38l-.38-.76V80zm0 2h16V51h-1v30H76v1zm0-63h15v30h1V18H76v1zm-66 1v29h13.59l.41-.41V20H10zm0 31v29h14V51H10zm0 30H9V51H8v31h16v-1H10z">
+              <animate attributeName='fill' dur='4000ms' to='#000000' fill='freeze' begin='bulbOff.end' restart="whenNotActive"/>
+              <!-- <animate attributeName='fill' dur='250ms' to='#4A4A4A' fill='freeze' begin='bulbOff.end + 1s' restart="whenNotActive"/> -->
+              <!-- <animate attributeName='fill' dur='250ms' to='#000000' fill='freeze' begin='monitorSVG.mouseover' restart="whenNotActive" min='5s'/>
+              <animate attributeName='fill' dur='250ms' to='#4A4A4A' fill='freeze' begin='monitorOn1.end' restart="whenNotActive"/> -->
+            </path>
+          </svg>
+        </div>
+        <div class="header">
+          <h5>Research</h5>
+        </div>
+        <div class="body">Using techniques like card sorting, interviews, and usability testing, I'll take an application to the next level.</div>
+      </div>
+      <div class="serviceContainer" id='houseSVG'>
+        <!-- Picture, Header, Body -->
+        <div class="picture">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" class="heroicon-home heroicon heroicons-lg">
+            <path class="home-wall" fill="#FFFFFF" d="M8 50L50 8l42 42v48H8V50zm10 7v22h12V57H18zm52 0v22h12V57H70zM50 38a8 8 0 1 0 0-16 8 8 0 0 0 0 16z">
+              <animate attributeName='fill' dur='2000ms' to='#BD6E62' fill='freeze' begin='monitorOff.end + 1250ms' id='houseOn'/>
+              <!-- <animate attributeName='fill' dur='500ms' to='#FFFFFF' fill='freeze' begin='houseOn.end + 500ms'/> -->
+              <!-- <animate attributeName='fill' dur='250ms' to='#BD6E62' fill='freeze' begin='indefinite' restart="whenNotActive" min='5s' id='houseOn1' />
+              <animate attributeName='fill' dur='250ms' to='#FFFFFF' fill='freeze' begin='houseOn1.end' /> -->
+            </path>
+            <polygon class="home-roof" fill="#66a992" points="7 7 44.5 7 50 1.5 55 7 93 7 93 44 99 50 96 53 50 7 4 53 1 50 7 44">
+              <animate attributeName='fill' dur='1000ms' to='#736E6B' fill='freeze' begin='monitorOff.end + 2s' />
+              <!-- <animate attributeName='fill' dur='500ms' to='#66a992' fill='freeze' begin='houseOn.end + 500ms' /> -->
+              <!-- <animate attributeName='fill' dur='250ms' to='#736E6B' fill='freeze' begin='houseOn1.begin' restart="whenNotActive" min='5s' id='houseOn1' />
+              <animate attributeName='fill' dur='250ms' to='#66a992' fill='freeze' begin='houseOn1.end' /> -->
+            </polygon>
+            <path class="home-frames" fill="#66a992"
+              d="M84 79h2v4H66v-4h2V55h16v24zm-52 0h2v4H14v-4h2V55h16v24zm8-24h20v36H40V55zm10-16a9 9 0 1 1 0-18 9 9 0 0 1 0 18zm2-12v1h4.71A7.01 7.01 0 0 0 52 23.29V27zm-8.71 1H48v-4.71A7.01 7.01 0 0 0 43.29 28zM48 36.71V32h-4.71A7.01 7.01 0 0 0 48 36.71zM56.71 32H52v4.71A7.01 7.01 0 0 0 56.71 32zM18 57v22h12V57H18zm52 0v22h12V57H70z">
+              <animate attributeName='fill' dur='1000ms' to='#FBFBFB' fill='freeze' begin='monitorOff.end + 750ms'/>
+              <!-- <animate attributeName='fill' dur='500ms' to='#66a992' fill='freeze' begin='houseOn.end + 500ms'/> -->
+              <!-- <animate attributeName='fill' dur='250ms' to='#FBFBFB' fill='freeze' begin='houseOn1.begin' restart="whenNotActive" min='5s' id='houseOn1' />
+              <animate attributeName='fill' dur='250ms' to='#66a992' fill='freeze' begin='houseOn1.end'/> -->
+            </path>
+            <rect class="home-door" width="16" height="34" x="42" y="57" fill="#66a992">
+              <animate attributeName='fill' dur='1000ms' to='#D5A17A' fill='freeze' begin='monitorOff.end + 1000ms'/>
+              <!-- <animate attributeName='fill' dur='500ms' to='#66a992' fill='freeze' begin='houseOn.end + 500ms'/> -->
+              <!-- <animate attributeName='fill' dur='250ms' to='#D5A17A' fill='freeze' begin='houseOn1.begin' restart="whenNotActive" min='5s' id='houseOn1' />
+              <animate attributeName='fill' dur='250ms' to='#66a992' fill='freeze' begin='houseOn1.end'/> -->
+            </rect>
+            <path class="home-windows" fill="#FFFFFF"
+              d="M52 27v-3.71A7.01 7.01 0 0 1 56.71 28H52v-1zm-8.71 1A7.01 7.01 0 0 1 48 23.29V28h-4.71zM48 36.71A7.01 7.01 0 0 1 43.29 32H48v4.71zM56.71 32A7.01 7.01 0 0 1 52 36.71V32h4.71zM18 57h12v22H18V57zm52 0h12v22H70V57z">
+              <animate attributeName='fill' dur='2000ms' to='#FFC31F' fill='freeze' begin='monitorOff.end + 3000ms'/>
+              <!-- <animate attributeName='fill' dur='500ms' to='#FFFFFF' fill='freeze' begin='houseOn.end + 500ms'/> -->
+              <!-- <animate attributeName='fill' dur='250ms' to='#FFC31F' fill='freeze' begin='houseOn1.begin' restart="whenNotActive" min='5s' id='houseOn1' />
+              <animate attributeName='fill' dur='250ms' to='#FFFFFF' fill='freeze' begin='houseOn1.end'/> -->
+            </path>
+            <polygon class="home-parging" fill="#FFFFFF" points="93 90 7 90 7 99 93 99">
+              <animate attributeName='fill' dur='1000ms' to='#5F6B4D' fill='freeze' begin='monitorOff.end + 2s' />
+              <!-- <animate attributeName='fill' dur='500ms' to='#FFFFFF' fill='freeze' begin='houseOn.end + 500ms' /> -->
+              <!-- <animate attributeName='fill' dur='250ms' to='#5F6B4D' fill='freeze' begin='houseOn1.begin' restart="whenNotActive" min='5s' id='houseOn1' />
+              <animate attributeName='fill' dur='250ms' to='#FFFFFF' fill='freeze' begin='houseOn1.end' /> -->
+            </polygon>
+            <path class="shadows" fill="#000000" d="M7 50L50 7l43 43v6L50 13 7 56v-6zm7 33h20v2H14v-2zm52 0h20v2H66v-2z" opacity=".2"></path>
+            <path class="heroicon-outline" fill="#4A4A4A" fill-rule="nonzero"
+              d="M94 98h6v2H0v-2h6V52l-.59.59L4 54l-1.41-1.41L1.4 51.4 0 50l1.41-1.41L6 44V6h38l4.59-4.59L50 0l1.41 1.41L56 6h38v38l4.59 4.59L100 50l-1.41 1.41-1.18 1.18L96 54l-1.41-1.41L94 52v46zM8 90h32V55h20v35h32V50l-4-4H12l-4 4v40zm6-46l-1 1h74l-1-1H14zm71-1L51.41 9.41 50 8l-1.41 1.41L15 43h70zm-35-3a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm9-10a9 9 0 1 0-18 0 9 9 0 0 0 18 0zm-1 0a8.02 8.02 0 0 1-10 7.75 8.01 8.01 0 0 1 4-15.5A8.01 8.01 0 0 1 58 30zm-10-1h-4.93a7.06 7.06 0 0 0 0 2H49v5.93a7.06 7.06 0 0 0 2 0V31h5.93a7.06 7.06 0 0 0 0-2H51v-5.93a7.06 7.06 0 0 0-2 0V29h-1zm4-2v1h4.71A7.01 7.01 0 0 0 52 23.29V27zm-8.71 1H48v-4.71A7.01 7.01 0 0 0 43.29 28zM48 36.71V32h-4.71A7.01 7.01 0 0 0 48 36.71zM56.71 32H52v4.71A7.01 7.01 0 0 0 56.71 32zM16 56v-1h16v24h2v4H14v-4h2V56zm15 0H17v23h1V57h12v22h1V56zm-2 23V69H19v10h10zM19 68h10V58H19v10zm14 12H15v2h18v-2zm35-24v-1h16v24h2v4H66v-4h2V56zm1 0v23h1V57h12v22h1V56H69zm2 23h10V69H71v10zm10-11V58H71v10h10zM67 80v2h18v-2H67zm-4 11v3h3v4h26v-7H63zM8 98h26v-4h3v-3H8v7zm28 0h28v-2H36v2zm23-8V56H41v34h1V57h16v33h1zm-16 0h14V58H43v32zm2.5-14a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM49 60v1h-3v10h-1V60h4zm6 0v1h-3v10h-1V60h4zm0 18v1h-9v8h-1v-9h10zm6 16v-2H39v2h22zM58 8l3 3h7V9h1v2h4v1H62l7 7h7v-2h1v2h7v1H70l7 7h7v-2h1v2h2v1h-9l14 14V32h-8v-1h4v-2h1v2h3v-7h-7v-1h3v-2h1v2h3v-7H77v-1h3v-2h1v2h11v-3h-9v-1h1V9h1v2h7V8H58zM8 8v3h3V9h1v2h8v1H8v3h7v-2h1v2h14v1H8v3h11v-2h1v2h4v1H8v3h7v-2h1v3H8v7h7v-2h1v3H8v10l14-14H10v-1h9v-2h1v2h3l15-15h-6v-1h3V9h1v2h3l3-3H8zM4 51.17L48.59 6.6 50 5.17l1.41 1.42L96 51.17 97.17 50 50 2.83 2.83 50 4 51.17z">
+            </path>
+          </svg>
+
+        </div>
+        <div class="header">
+          <h5>Front-End Development</h5>
+        </div>
+        <!-- <div class="body">Using techniques like Card Sorting, Interviews, and Usability Testing, I'll take an application to the next level.</div> -->
+        <div class="body">I’ll help you bridge the gap between design and development. I understand what a developer needs.</div>
+      </div>
     </div>
   </div>
-  <!-- <div class="herobox">
-  <h2>Read about my&nbsp<a href="index.html">projects</a>&nbspbelow</h2>
-</div> -->
-<div class="projectcard">
-  <div class="projectdesc">
-    <h2>Desert Paradigm</h2>
-    <h3>A 3rd Party Economic Planner for a Popular Videogame</h3>
-    <h3>UX/UI Designer &nbsp | &nbsp March 15 2019 &nbsp | &nbsp 7 Weeks</h3>
-  </div>
-  <div class="projectpicture"></div>
-  <!-- <div class="projectbuttons"> -->
-  <!-- <ul>
-  <a href="https://www.figma.com/proto/BgddHq2Vnb6b6M1C9eqWxqm2/UX-Intensive-Clickable-Prototype-2?node-id=2%3A2669&viewport=920%2C626%2C0.04535767436027527&scaling=min-zoom" class="projectcardbutton prototypebutton">Prototype</a>
-</ul> -->
-<ul><a href="desertparadigm.html" class="projectcardbutton">Case Study</a></ul>
-<!-- </div> -->
-</div>
-<div class="projectcard">
-  <div class="projectdesc">
-    <h2>Bloc Jams</h2>
-    <h3>A Web Based Media Player</h3>
-    <h3>Developer &nbsp | &nbsp April 22 2019 &nbsp | &nbsp 1 Week</h3>
-    <!-- <a href="https://github.com/davidlguindon/bloc-jams-jquery" class="projectcardbutton">Learn More</a> -->
-  </div>
-  <div class="projectpicture2"></div>
-  <ul><a href="https://davidsmediaplayer.netlify.com/" class="projectcardbutton prototypebutton">Visit Website</a></ul>
-</div>
-<!-- <div class="projectcard">
-<div class="projectdesc">
-<h2>Project Name</h2>
-<h3>Five Word Project Description</h3>
-<h3>Role  |  Date  |  Duration</h3>
-<a href="" class="projectcardbutton">Case Study</a>
-<a href="" class="projectcardbutton prototypebutton">Prototype</a>
-</div>
-<div class="projectpicture3"></div>
-</div> -->
-<footer>
+  <!-- Section Three -->
+  <section class="section3 sectionPadding">
+    <h2>Principles</h2>
+    <div class="horizontal">
 
-  <div class="alignleft">
-    <a href="https://github.com/davidlguindon"><i class="fab fa-github-square"></i></a>
-    <a href="https://www.linkedin.com/in/davidguindon"><i class="fab fa-linkedin"></i></a>
-    <a><i onclick='moogle()' class="fas fa-envelope-square"></i></a>
+      <div class="principlesContainer">
+        <div class="header">
+          <h5>UX is the sum of all things.</h5>
+        </div>
+        <div class="body">There’s no style over substance here. I bring together form and function to create something that looks good and performs brilliantly. Simple.</div>
+      </div>
+      <div class="principlesContainer">
+        <div class="header">
+          <h5>Helping people is my life goal.</h5>
+        </div>
+        <div class="body">Enabling people to complete tasks simply, quickly, and easily gives me the energy to wake up in the morning with a smile.</div>
+      </div>
+      <div class="principlesContainer">
+        <div class="header">
+          <h5>Perfection doesn’t do a 9-5.</h5>
+        </div>
+        <div class="body">And neither do I. I make sure I go the extra mile to make sure everyone involved is happy. Essentially, I always go the extra mile.</div>
+      </div>
+      <div class="principlesContainer">
+        <div class="header">
+          <h5>Empathy is a great asset.</h5>
+        </div>
+        <div class="body">Being able to address the needs and pain points of others is what User Centered Design is all about. It is one of the best mediums to make the world a better place.</div>
+      </div>
+      <div class="principlesContainer">
+        <div class="header">
+          <h5>Details are Important.</h5>
+        </div>
+        <div class="body">I manage my time to make sure what I am working on can get my full attention. This quality control means I can give a project exactly what it needs - focus and time.</div>
+      </div>
+      <div class="principlesContainer">
+        <div class="header">
+          <h5>Clean - In thinking, in style.</h5>
+        </div>
+        <div class="body">Simple, Minimal, and effective. This is my mantra and method. Fuss-free interfaces, Clean code and expert execution, design as it should be.</div>
+      </div>
     </div>
-</footer>
-<script src="Scripts\script.js"></script>
-<script type="text/javascript">
-jQuery(document).ready(function() {
-jQuery('.toggle-nav').click(function(e) {
-  jQuery(this).toggleClass('active');
-  jQuery('.menu ul').toggleClass('active');
-
-  e.preventDefault();
-});
-});
-</script>
+  </section>
+  <!-- Section Four -->
+  <!-- <section class="section4 sectionPadding">
+  <div class="">
+  <h2>What Others Say About Me</h2>
+</div>
+<div class="">
+Hi I'm a mystery person and I have nice things to say about David!
+</div>
+</section> -->
+  <!-- Section Five -->
+  <section class="section5">
+    <div class="hvcenter">
+      Now that you know about me.
+      <h1>Feel free to view my work.</h1>
+      <ul>
+        <a href="casestudies.html">David's Case Studies</a>
+        <a href="assets\David Guindon Resume.doc">Download Resume</a>
+      </ul>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer></footer>
+  <script src="Scripts\script.js"></script>
 </body>
+
 </html>

@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 html {
   font-size: 150%;
 }
@@ -22,6 +25,15 @@ body {
 }
 .menu{
   z-index: 3;
+}
+.menu.hero{
+  background-color: #272727;
+}
+.menu.hero a{
+color:#D4D3DA;
+}
+.menu.hero a:hover{
+color:#C6A344;
 }
 .menu ul{
   margin: auto 25px;
@@ -76,9 +88,8 @@ small, .text_small {
 }
 
 .section1 {
-  padding: 40px 15px;
+  /* padding: 40px 15px; */
   grid-area: section1;
-  user-select: none;
   display: flex;
   justify-content: center;
 }
@@ -142,8 +153,7 @@ small, .text_small {
   background-color: #4A7365;
   color: #ffffff;
   text-align: center;
-  position: sticky;
-  top: 1rem;
+  height: 100vh;
 }
 
 .section5 h1 {
@@ -228,6 +238,131 @@ margin: 44px 25px 50px 25px;
 .aspectRatioContainerInner {
   display: none;
 }
+.businessCards {
+/* .section1 { */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url("../assets/Textures/bkg.jpg");
+  /* background: url("../assets/racecar.jpg"); */
+  background-size: 100% auto;
+}
+.card {
+    font-family: 'Lato', sans-serif;
+  position: relative;
+  width: 450px;
+  height:250px;
+  padding:10px 15px 15px 10px;
+  margin-top:50px;
+  border-radius: 2px;
+  background: url("../assets/Textures/texture.jpg");
+  background-size: cover;
+  box-shadow:
+  /* top shadow */
+  0px -10px 10px rgba(0,0,0,0.2),
+  /* bottom shadow */
+  0px 10px 20px rgba(0,0,0,0.4),
+  /* left shadow */
+  -10px 0px 20px rgba(0,0,0,0.4),
+  /*right shadow */
+  10px 0px 20px rgba(0,0,0,0.4),
+  /* inner shadow */
+  inset 1px 1px 20px rgba(0,0,0,0.4)
+  ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.logo {
+  width: 200px;
+  height: 90px;
+  background: url("../assets/Textures/gold-texture.jpg");
+  background-size: cover;
+clip-path: url(#testsvg);
+position: relative;
+top: 8px;
+}
+.front-text {
+  font-size: 26px;
+  letter-spacing: 2px;
+  word-spacing: 6px;
+  color: transparent;
+  background: url("../assets/Textures/gold-texture.jpg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: -1px -1px 1px rgba(0,0,0,0.1);
+  padding-top: 20px;
+  position: relative;
+  top: 8px;
+}
+
+.card.back .left {
+  position: absolute;
+  left: 30px;
+  top: 25px;
+  color:transparent;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+.name-text {
+  font-size: 32px;
+  word-spacing: 8px;
+  background:url("../assets/Textures/silver-texture.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+}
+.role-text {
+  font-size: 18px;
+  background:url("../assets/Textures/gold-texture.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+}
+.card.back .right {
+  position: absolute;
+  width: 370px;
+  /* right: 40px;
+  bottom: 40px; */
+  /* font-size: 16px; */
+  font-size: 20px;
+  font-weight: 700;
+  color:transparent;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  background:url("../assets/Textures/silver-texture.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+}
+.card.front {
+  transform: rotateZ(-7deg);
+  left: -15%;
+}
+.card.back {
+  transform: rotateZ(4deg);
+  left: 5%;
+  top: -2%;
+}
+.card:hover {
+  transform: scale(1.12);
+}
+.light {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.5) 20%,rgba(255,255,255,0) 60%);
+  opacity: 0.2;
+  z-index: 2;
+  pointer-events: none;
+}
 
 @media (min-width: 576px) {
   .sectionPadding {
@@ -254,6 +389,7 @@ margin: 44px 25px 50px 25px;
     /* background-image: linear-gradient(90deg, #C7CAD5 25%, #C7CAD5, #ffffff); */
     background-image: linear-gradient(90deg, #ffffff 5%, #C7CAD5, #C7CAD5);
     justify-content: space-around;
+    height: calc(100vh - 70px);
   }
   .section1 h3 {
     font-size: 76px;
@@ -562,6 +698,10 @@ div>h4 {
 .menu a:hover, .menu .current-item a {
   text-decoration: none;
   color: #4A7365;
+}
+.hero.menu a:hover, .menu.hero .current-item a {
+  text-decoration: none;
+  color: #c6a344;
 }
 
 /*----- Responsive -----*/

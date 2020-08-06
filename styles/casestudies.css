@@ -15,13 +15,6 @@
 .liteSku .projectPicture{
     background-image: url(../assets/LiteSku/liteSkuMobileMockup.png);
 }
-.twoPictureRow{
-  display: flex;
-  justify-content: space-around;
-}
-.twoPictureRow>.picture{
-  width: inherit;
-}
 .caseStudyGrid>div {
   /* border: 5px solid gray; */
   min-height: 500px;
