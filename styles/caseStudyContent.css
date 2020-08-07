@@ -7,8 +7,9 @@
 }
 .contentScreenScroll:hover > img
 {
--moz-animation: border-bounce 3000ms linear;
--webkit-animation: border-bounce 3000ms linear;
+  object-fit: contain;
+-moz-animation: border-bounce 3000ms linear 1;
+-webkit-animation: border-bounce 3000ms linear 1;
 }
 @-moz-keyframes border-bounce {
   0%   { margin-top: -10;  }
@@ -18,12 +19,26 @@
   100% { margin-top: -0px;  }
 }
 @-webkit-keyframes border-bounce {
-  0%   { margin-top: -10px;  }
+  0%   { margin-top: -10;  }
   25%  { margin-top: -50px; }
   50%  { margin-top: -100px;  }
   75%  { margin-top: -50px;  }
   100% { margin-top: -0px;  }
 }
+/* @-moz-keyframes border-bounce {
+  0%   { object-position: 0 10%;  }
+  25%  { object-position: 0 25%; }
+  50%  { object-position: 0 50%;  }
+  75%  { object-position: 0 75%;  }
+  100% { object-position: 0 100%;  }
+}
+@-webkit-keyframes border-bounce {
+  0%   { object-position: 0 10%;  }
+  25%  { object-position: 0 25%; }
+  50%  { object-position: 0 50%;  }
+  75%  { object-position: 0 75%;  }
+  100% { object-position: 0 100%;  }
+} */
 .twoPictureRow{
   display: flex;
   justify-content: center;
