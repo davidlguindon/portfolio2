@@ -572,7 +572,9 @@ margin:0 0 15px 0;
     display: flex;
     justify-content: space-between;
   }
-
+.businessCards{
+  display: none;
+}
   .section1 {
     display: flex;
     margin: auto 0;
@@ -748,7 +750,9 @@ height: 750px;
   .section1 .body {
     width: auto;
   }
-
+.businessCards{
+  display: block;
+}
   .visibleMobile {
     display: none;
   }
