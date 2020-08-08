@@ -417,7 +417,7 @@ left:calc(25% + 415px);
 .card.back {
   transform: rotateZ(4deg);
   /* top: 48.1%; */
-  left: calc(45% + 215px);
+  left: calc(115px + 48vw);
   /* left: calc(10% + 915px); */
   /* left: 73.25%; */
   /* left: 43.25%; */
