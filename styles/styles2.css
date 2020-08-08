@@ -294,14 +294,14 @@ small, .text_small {
   justify-content: center;
   flex-direction: column;
   cursor: pointer;
-  transition: transform 1.5s;
   transform-style: preserve-3d;
+  transition: transform 1.5s;
 }
 
 .logo {
   width: 200px;
   height: 90px;
-  background: url("../assets/Textures/gold-texture.jpg");
+  background: url("../assets/Textures/green-texture.jpg");
   background-size: cover;
   clip-path: url(#business-card-svg);
   position: relative;
@@ -313,7 +313,7 @@ small, .text_small {
   letter-spacing: 2px;
   word-spacing: 6px;
   color: transparent;
-  background: url("../assets/Textures/gold-texture.jpg");
+  background: url("../assets/Textures/green-texture.jpg");
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
@@ -327,8 +327,6 @@ small, .text_small {
   color: transparent;
   font-weight: 700;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  /* display: flex;
-  flex-direction: column; */
   display: grid;
   grid-template-columns: 300px auto;
   grid-template-rows: 75px auto;
@@ -356,6 +354,9 @@ small, .text_small {
 .name-text .role-text {
   position: relative;
   top: -10px;
+  background: url("../assets/Textures/silver-texture.jpg");
+  -webkit-background-clip: text;
+background-size: cover;
 }
 
 .back .flipped .myPicture {
@@ -403,10 +404,6 @@ small, .text_small {
   background-size: cover;
 }
 
-/* .card.front {
-  transform: rotateZ(-7deg);
-  left: -15%;
-} */
 .card.front {
   transform: rotateZ(-7deg);
 /* left:calc(10% + 715px); */
@@ -488,12 +485,9 @@ margin:0 0 15px 0;
 .card:hover {
   z-index: 2;
   transform: scale(1.12);
-  transition: 1.5s;
 }
 
 .card.front:hover {
-  /* top: calc(23.5% - 10px); */
-  /* transform: rotateZ(-14deg); */
   /* animation: slide-card .5s; */
 }
 
@@ -509,7 +503,6 @@ margin:0 0 15px 0;
   height: 0px;
   z-index: 2;
   opacity: .3;
-  background-color:purple;
 }
 
 .front:hover>.delay-checkbox {
@@ -520,8 +513,16 @@ margin:0 0 15px 0;
   width: 100%;
   height: 100%;
 }
+#top-card:checked ~ .front:hover>.delay-checkbox {
+  transition: 1ms .3s ease-out;
+  cursor: pointer;
+  top: -99999px;
+  left: -99999px;
+  width: 100%;
+  height: 100%;
+}
 
-@keyframes slide-card {
+/* @keyframes slide-card {
   0% {
     transform: rotateZ(-7deg);
   }
@@ -539,7 +540,7 @@ margin:0 0 15px 0;
   100% {
     transform: rotateZ(-0deg) scale(1.12);
   }
-}
+} */
 
 .light {
   position: absolute;
@@ -547,7 +548,7 @@ margin:0 0 15px 0;
   height: 100%;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 60%);
-  opacity: 0.2;
+  opacity: 0.3;
   z-index: 3;
   pointer-events: none;
 }
