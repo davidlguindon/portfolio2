@@ -271,6 +271,7 @@ small, .text_small {
   /* background-color: #4A7365; */
   background-size: 100% auto;
   background-size: cover;
+  display: none;
 }
 
 .card {
@@ -572,9 +573,6 @@ margin:0 0 15px 0;
     display: flex;
     justify-content: space-between;
   }
-.businessCards{
-  display: none;
-}
   .section1 {
     display: flex;
     margin: auto 0;
