@@ -345,6 +345,7 @@ small, .text_small {
   justify-content: flex-end;
   text-align: right;
   grid-column-gap: 25px;
+  transform: rotateX(180deg);
 }
 
 .back .flipped .myPicture img {
@@ -415,6 +416,7 @@ small, .text_small {
   left: 23.1%;
   top: 23.5%;
   position: absolute;
+  transition: .5s linear;
 }
 .card.back {
   transform: rotateZ(4deg);
@@ -459,20 +461,20 @@ margin:0 0 15px 0;
 }
 
 #top-card:checked~.card.front {
-  transform-origin: center left;
-  transform: translateX(100%) rotateY(180deg) rotate(90deg);
-  transform: translateX(100%) rotateY(180deg);
-  /* transform: rotateY( 180deg ); */
+  transform-origin: center right;
+  /* transform: translateX(100%) rotateY(180deg) rotate(90deg); */
+  transform: translateX(-100%) rotateY(180deg);
+  /* transform: rotateY( -180deg ); */
   z-index: 3;
   top: -170px;
   left: 70px;
-  transition: 1.5s;
+  transition: all 1.5s;
 }
 
 #bottom-card:checked~.card.back {
-  transform-origin: center right;
-  transform: translateX(-100%) rotateY(-180deg);
-  /* transform: rotateY( 180deg ); */
+  transform-origin: top center;
+  /* transform: translateX(-100%) rotateY(-180deg); */
+  transform: rotateX( 180deg ) translateY(-100%);
   z-index: 3;
 }
 
@@ -480,15 +482,15 @@ margin:0 0 15px 0;
   display: none;
 }
 
-
 .card:hover {
   z-index: 2;
   transform: scale(1.12);
-  transition: 0.5s;
+  transition: 1.5s;
 }
 
 .card.front:hover {
   top: calc(23.5% - 10px);
+  /* animation: slide-card .5s; */
 }
 
 .front:hover~.card.back {
