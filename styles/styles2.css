@@ -298,7 +298,6 @@ small, .text_small {
   justify-content: center;
   flex-direction: column;
   cursor: pointer;
-  /* transition: 0.5s; */
   transition: transform 1.5s;
   transform-style: preserve-3d;
 }
@@ -417,6 +416,13 @@ small, .text_small {
   top: 23.5%;
   position: absolute;
 }
+.card.back {
+  transform: rotateZ(4deg);
+  /* top: 48.1%; */
+  left: 43.25%;
+  position: absolute;
+  top: calc(23.5% + 220px);
+}
 
 .not-flipped {
   position: absolute;
@@ -442,8 +448,6 @@ small, .text_small {
 .flipped ul {
   display: flex;
   margin: auto;
-  /* width: 450px;
-height: 250px; */
   flex-wrap: wrap;
 }
 .flipped .menu.hero {
@@ -451,7 +455,7 @@ background-color: transparent;
 margin:0 0 15px 0;
 }
 .front.flipped .name-text {
-  margin:0;
+  margin:auto;
 }
 
 #top-card:checked~.card.front {
@@ -460,12 +464,9 @@ margin:0 0 15px 0;
   transform: translateX(100%) rotateY(180deg);
   /* transform: rotateY( 180deg ); */
   z-index: 3;
-  /* top:25%x;
-  left:25%; */
   top: -170px;
   left: 70px;
   transition: 1.5s;
-  /* top:0; */
 }
 
 #bottom-card:checked~.card.back {
@@ -479,39 +480,19 @@ margin:0 0 15px 0;
   display: none;
 }
 
-/* .card.back {
-  transform: rotateZ(4deg);
-  top:34.8%;
-  left:43.25%;
-  position: absolute;
-} */
-.card.back {
-  transform: rotateZ(4deg);
-  top: 48.1%;
-  left: 43.25%;
-  position: absolute;
-  transition: all 1s 1s;
-}
 
-/* .card.back {
-  transform: rotateZ(4deg);
-  left: 23.1%;
-  top: 36.8%;
-  position: absolute;
-} */
 .card:hover {
   z-index: 2;
   transform: scale(1.12);
+  transition: 0.5s;
 }
 
 .card.front:hover {
-  /* animation: slide-card .4s ease-out; */
-  /* cursor: wait; */
+  top: calc(23.5% - 10px);
 }
 
 .front:hover~.card.back {
-  transition: 0.5s;
-  margin-top: 50px;
+  top: calc(23.5% + 250px);
 }
 
 .delay-checkbox {
