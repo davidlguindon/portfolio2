@@ -285,11 +285,17 @@ small, .text_small {
   background: url("../assets/Textures/texture.jpg");
   background-size: cover;
   box-shadow:
+    0px -5px 5px rgba(0, 0, 0, 0.2),
+    0px 5px 5px rgba(0, 0, 0, 0.4),
+    -5px 0px 5px rgba(0, 0, 0, 0.4),
+    5px 0px 5px rgba(0, 0, 0, 0.4),
+    inset 1px 1px 20px rgba(0, 0, 0, 0.4);
+  /* box-shadow:
     0px -10px 10px rgba(0, 0, 0, 0.2),
     0px 10px 20px rgba(0, 0, 0, 0.4),
     -10px 0px 20px rgba(0, 0, 0, 0.4),
     10px 0px 20px rgba(0, 0, 0, 0.4),
-    inset 1px 1px 20px rgba(0, 0, 0, 0.4);
+    inset 1px 1px 20px rgba(0, 0, 0, 0.4); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -302,7 +308,7 @@ small, .text_small {
 .logo {
   width: 200px;
   height: 90px;
-  background: url("../assets/Textures/green-texture.jpg");
+  background: url("../assets/Textures/gold-texture.jpg");
   background-size: cover;
   clip-path: url(#business-card-svg);
   position: relative;
@@ -314,7 +320,7 @@ small, .text_small {
   letter-spacing: 2px;
   word-spacing: 6px;
   color: transparent;
-  background: url("../assets/Textures/green-texture.jpg");
+  background: url("../assets/Textures/gold-texture.jpg");
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
@@ -489,7 +495,7 @@ margin:0 0 15px 0;
 }
 
 .card.front:hover {
-  /* animation: slide-card .5s; */
+  animation: slide-card .5s;
 }
 
 .front:hover~.card.back {
@@ -549,9 +555,11 @@ margin:0 0 15px 0;
   height: 100%;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 60%);
-  opacity: 0.3;
-  z-index: 3;
+  opacity: 0.1;
+  z-index: 9999;
   pointer-events: none;
+  top: -178px;
+left: -215px;
 }
 
 @media (min-width: 576px) {
