@@ -563,7 +563,8 @@ tr:hover {
 
     .PersonaCard {
       margin: 25px 25px 50px 25px;
-      width: 360px;
+      /* width: 360px; */
+      width: 425px;
     }
   }
 
