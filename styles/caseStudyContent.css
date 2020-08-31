@@ -435,6 +435,7 @@ th {
 table {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
 }
 
 table td {
@@ -466,7 +467,8 @@ tr:hover {
   border-radius: 5px;
   overflow-x: hidden;
   border: 1px solid #205C65;
-  width: 80%;
+  /* width: 80%; */
+  width: 950px;
   margin: auto;
 }
 
