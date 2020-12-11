@@ -1,4 +1,4 @@
-.articleAndCaseStudy {
+q.articleAndCaseStudy {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   grid-template-areas:
@@ -336,7 +336,7 @@ left:0px;
   align-items: center;
 }
 
-.mobileContainer .topExtras .light {
+.mobileContainer .topExtras .mobileLight {
   width: 15px;
   height: 15px;
   background-color: darkgray;
@@ -358,10 +358,6 @@ left:0px;
   background-color: black;
   border-radius: 25px;
   opacity: .05;
-}
-
-.mobileContainer .bottomExtras {
-  padding-top: 10px;
 }
 
 .mobileContainer .bottomExtras .unlock {
