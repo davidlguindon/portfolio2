@@ -33,6 +33,7 @@ body {
 .menu.hero {
   position: absolute;
   /* background-color: #272727; */
+  display: flex;
 }
 
 .card .menu.hero {
@@ -42,18 +43,56 @@ body {
 .menu.hero a {
   color: #D4D3DA;
 }
-
+.menu.hero .border{
+  border-style: solid;
+border-width: 0 0 10px 0;
+border-color:#98ACA5;
+}
+.active .menu.hero a {
+border: none
+}
+.navShadow{
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 96px;
+}
 .menu.hero a:hover {
   color: #C6A344;
 }
 
-.nav-logo {
-  background-image: url("../assets/gold-logo.svg");
-  height: 60px;
-  width: 107px;
-  background-size: contain;
+.logoTail{
+  margin: 0;
+position: relative;
+top: 5px;
+border-style: solid;
+border-width: 96px 22px 0 10px;
+border-color: #98ACA5 transparent transparent #98ACA5;
+}
+.logoTail::after{
+  position: absolute;
+  left: -35px;
+  bottom: -5px;
+  content: "";
+  height: 96px;
+  width: 350px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
+  background-size: contain;
+background-image: url(../assets/navLogoTail.svg);
+transform: scale(.75);
+}
+.logoTail::before{
+  position: absolute;
+  left: -10px;
+  bottom:10px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 96px 20px 0 0;
+  border-color: #4a7365 transparent transparent transparent;
 }
 
 .menu ul {
@@ -113,7 +152,7 @@ small, .text_small {
 }
 
 .section1 {
-  margin: 100px 0 0 0;
+  margin: 75px 0 0 0;
   grid-area: section1;
   display: flex;
   justify-content: center;
@@ -458,7 +497,6 @@ small, .text_small {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  width: 100%;
   align-items: center;
 }
 
@@ -1007,13 +1045,26 @@ div>h4 {
     top: 0;
     left: 0;
     display: inline-block;
-    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
     color: #777;
     transition: color linear 0.15s;
     text-decoration: none;
   }
+.logoTail{
 
+}
+  .menu svg:hover {
+    transition: linear 0.15s;
+    filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .5));
+    fill: #c6a344;
+  }
+  .menu svg {
+    /* background-color: #4A7365; */
+    padding: 15px;
+    /* transition: linear 0.15s; */
+    fill: white;
+  }
   .toggle-nav:hover, .toggle-nav.active {
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     color: #66a992;
   }
