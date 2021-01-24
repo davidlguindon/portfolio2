@@ -1,5 +1,5 @@
 .caseStudyGrid {
-  background-color: #ececec;
+  /* background-color: #ececec; */
   display: grid;
   grid-template-columns:1fr;
   grid-template-areas:
@@ -14,6 +14,12 @@
 }
 .liteSku .projectPicture{
     background-image: url(../assets/LiteSku/liteSkuMobileMockup.png);
+}
+.resilApp .projectPicture{
+    background-image: url(../assets/resilMockup.png);
+    background-size: contain;
+    position: relative;
+    top: 10px;
 }
 .caseStudyGrid>div {
   /* border: 5px solid gray; */
@@ -64,13 +70,17 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 30px;
+  height: 100%;
 }
 .projectCard{
   transition: transform 200ms ease 0s;
-  transform: scale(1);
   background-color: #333333;
-  background-image: url(../assets/casestudyCardBackground2.jpg);
+  background-image: linear-gradient(70deg, #4A7365, #4A7365 30%,#98ACA5);
+  /* background-image: linear-gradient(0deg, #4A7365 20%, #c6a344 40%,#4A7365 60%); */
+  /* background-image: linear-gradient(110deg, #4A7365 -20%, #4A7365 0%,#333333); */
+  /* background-image: linear-gradient(70deg, #333333, #333333 30%,#98ACA5); */
+  /* background-image: linear-gradient(110deg, #333333, #333333 30%,#4A7365); */
+  /* background-image: url(../assets/casestudyCardBackground2.jpg); */
   background-position: center;
   background-size: cover;
   /* filter: blur(1px); */
@@ -79,28 +89,41 @@
   grid-template-columns: 1fr;
   grid-template-areas:
   'projectName'
-  'projectPicture';
+  'projectPicture'
+  'projectPicture'
+  'projectPicture'
+  '.';
 }
 .projectCard:hover{
+  transform: scale(1.02);
   transition: transform 200ms ease 0s;
-  transform: scale(1.01);
   cursor: pointer;
 }
+
+.projectCard:hover > .projectName h2 {
+  transition: color 200ms ease 0s;
+  /* color:#c6a344; */
+}
+/* .projectCard:hover {
+  transition: color 200ms ease 0s;
+  box-shadow: 2px 2px 4px #c6a344;
+} */
 .summary{
   display: none;
 }
-.summary h5{
+.summary p{
   margin: 0;
   width: 100%;
   background-color:rgba(196, 196, 196, 0.5);
+  color: black;
+  font-weight: bold;
+  max-width: 90%;
 }
 .projectName{
   display: flex;
   flex-direction: column;
   /* background-color:rgba(196, 196, 196, 0.5); */
-  justify-content: center;
-  text-align: left;
-  margin: auto;
+  margin: auto 50px;
 }
 .projectName>div{
   margin: auto;
@@ -112,6 +135,7 @@
   font-size: 36px;
   color: white;
   text-shadow: 2px 2px 4px #000000;
+  transition: color 200ms ease 0s;
 }
 .projectName small{
   position: relative;
@@ -144,14 +168,16 @@
     grid-template-columns: 1fr;
     grid-template-areas:
     'projectName'
-    'projectName'
-    'projectPicture';
+    'projectPicture'
+    'projectPicture'
+    '.';
   }
 }
 
 @media (min-width: 768px) {
   .projectName{
-    margin-left: 25px;
+    margin-left: 50px;
+    display: inline;
   }
   .projectName h2{
     margin:0;
@@ -171,19 +197,11 @@
       'blocJams'
       'fate';
   }
-  .summary{
-    display: flex;
-  }
-  .summary h5{
-    text-align: left;
-    margin: auto;
-    padding: 25px;
-  }
-  .projectPicture{
+  /* .projectPicture{
     display: inline-block;
     position: relative;
     top: 75px;
-  }
+  } */
   .projectCard{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -192,6 +210,14 @@
     'projectName projectPicture'
     'projectName projectPicture'
     'summary summary';
+  }
+  .summary{
+    display: inline;
+  }
+  .summary p{
+    text-align: left;
+    margin: auto 50px;
+    padding: 25px;
   }
 }
 
@@ -213,7 +239,6 @@
     display: flex;
   }
   .projectPicture{
-    background-position: initial;
   }
   .projectCard{
     display: grid;
@@ -224,12 +249,16 @@
     'summary projectPicture';
   }
   .summary{
-    margin: 0 0 25px 25px;
+    /* margin: 0 0 25px 25px; */
   }
+  .summary p{
+  /* max-width: 450px; */
+}
 }
 
 @media (min-width: 1400px) {
   .summary{
+    display: flex;
     margin: 0;
   }
   .caseStudyGrid {
@@ -251,7 +280,7 @@
         position: relative;
         top: 25px;
   }
-  .summary h5{
+  .summary p{
     width: 70%;
   background-color:rgba(196, 196, 196, 0.5);
   padding: 50px;
