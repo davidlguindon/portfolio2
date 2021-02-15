@@ -387,7 +387,7 @@ left:0px;
 
 .caseStudyContainer .Introduction .text {
   width: 50%;
-  margin: auto 0;
+  margin: auto 25px;
 }
 
 /* .caseStudyContainer .Introduction img {
@@ -567,9 +567,6 @@ tr:hover {
   @media (min-width: 768px) {
 .gridContainer{
   grid-template-columns: 1fr  2fr;
-}
-.laptopContainer{
-  display: none;
 }
     .locationViewer {
       position: fixed;
