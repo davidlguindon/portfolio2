@@ -180,6 +180,7 @@ footer ul a {
   padding: 8px 70px 8px 70px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 max-width: 450px;
+min-width: 300px;
 }
 
 a:hover {
@@ -370,7 +371,7 @@ left:0px;
 }
 
 .caseStudyContainer p {
-  margin: 100px 0;
+  margin: 100px 25px;
 }
 
 .caseStudyContainer .picture {
@@ -476,7 +477,6 @@ tr:hover {
   footer img {
     display: none;
   }
-
   .PersonaCard .FlexContainer .InfoList {
     margin: 0;
   }
@@ -567,6 +567,9 @@ tr:hover {
   @media (min-width: 768px) {
 .gridContainer{
   grid-template-columns: 1fr  2fr;
+}
+.laptopContainer{
+  display: none;
 }
     .locationViewer {
       position: fixed;
