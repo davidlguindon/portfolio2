@@ -171,15 +171,15 @@ footer ul {
 footer ul a {
   text-decoration: none;
   display: block;
-  background-color: white;
-  color: #4A7365;
+  background-color: #ffc31f;
+  color: black;
   transition: color linear 0.15s;
   font-size: 22px;
-  text-align: left;
+  text-align: center;
   margin: 15px auto;
   padding: 8px 70px 8px 70px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-
+max-width: 450px;
 }
 
 a:hover {
@@ -488,7 +488,7 @@ tr:hover {
 
   .PersonaCard {
     margin: 0 0 50px 0;
-    width: 100%;
+    width: 80%;
   }
 
   .article small {
