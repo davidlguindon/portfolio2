@@ -11,6 +11,8 @@
     'busyBus'
     'blocJams'
     'fate';
+    position: relative;
+    top: 75px;
 }
 .liteSku .projectPicture{
     background-image: url(../assets/LiteSku/liteSkuMobileMockup.png);
@@ -19,7 +21,7 @@
     background-image: url(../assets/resilMockup.png);
     background-size: contain;
     position: relative;
-    top: 10px;
+    /* top: 10px; */
 }
 .caseStudyGrid>div {
   /* border: 5px solid gray; */
@@ -75,12 +77,12 @@
 .projectCard{
   transition: transform 200ms ease 0s;
   background-color: #333333;
-  background-image: linear-gradient(70deg, #4A7365, #4A7365 30%,#98ACA5);
+  /* background-image: linear-gradient(70deg, #4A7365, #4A7365 30%,#98ACA5); */
   /* background-image: linear-gradient(0deg, #4A7365 20%, #c6a344 40%,#4A7365 60%); */
   /* background-image: linear-gradient(110deg, #4A7365 -20%, #4A7365 0%,#333333); */
   /* background-image: linear-gradient(70deg, #333333, #333333 30%,#98ACA5); */
   /* background-image: linear-gradient(110deg, #333333, #333333 30%,#4A7365); */
-  /* background-image: url(../assets/casestudyCardBackground2.jpg); */
+  background-image: url(../assets/casestudyCardBackground2.jpg);
   background-position: center;
   background-size: cover;
   /* filter: blur(1px); */

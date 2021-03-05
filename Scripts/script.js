@@ -211,3 +211,25 @@ function callback(entries, observer){
 //   });
 // };
 })
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (currentScrollPos == 0) {
+    // var navbar = document.querySelectorAll(".logoTail::after");
+    var element = document.querySelectorAll(".logoTail2");
+    element[0].style.opacity = "1";
+  }
+  if (currentScrollPos != 0) {
+    // var navbar = document.querySelectorAll(".logoTail::after");
+    var element = document.querySelectorAll(".logoTail2");
+    element[0].style.opacity = "0";
+  }
+  if (prevScrollpos > currentScrollPos) {
+    var navbar = document.querySelectorAll(".menu.hero");
+    navbar[0].style.top = "0";
+  } else {
+    var navbar = document.querySelectorAll(".menu.hero");
+    navbar[0].style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}

@@ -58,7 +58,7 @@ figcaption{
   margin: 25px;
 }
 .twoPictureRow figure img{
-width:30vw;
+width:60vw;
 min-width: 350px;
 height: 100%;
 object-fit: contain;
@@ -71,7 +71,7 @@ article{
   margin-bottom: 100px;
 }
 section{
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 .menu {
   position: relative;
@@ -96,7 +96,8 @@ section{
   text-justify: inter-word;
   hyphens: auto;
   font-size: 16px;
-  line-height: 1.3;
+  /* line-height: 1.3; */
+  line-height: 1.5;
 }
 
 .article {
@@ -257,7 +258,7 @@ footer sub {
   font-size: 16px;
   padding: 25px;
   margin: 50px;
-  border-radius: 25px;
+  /* border-radius: 25px; */
 }
 
 .PersonaCard .InfoList {
@@ -288,7 +289,7 @@ left:0px;
 /* max-width: calc(100% - 20px); */
 }
 .laptopContainer{
-  width: 40vw;
+  width: 65vw;
   margin: auto;
   min-width: 600px;
 }
@@ -306,7 +307,7 @@ left:0px;
 }
 .laptopMonitor{
   border-radius: 15px 15px 0 0 ;
-  margin: 0 60px;
+  margin: 0 70px;
   padding: 20px 20px 35px 20px;
   background-color: #333333;
 }
@@ -315,6 +316,9 @@ position: absolute;
 top: 0px;
 left:0px;
 /* max-width: calc(100% - 20px); */
+}
+.bottomExtras{
+  margin-top: 10px;
 }
 .mobileScreen{
   position: relative;
@@ -371,7 +375,9 @@ left:0px;
 }
 
 .caseStudyContainer p {
-  margin: 100px 25px;
+  /* margin: 100px 25px; */
+  /* font-size: 20px; */
+  font-size: 18px;
 }
 
 .caseStudyContainer .picture {
@@ -387,7 +393,7 @@ left:0px;
 
 .caseStudyContainer .Introduction .text {
   width: 50%;
-  margin: auto 25px;
+  margin: auto 0;
 }
 
 /* .caseStudyContainer .Introduction img {
@@ -472,8 +478,17 @@ tr:hover {
 .spacer {
   height: 100px;
 }
-
+.hide{
+  display: none;
+}
 @media (min-width: 1px) {
+
+  p {
+  margin: 0 10px;
+}
+.text p{
+    margin: 0;
+}
   footer img {
     display: none;
   }
@@ -487,8 +502,9 @@ tr:hover {
   }
 
   .PersonaCard {
-    margin: 0 0 50px 0;
-    width: 80%;
+    /* margin: 0 0 50px 0; */
+    /* width: 80%; */
+        margin: 0 0 0px 0;
   }
 
   .article small {
@@ -509,6 +525,7 @@ tr:hover {
 
   .caseStudyContainer .Introduction .text {
     width: 100%;
+    padding: 50px;
   }
 
   .caseStudyContainer .Introduction {
@@ -518,22 +535,27 @@ tr:hover {
 
   .caseStudyContainer .mobileContainer {
     /* display:none; */
-    margin: 100px auto;
+    /* margin: 100px auto; */
+    margin: auto;
   }
 
   .caseStudyContainer h3 {
-    text-align: center;
+    /* text-align: center; */
     margin-top: 100px;
     margin-bottom: 25px;
   }
 
+h3{
+  padding-left: 50px;
+}
   .caseStudyContainer h1 {
-    font-size: 72px;
+    /* font-size: 72px; */
+    font-size: 44px;
   }
 
   .articleAndCaseStudy {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-areas:
       'locationViewer'
       'caseStudyContainer'
@@ -563,13 +585,15 @@ tr:hover {
       width: 425px;
     }
   }
-
   @media (min-width: 768px) {
+    .hide{
+      display: flex;
+    }
 .gridContainer{
   grid-template-columns: 1fr  2fr;
 }
     .locationViewer {
-      position: fixed;
+      /* position: fixed; */
       width:calc(100% - 50px);
       top: 0px;
       height: 80px;
@@ -644,7 +668,7 @@ tr:hover {
     }
 
     .caseStudyContainer p {
-      margin: 100px 50px 100px 50px;
+      /* margin: 100px 50px 100px 50px; */
     }
 
     .PersonaCard .FlexContainer .InfoList {
@@ -659,7 +683,7 @@ tr:hover {
     }
     .locationViewer {
       display: flex;
-      position: fixed;
+      /* position: fixed; */
       width:calc(100% - 50px);
       top: 0px;
       height: 80px;
@@ -712,14 +736,15 @@ footer ul{
 margin: 0 auto;
 }
     .caseStudyContainer p {
-      width: 750px;
+      /* width: 750px; */
+      width: 100%;
     }
 
     .caseStudyContainer .Introduction{
       padding-top: 0;
     }
     .caseStudyContainer .Introduction .text {
-      width: 30%;
+      width: 35%;
     }
 
     .locationViewer {
@@ -732,10 +757,10 @@ margin: 0 auto;
     }
 
     .locationViewer {
-      position: fixed;
+      /* position: fixed; */
     }
 
     section {
-      min-height: 100vh;
+      /* min-height: 100vh; */
     }
   }
