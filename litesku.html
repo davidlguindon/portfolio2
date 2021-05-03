@@ -19,130 +19,58 @@
 </head>
 
 <body>
-  <div>
     <!-- Navigation -->
-    <nav class="menu">
-      <ul class="active">
-        <li><a href="index.html">Profile</a></li>
-        <li><a href="casestudies.html">Case Studies</a></li>
-        <li><a href="assets\David Guindon Resume.doc">Resume</a></li>
-      </ul>
-      <!-- <div class="active hiddenMobile">
-        <h5>Based in West Michigan</h5>
-      </div> -->
-      <a class="toggle-nav" href="#">&#9776;</a>
-      <img src="assets\headerlogo4.png" alt="Personal Logo" class='hiddenMobile'>
+    <nav class="menu hero">
+      <div style="display:flex">
+        <a class="toggle-nav border" href="#" style="background-color: #4A7365;">&#9776;
+        </a>
+        <a href="index.html" style="background-color: #4A7365;" class="border">
+          <svg width="125" height="75" viewBox="0 0 200 90">
+            <path
+              d="M44.6209 89.9997C30.6427 89.9997 19.6568 85.8196 11.663 77.4593C3.88767 69.3524 0 58.522 0 44.9682C0 31.4566 3.88767 20.6474 11.663 12.5404C19.6568 4.18014 30.6427 0 44.6209 0H59.6872L68.4055 26.8508V53.4556L80.6614 49.0131L73.3398 26.605L64.7161 0H91.146V3.73679C89.9229 4.24348 88.7654 4.66571 87.6733 5.0035C86.5813 5.34129 85.6203 5.74242 84.7903 6.20688C84.1296 6.56338 83.585 7.01916 83.1567 7.57423L105.782 76.9526L101.785 89.9997H94.0532L83.5521 57.8603L68.4055 63.3507V78.346C68.4055 79.6933 68.6336 80.8307 69.0896 81.7582C69.5409 82.4434 70.1086 83.0161 70.7927 83.4762C71.7101 84.0673 72.7366 84.5529 73.8723 84.9329C74.3919 85.0817 74.9115 85.251 75.4311 85.4408C76.1301 85.6741 76.846 85.9481 77.5787 86.2629V89.9997H44.6209ZM44.4243 4.75016C41.1482 4.75016 37.8065 5.38352 34.3993 6.65023C23.7847 10.6615 18.4774 23.4341 18.4774 44.9682C18.4774 59.7887 20.8799 70.3657 25.6848 76.6993C28.0437 79.7816 30.9485 81.9772 34.3993 83.2862C37.8065 84.5529 40.9953 85.1862 43.9656 85.1862C46.936 85.1862 49.2948 85.0807 51.0421 84.8696V5.06684C49.8627 4.85572 47.6567 4.75016 44.4243 4.75016Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M155.379 0.000282748C169.357 0.000282748 180.343 4.18042 188.337 12.5407C196.112 20.6477 200 31.4569 200 44.9685C200 58.5223 196.112 69.3526 188.337 77.4596C180.343 85.8199 169.357 90 155.379 90L118.1 89.9997V86.2629C119.148 85.7562 120.175 85.334 121.18 84.9962C122.228 84.6584 123.167 84.2573 123.997 83.7928C125.875 82.7373 126.815 80.9216 126.815 78.346V9.05697H126.552L108.337 68.6557L104.864 57.572L120.941 5.05975L120.769 5.0035C119.765 4.66571 118.738 4.24348 117.69 3.73679V0L155.379 0.000282748ZM155.576 4.75044C158.852 4.75044 162.193 5.3838 165.601 6.65051C176.215 10.6618 181.523 23.4344 181.523 44.9685C181.523 59.789 179.12 70.366 174.315 76.6996C171.956 79.7819 169.052 81.9775 165.601 83.2864C162.193 84.5532 159.005 85.1865 156.034 85.1865C153.064 85.1865 150.705 85.081 148.958 84.8698V85.0156L148.896 84.9962C147.804 84.6584 146.843 84.2573 146.013 83.7928C144.134 82.7795 143.195 80.9639 143.195 78.346V10.6404C143.195 8.40251 144.112 6.81912 145.947 5.8902C146.777 5.51019 147.716 5.19351 148.765 4.94017L148.958 4.88446V5.06712C150.137 4.856 152.343 4.75044 155.576 4.75044Z" />
+          </svg>
+        </a>
+        <div class="logoTail"></div>
+        <div class="logoTail2"></div>
+        <div class="navShadow"></div>
+        <ul class="active">
+          <li><a href="index.html">Profile</a></li>
+          <li class="current-item"><a href="casestudies.html">Case Studies</a></li>
+          <li><a href="assets\David Guindon Resume.doc">Resume</a></li>
+        </ul>
+      </div>
     </nav>
-    <div class='articleAndCaseStudy'>
-      <div class="locationViewer" style="grid-area:locationViewer;">
-        <!-- <div class="sticky"> -->
+    <div class="caseStudyContentGrid">
+    <div class="locationViewer" style="grid-area:locationViewer;">
 
-        <a href="#Introduction" class="Introduction">
-          <div class="circle">1</div> Introduction
-        </a>
-        <a href="#DiscoveryResearch" class="DiscoveryResearch">
-          <div class="circle">2</div>Discovery & Research
-        </a>
-        <a href="#InformationArchitecture" class="InformationArchitecture">
-          <div class="circle">3</div>Information Architecture
-        </a>
-        <a href="#VisualDesign" class="VisualDesign">
-          <div class="circle">4</div>Visual Design
-        </a>
-        <a href="#ProjectArticle" class="ProjectArticle">
-          <div class="circle">5</div>Project Article
-        </a>
-        <!-- </div> -->
+      <a href="#Introduction" class="Introduction">
+        <div class="circle">1</div> Introduction
+      </a>
+      <a href="#DiscoveryResearch" class="DiscoveryResearch">
+        <div class="circle">2</div>Discovery & Research
+      </a>
+      <a href="#InformationArchitecture" class="InformationArchitecture">
+        <div class="circle">3</div>Information Architecture
+      </a>
+      <a href="#VisualDesign" class="VisualDesign">
+        <div class="circle">4</div>Visual Design
+      </a>
+      <a href="#ProjectArticle" class="ProjectArticle">
+        <div class="circle">5</div>Project Article
+      </a>
+    </div>
+<div class="caseStudyContent" style='margin: 0 0 0 25px;'>
+        <section class='Introduction' id='Introduction' style="grid-area:Introduction;">
+<div class="twoPictureRow" style='margin-bottom: 25vh;'>
 
-      </div>
-      <div class="article" style='grid-area:article;'>
-        <section class='ProjectArticle' id='ProjectArticle'>
-
-          <h1>Understanding a <br>Design's Environment</h1>
-          <small>By David Guindon</small>
-          <article>
-            <p class='subhead'>
-              I started the LiteSku project because I noticed that even the better-designed inventory management systems still miss the mark when it comes to a genuinely polished UX design.
-            </p>
-            <p>
-              The better systems offer all the essential tools, with excellent organization.  They are easy to understand and integrate well with other software.  What more could you want from an app?
-            </p>
-            <p>
-              Their designs overlook tiny but vital details in the flow of tasks.  These small problems often compound into enormous amounts of wasted time when you consider 500 stores repeating these same actions every fifteen minutes in each department.
-            </p>
-            <p>
-              Here is an example of an important feature that is often overlooked in systems like this.
-            </p>
-            <p>
-              Let us say you are doing a task on the sales floor.  You bring up your inventory tool and go through the menus to find the feature you need.  Since it is a common task, it only takes ten seconds.  You work on the project for about two minutes and see a customer who requires help.
-  This interaction is crucial for a retail store and extremely common. It happens dozens of times a day, and the employee should be the one initiating the exchange.  Being approachable when on the sales floor is more important than a task, and the computer in your hand should be able to assist the customer quickly.
-            </p>
-            <p>
-              Situations like this are where significant UX problems start showing up in many designs.  When the employee encounters this situation, it is often frustrating for the employee.  They want to give the customer their full attention.  However, they need 10 - 30 seconds to get their app into the appropriate menu to answer the customer’s question.  Also, switching menus for the customer means losing their previous work in many apps.
-What tends to happen is that instead of giving a great experience to the customer, the employee abandons their device and provides the customer with generalized information or fewer options.  It is not because an employee is lazy,  but because the app gives the employee a bad user experience by being slow at swapping tasks and not saving progress.  Using the app as intended is not realistic because of its UX design.  If an employee loses one to three minutes while giving proper customer service, many days, not even half of their required tasks can be realistically completed.
-            </p>
-            <p>
-In the example mentioned, employees are repeatedly given a no-win situation, creating a bad experience for the employee and a bad experience for each customer interacting with the employee while using the software.
-            </p>
-            <p>
-              It is staggering when you think about how significant an impact fixing a problem in an inventory management app can have on a chain of stores.  It shows why UX design is so important.  However, finding UX problems like this using traditional research techniques can be challenging.
-            </p>
-            <p>
-              An interface that only crudely understands a persona’s environment, and has collected all their data from the lab, or from talking with users may still be missing some of the most critical holistic factors in the UX.
-            </p>
-            <p>
-Even if you talk to an employee with this problem, it is unlikely that they will notice making a subconscious decision when interacting with customers and will not bring it up during testing.
-            </p>
-            <p>
-I think the best way to catch problems like this early is to have UX designers observe the environment their personas are operating in, shadowing and talking with users of all skill levels, and performing the actions themselves.  A good UX designer is more sensitive to the big picture needs of a user and can provide invaluable information early in the design process.
-            </p>
-          </article>
-          <!-- <h1>The Power Of Communication</h1>
-          <small>By David Guindon</small>
-          <article>
-            <p class='subhead'>
-              One day, I decided to do some volunteer design work to help the COVID-19 effort. After I got access to all the required files and channels, I jumped right in. When I came on board the project, most of the initial planning had been done.
-              There was an excellent set of Style Guides, UI Components, User Flows, and Personas! Other designers had already spent about a week coming up with ideas and wireframes. I spent the next two days looking over the non-wireframe
-              Information
-              Architecture. I also attended a few designer meetings to get a better feel for what was going on. Now I was ready to start knocking out kanban cards!
-            </p>
-            <p>About 50 kanban cards were marked for designers at this point, and around 15 of them were marked as completed. "Not a bad start," I thought. I picked a card that sounded fun and opened up the Figma file. There were at LEAST 500 frames
-              in
-              there, and on initial inspection, they were in no particular order. "Oh man!" I thought, "this one might be tough. It looks like an army of designers all sprinted to a wall and started writing wherever there was space!" Creating any new
-              ideations at this point would just be making the mess bigger. I spent the next two days looking over what had already been created and mentally sorting out what frames went with what kanban card and what screens could be effectively
-              linked.
-            </p>
-            <p>After looking everything over, I noticed that a kanban card could have up to five solutions, all by different designers, whose names did not appear under the designer tab. However, nearly all the solutions were effective in the context
-              of
-              the kanban card.
-            </p>
-            <p>This is what I think was happening. When the project was fresh, several designers joined each day. They read the onboarding instructions, looked over the provided information architecture, picked a kanban card, then wireframed a
-              solution.
-              However, they were too nervous to move kanban cards to the next phase. After a day or two, they would get overwhelmed and quit the project. What an interesting problem!
-            </p>
-            <p>After a few more days and three long meetings, we ended up hashing out a vague path through all the content to make a viable initial MVP. Now that things settled
-              down a bit, we were down to approximately 25 kanban cards without solutions. I grabbed a few that all dealt with roughly the same task, and went to work. I let the other designers who had been on the project longer polish up the designs
-              we
-              decided to use. I frequently used Figma's comment tool to share ideas and concerns about the unpolished cards, or the cards that someone else was editing.
-            </p>
-            <p>After completing the cards I was working on, I started polishing the designs adjacent to what I had sent to the developers. That way, when someone had a question about that section, they would know whom to ask. After chatting with the
-              devs
-              for a while and watching my designs become a reality, the initial MVP shipped. It was a fun journey filled with amazing people from every time zone. The team's ability to talk out potential problems and mold a huge set of puzzle pieces
-              into
-              a cohesive story with so many hands in the design pie was a great experience. Soon after this, the next project came knocking, and I headed out.
-            </p>
-          </article> -->
-        </section>
-      </div>
-      <div class="caseStudyContainer" style='grid-area:caseStudyContainer;'>
-        <section class='Introduction' id='Introduction'>
           <div class="text">
             <h1>LiteSku</h1>
 
-          LiteSku helps small business owners by <br>
-          tracking inventory, ordering product, <br>
-          and checking out customers.
-            <!-- Resilience <span class='underline'> Lowers the Burden of Planning</span> for Volunteer Organizations, Delivering Goods to Those in Need. -->
+            LiteSku helps small business owners by <br>
+            tracking inventory, ordering product, <br>
+            and checking out customers.
           </div>
           <div class="mobileContainer">
             <div class="topExtras">
@@ -155,35 +83,34 @@ I think the best way to catch problems like this early is to have UX designers o
               <div class="unlock"></div>
             </div>
           </div>
-        </section>
-          <p>
-LiteSku is designed for mobile.<br><br>
-It requires a special case that gives extra battery life, a barcode scanner, and a credit card reader.<br><br>
-It also connects to a recipt printer for shelf labels and recipts.
-          </p>
-          <div class="twoPictureRow">
-
-          <div>
-
-            <img src="assets\LiteSku\liteSkuCase.jpg" alt="Retail Case" style="width: 300px; height:auto;">
-            <sub>LiteSku's Required Case</sub>
-          </div>
-          <div>
-
-            <img src="assets\LiteSku\liteSkuReceptPrinter.jpeg" alt="Recept Printer" style="width: 500px; height:auto;">
-            <sub>Recept Printer Used by LiteSku</sub>
-          </div>
         </div>
-          <p>
-This is a self started project that adresses a need I saw while working store level retail.
-          </p>
+        <p>
+          LiteSku is designed for mobile.<br>
+          It requires a special case that gives extra battery life, a barcode scanner, and a credit card reader.<br>
+          It also connects to a recipt printer for shelf labels and recipts.
+        </p>
+        <div class="twoPictureRow">
+          <figure>
+
+            <img src="assets\LiteSku\liteSkuCase.jpg" alt="Retail Case" style="width: 229px; height:auto;">
+            <figcaption><sub>LiteSku's Required Case</sub></figcaption>
+          </figure>
+          <figure>
+            <img src="assets\LiteSku\liteSkuReceptPrinter.jpeg" alt="Recept Printer" style="width: 350px; height:auto;">
+            <figcaption><sub>Recept Printer Used by LiteSku</sub></figcaption>
+          </figure>
+        </div>
+        <p>
+          This is a personal project that adresses a need I saw while working store level retail.
+        </p>
+</section>
         <section class='DiscoveryResearch' id='DiscoveryResearch'>
           <h3>Discovery & Research</h3>
           <p>
-The tasks being completed in the app are all the same for each Persona.<br><br>
-However, the pain points of each Persona can be vastly different.<br><br>
-<!-- These two Personas show two extremes for LiteSku users. <br><br> -->
-It should be kept in mind that these two Personas are extremes and most users fall in the middle of the two.
+            The tasks being completed in the app are all the same for each Persona.<br>
+            However, the pain points of each Persona can be vastly different.<br>
+            <!-- These two Personas show two extremes for LiteSku users. <br><br> -->
+            It should be kept in mind that these two Personas are extremes and most users fall in the middle of the two.
             <!-- All <span class="underline">four personas</span> required unique user flows and
             interfaces. -->
             <!-- They all have specific needs that are not as related to one another as you might initially think. -->
@@ -226,7 +153,7 @@ It should be kept in mind that these two Personas are extremes and most users fa
               </div>
               <li class="Bio">
                 <h5>Bio:</h5>
-                Carol just started college and spends most her time in classes or studying.  She just moved out of her parents house, and her first job is at StoreMart.
+                Carol just started college and spends most her time in classes or studying. She just moved out of her parents house, and her first job is at StoreMart.
               </li>
               <!-- <li><span style="font-weight:bold">Motivations: </span>Frank is a student and still living at home by himself. His college life keeps him busy, but he also spends a large amount of his time playing video games and secretly aspires to be a
             professional video game player. Because of this Frank spends nearly as much time playing video games as he does on his college life. Frank’s parents give him a monthly allowance to live on so most of his budget goes to his hobby. Frank
@@ -234,7 +161,8 @@ It should be kept in mind that these two Personas are extremes and most users fa
           </li> -->
               <li class="Goals">
                 <h5>Goals:</h5>
-                Carol wants to be able to understand how to complete her given task after the quick explanation her boss gave her.  She needs to be able to use the system to answer customer questions, even though she has not been trained to do every task yet.
+                Carol wants to be able to understand how to complete her given task after the quick explanation her boss gave her. She needs to be able to use the system to answer customer questions, even though she has not been trained to do every
+                task yet.
               </li>
               <li class="Frustrations">
                 <h5>Frustrations:</h5>
@@ -279,7 +207,7 @@ It should be kept in mind that these two Personas are extremes and most users fa
               </div>
               <li class="Bio">
                 <h5>Bio:</h5>
-                Mark has been working at StoreMart for over 20 years.  He takes pride in his job, and thinks the store will fall apart if he does not do twice the work as everyone else.
+                Mark has been working at StoreMart for over 20 years. He takes pride in his job, and thinks the store will fall apart if he does not do twice the work as everyone else.
               </li>
               <!-- <li><span style="font-weight:bold">Motivations: </span>Frank is a student and still living at home by himself. His college life keeps him busy, but he also spends a large amount of his time playing video games and secretly aspires to be a
             professional video game player. Because of this Frank spends nearly as much time playing video games as he does on his college life. Frank’s parents give him a monthly allowance to live on so most of his budget goes to his hobby. Frank
@@ -287,20 +215,21 @@ It should be kept in mind that these two Personas are extremes and most users fa
           </li> -->
               <li class="Goals">
                 <h5>Goals:</h5>
-                Mark does not want to be slowed down by StoreMart's inventory system.  He may have to change what he is doing at any time, and needs to swap tasks with no time and work loss.
+                Mark does not want to be slowed down by StoreMart's inventory system. He may have to change what he is doing at any time, and needs to swap tasks with no time and work loss.
               </li>
               <li class="Frustrations">
                 <h5>Frustrations:</h5>
-                Mark never has enough time, he cant waste it in menus of an app he has used for thousands of hours.  Losing progress on a task is unaccepable as well.
+                Mark never has enough time, he cant waste it in menus of an app he has used for thousands of hours. Losing progress on a task is unaccepable as well.
                 </ol>
               </li>
               <!-- <li><span style="font-weight:bold">Quote: </span> “I want to be the very best like no one ever was!”</li> -->
             </div>
+          </div>
             <p>
-My plan for this project was to use Guerilla Tactics for sense-checking and usability testing.<br><br>
-However, the COVID-19 pandemic hit shortly after the project was started.<br><br>
-<!-- I was looking forward to talking with small business owners so...<br><br> -->
-I decided to narrow the project scope, and focus less on polishing the UX, and adding features for the time being.
+              My plan for this project was to use Guerilla Tactics for sense-checking and usability testing.<br>
+              However, the COVID-19 pandemic hit shortly after the project was started.<br>
+              <!-- I was looking forward to talking with small business owners so...<br><br> -->
+              I decided to narrow the project scope, and focus less on polishing the UX, and adding features for the time being.
             </p>
         </section>
         <section class='InformationArchitecture' id='InformationArchitecture'>
@@ -312,154 +241,155 @@ I decided to narrow the project scope, and focus less on polishing the UX, and a
             <!-- Since there was no prior design, The team started by creating several sets of User Flows for each persona. Then we ran it by our stakeholders while preparing to set up a research team to do some testing later on. -->
           </p>
           <div class="tableborder">
-          <table style='height:100%;'>
-            <thead>
-              <tr>
-                <th colspan="5">LiteSku - User Stories</th>
-            </thead>
-            <tbody>
-              <tr class='tableSecondrow'>
-                <td>&nbsp;</td>
-                <td>As a</td>
-                <td>I want to... </td>
-                <td>So that I can...</td>
-                <td>Importance</td>
-              </tr>
-              <tr>
-                <td style='font-weight: bold;'>New User </td>
-                <td>New user</td>
-                <td>Gain access to my acccount</td>
-                <td>Access the tools required to do my job. </td>
-                <td bgcolor="#B7E1CD">High</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td style='font-weight: bold;'>Returning User</td>
-                <td>Returning user</td>
-                <td>Log into my account</td>
-                <td>Access the tools required to do my job.</td>
-                <td bgcolor="#B7E1CD">High</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td style='font-weight: bold;'>All Users</td>
-                <td>All users</td>
-                <td>Access the main menu.</td>
-                <td>Access the features required to do my job.</td>
-                <td bgcolor="#B7E1CD">High</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>All users</td>
-                <td>Enter the Point of Sale menu</td>
-                <td>Assist customers in purchasing products.</td>
-                <td bgcolor="#B7E1CD">High</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>All users</td>
-                <td>Enter the Inventory Manager</td>
-                <td>Edit, view, and understand the store's inventory.</td>
-                <td bgcolor="#B7E1CD">High</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>All users</td>
-                <td>View Reports</td>
-                <td>Better understand trends and needs of my store.</td>
-                <td bgcolor="#B7E1CD">High</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>All users</td>
-                <td>Order new products</td>
-                <td>keep the shelves full, and the store looking good.</td>
-                <td bgcolor="#B7E1CD">High</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>All users</td>
-                <td>Create edit sales</td>
-                <td>bring customers into the store.</td>
-                <td bgcolor="#FCE8B2">Medium</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>All users</td>
-                <td>Be able to save a picture to an item</td>
-                <td>find the item I am looking for faster.</td>
-                <td bgcolor="#FCE8B2">Medium</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>All users</td>
-                <td>Be able to save a shelf location on an item</td>
-                <td>find the item I am looking for faster.</td>
-                <td bgcolor="#FCE8B2">Medium</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>All users</td>
-                <td>Access the Planogram Manager</td>
-                <td>So I can plan how the shelves look at multiple locations.</td>
-                <td bgcolor="#F4C7C3">Low</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>All users</td>
-                <td>Have my backroom stock scanned into shelves</td>
-                <td>quickly find and replentish stock to the floor every day.</td>
-                <td bgcolor="#F4C7C3">Low</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>All users</td>
-                <td>Have an auditing tool</td>
-                <td>keep my back room and floor inventoy checked systematcly.</td>
-                <td bgcolor="#F4C7C3">Low</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>All users</td>
-                <td>Track user time logged into the system</td>
-                <td>So I can use the system to track how many hours someone has worked.</td>
-                <td bgcolor="#F4C7C3">Low</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>All users</td>
-                <td>Keep track of pending orders</td>
-                <td>do not accidently double order.</td>
-                <td bgcolor="#F4C7C3">Low</td>
-              </tr>
-              <tr>
-                <td>&nbsp;</td>
-                <td>All users</td>
-                <td>Be able to create, edit, and delete accounts</td>
-                <td>monitor who has access to LiteSku.</td>
-                <td bgcolor="#F4C7C3">Low</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p>
-After setting some guidelines for the project I started creating wireframes.<br><br>
-<div class="picture">
-  <img src="assets\LiteSku\liteSkuWireframes.png" alt="LiteSku Wireframes">
-</div>
-        </p>
+            <table style='height:100%;'>
+              <thead>
+                <tr>
+                  <th colspan="5">LiteSku - User Stories</th>
+              </thead>
+              <tbody>
+                <tr class='tableSecondrow'>
+                  <td>&nbsp;</td>
+                  <td>As a</td>
+                  <td>I want to... </td>
+                  <td>So that I can...</td>
+                  <td>Importance</td>
+                </tr>
+                <tr>
+                  <td style='font-weight: bold;'>New User </td>
+                  <td>New user</td>
+                  <td>Gain access to my acccount</td>
+                  <td>Access the tools required to do my job. </td>
+                  <td bgcolor="#B7E1CD">High</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td style='font-weight: bold;'>Returning User</td>
+                  <td>Returning user</td>
+                  <td>Log into my account</td>
+                  <td>Access the tools required to do my job.</td>
+                  <td bgcolor="#B7E1CD">High</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td style='font-weight: bold;'>All Users</td>
+                  <td>All users</td>
+                  <td>Access the main menu.</td>
+                  <td>Access the features required to do my job.</td>
+                  <td bgcolor="#B7E1CD">High</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>All users</td>
+                  <td>Enter the Point of Sale menu</td>
+                  <td>Assist customers in purchasing products.</td>
+                  <td bgcolor="#B7E1CD">High</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>All users</td>
+                  <td>Enter the Inventory Manager</td>
+                  <td>Edit, view, and understand the store's inventory.</td>
+                  <td bgcolor="#B7E1CD">High</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>All users</td>
+                  <td>View Reports</td>
+                  <td>Better understand trends and needs of my store.</td>
+                  <td bgcolor="#B7E1CD">High</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>All users</td>
+                  <td>Order new products</td>
+                  <td>keep the shelves full, and the store looking good.</td>
+                  <td bgcolor="#B7E1CD">High</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>All users</td>
+                  <td>Create edit sales</td>
+                  <td>bring customers into the store.</td>
+                  <td bgcolor="#FCE8B2">Medium</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>All users</td>
+                  <td>Be able to save a picture to an item</td>
+                  <td>find the item I am looking for faster.</td>
+                  <td bgcolor="#FCE8B2">Medium</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>All users</td>
+                  <td>Be able to save a shelf location on an item</td>
+                  <td>find the item I am looking for faster.</td>
+                  <td bgcolor="#FCE8B2">Medium</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>All users</td>
+                  <td>Access the Planogram Manager</td>
+                  <td>So I can plan how the shelves look at multiple locations.</td>
+                  <td bgcolor="#F4C7C3">Low</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>All users</td>
+                  <td>Have my backroom stock scanned into shelves</td>
+                  <td>quickly find and replentish stock to the floor every day.</td>
+                  <td bgcolor="#F4C7C3">Low</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>All users</td>
+                  <td>Have an auditing tool</td>
+                  <td>keep my back room and floor inventoy checked systematcly.</td>
+                  <td bgcolor="#F4C7C3">Low</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>All users</td>
+                  <td>Track user time logged into the system</td>
+                  <td>So I can use the system to track how many hours someone has worked.</td>
+                  <td bgcolor="#F4C7C3">Low</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>All users</td>
+                  <td>Keep track of pending orders</td>
+                  <td>do not accidently double order.</td>
+                  <td bgcolor="#F4C7C3">Low</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>All users</td>
+                  <td>Be able to create, edit, and delete accounts</td>
+                  <td>monitor who has access to LiteSku.</td>
+                  <td bgcolor="#F4C7C3">Low</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            After setting some guidelines for the project I started creating wireframes.<br>
+          <div class="picture">
+            <img src="assets\LiteSku\liteSkuWireframes.png" alt="LiteSku Wireframes">
+            <sub>Early Wireframes made in Figma, with imports from Balsamiq</sub>
+          </div>
+          </p>
         </section>
         <section class='VisualDesign' id='VisualDesign'>
           <h3>Visual Design</h3>
@@ -469,41 +399,32 @@ After setting some guidelines for the project I started creating wireframes.<br>
             <!-- The blue and white design promotes thoughts associated with stability, being taken care of, and confidence. The design's warm overall feeling and soft cartoon pictures can give a sense of healing and softness to the project. -->
           </p>
           <div class="picture">
-<img src="assets\LiteSku\Moodboard6.jpg" alt="Moodboard">
-<sub>One of Eight Moodboards Created</sub>
+            <img src="assets\LiteSku\Moodboard6.jpg" alt="Moodboard">
+            <sub>One of Eight Moodboards Created</sub>
           </div>
           <p>
-The moodboard inspired the primary colors for the project.<br><br>
-The almost warm icy blues feel relaxed, and confident.  Two traits that a busy retail employee could definetly benefit from.
+            The moodboard inspired the primary colors for the project.<br>
+            The almost warm icy blues feel relaxed, and confident. Two traits that a busy retail employee could definetly benefit from.
           </p>
           <div class="picture">
             <img src="assets\LiteSku\Colors.png" alt="LiteSku Colors">
-<sub>Secondary Colors are for Drawing Attention to Something Important</sub>
+            <sub>Secondary Colors are for Drawing Attention to Something Important</sub>
           </div>
           <p>
-Noto Serif supports many languages, and this could be important for many smaller family run grocery stores.<br><br>
-It also has well defined, easy to read numbers and symbols, and fits the calm rigid blue feel of the design.
+            Noto Serif supports many languages, and this could be important for many smaller family run grocery stores.<br>
+            It also has well defined, easy to read numbers and symbols, and fits the calm rigid blue feel of the design.
           </p>
           <div class="picture">
             <img src="assets\LiteSku\Typography.png" alt="LiteSku Typography">
             <sub>LiteSku's Typography</sub>
           </div>
           <p>
-While I could talk about components, brand choices, and the logo for a while longer I will save that for another case study.
+            <!-- While I could talk about components, brand choices, and the logo for a while longer I will save that for another case study. -->
+            To keep the case study short I will skip talking about components, brand choices, and the logo.  If you are interested, just ask me in person.
           </p>
-          <div class="mobileContainer">
-            <div class="topExtras">
-              <div class="mobileLight"></div>
-              <div class="speaker"></div>
-              <div class="camra"></div>
-            </div>
-            <!-- <img src="assets\ResilienceApp\Request _ Food Box _ Paypal Success.png" alt="Color Example"> -->
-            <div class="bottomExtras">
-              <div class="unlock"></div>
-            </div>
-          </div>
           <div class="twoPictureRow">
 
+            <img src="assets\LiteSku\SalesEditor.png" alt="Item Details" style="width:360px; height:auto;">
             <img src="assets\LiteSku\Item Details.png" alt="Item Details" style="width:360px; height:auto;">
             <!-- <img src="assets\LiteSku\Item Details - Extra Example.png" alt="Item Details Extra Example" style="width:360px; height:auto;"> -->
             <img src="assets\LiteSku\Point of Sale.png" alt="LiteSku POS" style="width:360px; height:auto;">
@@ -513,34 +434,91 @@ While I could talk about components, brand choices, and the logo for a while lon
 
           <p>
             If you want to read about how the design works for both Personas,<br>
-             read the<span>&nbsp<a href="#ProjectArticle" style="color:#4A7365;">article</a>&nbsp</span>on the project.
+            read the<span>&nbsp<a href="#ProjectArticle" style="color:#4A7365;">article</a>&nbsp</span>on the project.
           </p>
-          </div>
-        </section>
-        <!-- <div class='nextProject'>
-          Next Project <br> LiteSku
-        </div> -->
-      </div>
-    </div>
-  </div>
-  <footer>
+      </section>
+      <section class='ProjectArticle' id='ProjectArticle'>
+<div class="article">
+        <h1>Understanding a <br>Design's Environment</h1>
+        <small>By David Guindon</small>
+        <article>
+          <p class='subhead'>
+            I started the LiteSku project because I noticed that even the better-designed inventory management systems still miss the mark when it comes to a genuinely polished UX design.
+          </p>
+          <p>
+            The better systems offer all the essential tools, with excellent organization. They are easy to understand and integrate well with other software. What more could you want from an app?
+          </p>
+          <p>
+            Their designs overlook tiny but vital details in the flow of tasks. These small problems often compound into enormous amounts of wasted time when you consider 500 stores repeating these same actions every fifteen minutes in each
+            department.
+          </p>
+          <p>
+            Here is an example of an important feature that is often overlooked in systems like this.
+          </p>
+          <p>
+            Let us say you are doing a task on the sales floor. You bring up your inventory tool and go through the menus to find the feature you need. Since it is a common task, it only takes ten seconds. You work on the project for about two
+            minutes and see a customer who requires help.
+            This interaction is crucial for a retail store and extremely common. It happens dozens of times a day, and the employee should be the one initiating the exchange. Being approachable when on the sales floor is more important than a task,
+            and the computer in your hand should be able to assist the customer quickly.
+          </p>
+          <p>
+            Situations like this are where significant UX problems start showing up in many designs. When the employee encounters this situation, it is often frustrating for the employee. They want to give the customer their full attention.
+            However, they need 10 - 30 seconds to get their app into the appropriate menu to answer the customer’s question. Also, switching menus for the customer means losing their previous work in many apps.
+            What tends to happen is that instead of giving a great experience to the customer, the employee abandons their device and provides the customer with generalized information or fewer options. It is not because an employee is lazy, but
+            because the app gives the employee a bad user experience by being slow at swapping tasks and not saving progress. Using the app as intended is not realistic because of its UX design. If an employee loses one to three minutes while
+            giving proper customer service, many days, not even half of their required tasks can be realistically completed.
+          </p>
+          <p>
+            In the example mentioned, employees are repeatedly given a no-win situation, creating a bad experience for the employee and a bad experience for each customer interacting with the employee while using the software.
+          </p>
+          <p>
+            It is staggering when you think about how significant an impact fixing a problem in an inventory management app can have on a chain of stores. It shows why UX design is so important. However, finding UX problems like this using
+            traditional research techniques can be challenging.
+          </p>
+          <p>
+            An interface that only crudely understands a persona’s environment, and has collected all their data from the lab, or from talking with users may still be missing some of the most critical holistic factors in the UX.
+          </p>
+          <p>
+            Even if you talk to an employee with this problem, it is unlikely that they will notice making a subconscious decision when interacting with customers and will not bring it up during testing.
+          </p>
+          <p>
+            I think the best way to catch problems like this early is to have UX designers observe the environment their personas are operating in, shadowing and talking with users of all skill levels, and performing the actions themselves. A good
+            UX designer is more sensitive to the big picture needs of a user and can provide invaluable information early in the design process.
+          </p>
+        </article>
+        </div>
+</section>
+</div>
+  <!-- <footer style='grid-area:footer;'>
     <img src="assets\ResilienceApp\davidPicture.png" alt="David's Picture">
 
-<div class="caseStudyGrid">
-  <ul>
-    <a href="#">Next Project</a>
-    <a href="https://www.figma.com/proto/cmRBQ7M041BLIe3vCcAUaa/Volunteer-Menu-Prototype?node-id=3815%3A7483&viewport=848%2C447%2C0.0446573831140995&scaling=scale-down">View Prototype</a>
-  </ul>
-
-    <div class="resilApp projectCard" style='grid-area: resilApp;'>
-      <div class="projectPicture"></div>
-      <div class="projectName"><div><h2>Resilience App</h2><small>COVID-19 Relief App</small></div></div>
-      <div class="summary"><h5>This case study's focus is on the importance of communication and collaboration.<br><br><small>Theme: Communication</small><br><br> <small>Skim Time: 28 Seconds</small><br><small>Article Time: 2 Minutes 19 Seconds</small></h5></div>
+    <div class="caseStudyGrid">
+      <ul>
+        <a href="#">Next Project</a>
+        <a href="https://www.figma.com/proto/cmRBQ7M041BLIe3vCcAUaa/Volunteer-Menu-Prototype?node-id=3815%3A7483&viewport=848%2C447%2C0.0446573831140995&scaling=scale-down">View Prototype</a>
+      </ul>
+      <div class="resilApp projectCard" style='grid-area: resilApp;'>
+        <div class="projectPicture"></div>
+        <div class="projectName">
+          <div>
+            <h3>Resilience App</h3><small>COVID-19 Relief App</small>
+          </div>
+        </div>
+        <div class="summary">
+          <h5>This case study's focus is on the importance of communication and collaboration.<br><small>Theme: Communication</small><br> <small>Skim Time: 28 Seconds</small><br><small>Article Time: 2 Minutes 19 Seconds</small></h5>
+        </div>
+      </div>
     </div>
-  </div>
-    <!-- <sub>Designed and Developed by David Guindon</sub> -->
+  </footer> -->
+  <footer style='grid-area:footer;'>
+    <img src="assets\ResilienceApp\davidPicture.png" alt="David's Picture">
+    <ul>
+      <a href="https://www.figma.com/proto/cmRBQ7M041BLIe3vCcAUaa/Volunteer-Menu-Prototype?node-id=3815%3A7483&viewport=848%2C447%2C0.0446573831140995&scaling=scale-down">View Prototype</a>
+      <a href="#">Next Project</a>
+    </ul>
   </footer>
   <script src="Scripts\script.js"></script>
+  <script src="Scripts\onscroll.js"></script>
 </body>
 
 </html>

@@ -114,15 +114,6 @@ function UnSelectAll4() {
 //   var elements = document.getElementById('houseOn1');
 //   elements.beginElement();
 // });
-
-var mouseX;
-var mouseY;
-$(document).mousemove( function(e) {
-   mouseX = e.pageX;
-   mouseY = e.pageY;
-   // console.log(mouseX mouseY);
-   // console.log('mouseworking');
-});
 // $(".section2").mouseover(function(){
 //   var elements = document.getElementById('bulbOn');
 //    setTimeout(function(){ elements.beginElement(); }, 500);
@@ -146,7 +137,7 @@ function callback(entries, observer){
     if(item.isIntersecting){
       console.log('container activated', item.intersectionRatio);
         var elements = document.getElementById('bulbOn');
-    setTimeout(function(){ elements.beginElement(); }, 00);
+    setTimeout(function(){ elements.beginElement(); }, 3000);
     }
   });
 
@@ -165,71 +156,3 @@ function callback(entries, observer){
 //   });
 // };
 })
-
-$(document).ready(function(){
-let options = {
-  // root: document.querySelector('#scrollArea'),
-  // rootMargin: '0px',
-  threshold: .1
-}
-let observer = new IntersectionObserver(callback, options);
-
-document.querySelectorAll('section').forEach(container => {
-  observer.observe(container);
-})
-function callback(entries, observer){
-  entries.forEach((item, i) => {
-    if(item.isIntersecting){
- sectionRefrence = (item.target.classList);
-      var activeSection = document.querySelectorAll( '.' + sectionRefrence);
-      activeSection[0].classList.add('active');
-      // console.log('Watching: ', activeSection);
-    }
-    if(item.intersectionRatio < .1){
- sectionRefrence = (item.target.classList);
-      var activeSection = document.querySelectorAll( '.' + sectionRefrence);
-      activeSection[0].classList.remove('active');
-    }
-    // else{
-    //   var activeSection = document.querySelectorAll( '.' + sectionRefrence);
-    //   activeSection[0].classList.remove('active');
-    // };
-  });
-
-}
-// let callback = (entries, observer) => {
-//   entries.forEach(entry => {
-//     // Each entry describes an intersection change for one observed
-//     // target element:
-//     //   entry.boundingClientRect
-//     //   entry.intersectionRatio
-//     //   entry.intersectionRect
-//     //   entry.isIntersecting
-//     //   entry.rootBounds
-//     //   entry.target
-//     //   entry.time
-//   });
-// };
-})
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (currentScrollPos == 0) {
-    // var navbar = document.querySelectorAll(".logoTail::after");
-    var element = document.querySelectorAll(".logoTail2");
-    element[0].style.opacity = "1";
-  }
-  if (currentScrollPos != 0) {
-    // var navbar = document.querySelectorAll(".logoTail::after");
-    var element = document.querySelectorAll(".logoTail2");
-    element[0].style.opacity = "0";
-  }
-  if (prevScrollpos > currentScrollPos) {
-    var navbar = document.querySelectorAll(".menu.hero");
-    navbar[0].style.top = "0";
-  } else {
-    var navbar = document.querySelectorAll(".menu.hero");
-    navbar[0].style.top = "-100px";
-  }
-  prevScrollpos = currentScrollPos;
-}

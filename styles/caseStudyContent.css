@@ -1,10 +1,6 @@
-q.articleAndCaseStudy {
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  grid-template-areas:
-    'locationViewer caseStudyContainer .';
-  /* background-color: #D9DADF; */
-}
+sub{
+  margin: 0px 20px;
+  }
 .contentScreenScroll:hover > img
 {
   object-fit: contain;
@@ -39,18 +35,29 @@ q.articleAndCaseStudy {
   75%  { object-position: 0 75%;  }
   100% { object-position: 0 100%;  }
 } */
-.twoPictureRow{
+.twoPictureRow {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: self-end;
+  /* flex-direction: column; */
+  max-width: 900px;
+  /* margin: auto; */
+}
+
+.twoPictureRow img{
+  margin: 0 25px 25px 0;
+}
+body .mobileContainer img{
+  margin: 0;
 }
 figcaption{
   position:relative;
-  top: -28px;
+  top: -56px;
+  font-size: .8rem;
 }
 .twoPictureRow figure{
-  margin: 25px;
+  /* margin: 25px; */
   /* border: 2px solid lightgray; */
   border-radius: 5px;
 }
@@ -58,10 +65,14 @@ figcaption{
   margin: 25px;
 }
 .twoPictureRow figure img{
-width:60vw;
-min-width: 350px;
+max-width: 900px;
+/* min-width: 350px; */
 height: 100%;
 object-fit: contain;
+padding-bottom: 28px;
+}
+.caseStudyContent img{
+max-width: 900px;
 }
 .twoPictureRow>div{
   display: flex;
@@ -76,22 +87,11 @@ section{
 .menu {
   position: relative;
 }
-.gridContainer{
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  align-items: center;
-  grid-column-gap: 20px;
-  margin: 10px;
-}
-/* .articleAndCaseStudy>div {
-  padding: 0 20px;
-} */
 .underline {
   text-decoration: underline;
 }
 
-.article p {
+.caseStudyContent .article p {
   text-align: left;
   text-justify: inter-word;
   hyphens: auto;
@@ -99,25 +99,22 @@ section{
   /* line-height: 1.3; */
   line-height: 1.5;
 }
-
-.article {
-  position: sticky;
-  display: flex;
-}
 .locationViewer {
   z-index: 2;
   display: flex;
   position: sticky;
   top: 0px;
-  height: 80px;
   font-size: 16px;
   background-color: white;
   flex-wrap: wrap;
-  padding: 0 25px 0 25px;
+  /* padding: 0 25px 0 25px; */
   color: #4A7365;
   text-decoration: none;
   font-size: 100%;
   overflow: hidden;
+  flex-direction: column;
+  height: 100vh;
+  width: 300px;
 }
 
 .locationViewer a {
@@ -141,7 +138,6 @@ section{
   width: 20px;
   height: 20px;
   border-radius: 65px;
-  margin: 25px 15px 25px 0px;
 }
 
 .locationViewer .active>.circle {
@@ -150,7 +146,6 @@ section{
   width: 30px;
   height: 30px;
   border-radius: 65px;
-  margin: 25px 15px 25px 0px;
   text-align: center;
   font-size: .8rem;
   color: white;
@@ -165,9 +160,6 @@ section{
   margin-bottom: 44px;
 }
 
-footer ul {
-  text-align: center;
-}
 
 footer ul a {
   text-decoration: none;
@@ -195,12 +187,6 @@ footer a:hover {
   background-color: #333333;
 }
 
-footer img {
-  display: flex;
-  margin: 0 auto 44px auto;
-  width: 75%;
-}
-
 footer sub {
   position: absolute;
   bottom: 10px;
@@ -220,7 +206,7 @@ footer sub {
   margin: 50px 20px 0 20px;
 }
 
-.article .subhead {
+.caseStudyContent .article .subhead {
   /* margin: 0 0 50px 0; */
   border-top: 1px solid black;
   margin-top: 10px;
@@ -228,7 +214,7 @@ footer sub {
   text-indent: 0;
 }
 
-.article p {
+.caseStudyContent .article p {
   text-indent: 1em;
   margin: 0;
 }
@@ -252,13 +238,10 @@ footer sub {
   list-style-type: none;
   background-color: #75CEB4;
   width: 360px;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
   justify-content: flex-start;
   font-size: 16px;
   padding: 25px;
   margin: 50px;
-  /* border-radius: 25px; */
 }
 
 .PersonaCard .InfoList {
@@ -272,7 +255,6 @@ footer sub {
 
 .PersonaCard .Picture svg {
   display: flex;
-  margin: auto;
 }
 
 .PersonaCard h4 {
@@ -289,7 +271,7 @@ left:0px;
 /* max-width: calc(100% - 20px); */
 }
 .laptopContainer{
-  width: 65vw;
+  width: 1080px;
   margin: auto;
   min-width: 600px;
 }
@@ -374,8 +356,8 @@ left:0px;
   height: 23px;
 }
 
-.caseStudyContainer p {
-  /* margin: 100px 25px; */
+.caseStudyContent p {
+  margin: 0 0 2rem 0;
   /* font-size: 20px; */
   font-size: 18px;
 }
@@ -419,7 +401,7 @@ left:0px;
 .PersonaGrid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .Goals {
@@ -468,11 +450,12 @@ tr:hover {
 
 .tableborder {
   border-radius: 5px;
-  overflow-x: hidden;
-  border: 1px solid #205C65;
+  overflow-x: auto;
+  /* border: 1px solid #205C65; */
+  border: 1px solid #CCC;
   /* width: 80%; */
-  width: 950px;
-  margin: auto;
+  max-width: 950px;
+  margin-bottom: 2rem;
 }
 
 .spacer {
@@ -490,7 +473,22 @@ tr:hover {
     margin: 0;
 }
   footer img {
-    display: none;
+    margin: auto 0;
+    width: 250px;
+    height: 250px;
+    transform: scaleX(-1);
+  }
+  footer{
+    display: flex;
+    justify-content: left;
+    height: 50vh;
+  }
+  footer ul{
+    margin: auto 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
   }
   .PersonaCard .FlexContainer .InfoList {
     margin: 0;
@@ -529,7 +527,7 @@ tr:hover {
   }
 
   .caseStudyContainer .Introduction {
-    min-height: calc(100vh - 84px);
+    min-height: calc(100vh);
     display: block;
   }
 
@@ -539,7 +537,7 @@ tr:hover {
     margin: auto;
   }
 
-  .caseStudyContainer h3 {
+  .caseStudyContent h3 {
     /* text-align: center; */
     margin-top: 100px;
     margin-bottom: 25px;
@@ -548,86 +546,73 @@ tr:hover {
 h3{
   padding-left: 50px;
 }
-  .caseStudyContainer h1 {
+  .caseStudyContent h1 {
     /* font-size: 72px; */
     font-size: 44px;
-  }
-
-  .articleAndCaseStudy {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas:
-      'locationViewer'
-      'caseStudyContainer'
-      'article';
   }
 
 }
   @media (min-width: 576px) {
     .locationViewer{
+      display: none;
       flex-direction: column;
       flex-wrap: nowrap;
-    }
-    .article {
-      position: relative;
-      width: 360px;
-      margin: auto;
     }
 
     .PersonaCard .Picture {
       display: block;
-      margin: 0 20px 0 0;
+      margin: 0 20px 0 20px;
     }
 
     .PersonaCard {
-      margin: 25px 25px 50px 25px;
-      /* width: 360px; */
-      width: 425px;
+      margin: 25px 25px 50px 0px;
+      width: 450px;
+      border-radius: 25px;
     }
+    p {
+    margin: 0 60px;
+  }
   }
   @media (min-width: 768px) {
     .hide{
       display: flex;
     }
-.gridContainer{
+/* .gridContainer{
   grid-template-columns: 1fr  2fr;
-}
-    .locationViewer {
-      /* position: fixed; */
-      width:calc(100% - 50px);
-      top: 0px;
-      height: 80px;
-      display: flex;
-      position: sticky;
-      top: 0px;
-      height: auto;
-      font-size: 16px;
-      background-color: white;
+} */
+.locationViewer {
+      height: 100vh;
+      top: 85px;
+      font-size: 14px;
+      background-color: transparent;
       flex-wrap: wrap;
       color: #4A7365;
       text-decoration: none;
       font-size: 100%;
       overflow: hidden;
-      flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-start;
+      left: 30px;
+      margin: 10px 0 0 10px;
     }
 
     .locationViewer a {
       display: flex;
-      flex-direction: column;
+      justify-content: flex-start;
+      margin: 10px 0 0 0;
       font-size: 18px;
-      line-height: calc(20px * 1.6);
+      /* line-height: 1; */
       color: #707070;
       text-align: center;
-      justify-content:  center;
     }
-
+    .menu .locationViewer a {
+      color: #707070;
+    }
     .locationViewer .active {
-      font-size: 20px;
+      font-size: 18px;
       display: flex;
       align-items: center;
       text-decoration: none;
-      color: inherit;
+      color: inherit !important;
     }
 
     .locationViewer .active {
@@ -642,14 +627,14 @@ h3{
       width: 30px;
       height: 30px;
       border-radius: 65px;
-      margin: 10px auto 0 auto;
       text-align:center;
       font-size: .8rem;
       line-height: 30px;
+      margin-right: 10px;
     }
 
     .locationViewer .active>.circle {
-      margin: 10px auto 0 auto;
+      margin-right: 10px;
       display: block;
       background-color: #4b8a77;
       width: 30px;
@@ -664,13 +649,8 @@ h3{
 
     .article {
       position: relative;
-      width: 600px;
+      max-width: 600px;
     }
-
-    .caseStudyContainer p {
-      /* margin: 100px 50px 100px 50px; */
-    }
-
     .PersonaCard .FlexContainer .InfoList {
       margin: 0;
     }
@@ -678,24 +658,15 @@ h3{
   }
 
   @media (min-width: 1024px) {
-    .locationViewer a {
-      margin:0 10px;
-    }
-    .locationViewer {
+    .locationViewer{
       display: flex;
-      /* position: fixed; */
-      width:calc(100% - 50px);
-      top: 0px;
-      height: 80px;
-      font-size: 16px;
-      background-color: white;
-      flex-wrap: wrap;
-      color: #4A7365;
-      text-decoration: none;
-      font-size: 100%;
-      overflow: hidden;
-      flex-direction: row;
-      justify-content: space-between;
+    }
+    h3 {
+      padding-left: 0px;
+      width: 70%;
+      /* margin: 100px auto; */
+      text-align: left;
+      max-width: 900px;
     }
     .caseStudyContainer .picture {
       width: 950px;
@@ -705,8 +676,9 @@ h3{
 
     .caseStudyContainer p {
       width: 70%;
-      margin: 100px auto;
+      margin: 72px auto;
   text-align: left;
+  max-width: 900px;
     }
 
     .caseStudyContainer .Introduction .mobileContainer {
@@ -725,42 +697,22 @@ h3{
     .article footer {
       display: none;
     }
+    .text p{
+      margin: 0;
+    }
   }
 
   @media (min-width: 1400px) {
     .article footer {
       display: flex;
     }
-footer ul{
-  display: block;
-margin: 0 auto;
-}
-    .caseStudyContainer p {
-      /* width: 750px; */
-      width: 100%;
-    }
-
     .caseStudyContainer .Introduction{
       padding-top: 0;
     }
     .caseStudyContainer .Introduction .text {
       width: 35%;
     }
-
-    .locationViewer {
-      display: flex;
-      justify-content: center;
-    }
     .PersonaGrid {
       width: 70%;
-      margin: auto;
-    }
-
-    .locationViewer {
-      /* position: fixed; */
-    }
-
-    section {
-      /* min-height: 100vh; */
     }
   }

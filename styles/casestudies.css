@@ -14,6 +14,17 @@
     position: relative;
     top: 75px;
 }
+.caseStudyContentGrid {
+  display: grid;
+  /* grid-template-columns:260px calc(100vw - 260px); */
+  grid-template-columns:auto;
+  grid-template-areas:
+'caseStudyContent'
+'footer';
+    position: relative;
+    top: 75px;
+    grid-column-gap: 10px;
+}
 .liteSku .projectPicture{
     background-image: url(../assets/LiteSku/liteSkuMobileMockup.png);
 }
@@ -22,6 +33,9 @@
     background-size: contain;
     position: relative;
     /* top: 10px; */
+}
+section{
+  /* padding: 100px 0; */
 }
 .caseStudyGrid>div {
   /* border: 5px solid gray; */
@@ -256,6 +270,17 @@
   .summary p{
   /* max-width: 450px; */
 }
+.caseStudyContentGrid {
+  display: grid;
+  /* grid-template-columns:260px calc(100vw - 260px); */
+  grid-template-columns:auto 1fr 50px;
+  grid-template-areas:
+'locationViewer caseStudyContent'
+'locationViewer footer';
+    position: relative;
+    top: 75px;
+    grid-column-gap: 10px;
+}
 }
 
 @media (min-width: 1400px) {
@@ -301,14 +326,3 @@
     margin-bottom: 25px;
   }
 }
-
-
-entries.forEach((item, i) => {
-  if(item.intersectionRatio > .111){
-    var elements = document.getElementById('bulbOn');
-    console.log('elementcheck ', elements);
-     // setTimeout(function(){ elements.beginElement(); }, 100);
-     elements.beginElement();
-     console.log('activated ', item.intersectionRatio );
-
-  }
