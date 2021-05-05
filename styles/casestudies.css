@@ -14,10 +14,14 @@
     position: relative;
     top: 75px;
 }
+.locationViewer{
+  display: none;
+}
 .caseStudyContentGrid {
   display: grid;
   /* grid-template-columns:260px calc(100vw - 260px); */
-  grid-template-columns:auto;
+  /* grid-template-columns:auto; */
+  grid-template-columns:360px;
   grid-template-areas:
 'caseStudyContent'
 'footer';
@@ -280,6 +284,9 @@ section{
 'locationViewer footer';
     position: relative;
     top: 75px;
+}
+.locationViewer{
+  display: flex;
 }
 }
 

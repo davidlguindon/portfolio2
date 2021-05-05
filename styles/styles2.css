@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  /* border: 1px solid red !important; */
 }
 
 html {
@@ -298,7 +299,7 @@ small, .text_small {
   text-align: left;
   display: flex;
   flex-direction: column;
-  margin: 0 0 2rem 0;
+  margin: 0 0 4rem 0;
 }
 
 .header {

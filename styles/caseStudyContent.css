@@ -40,10 +40,7 @@ sub{
   flex-wrap: wrap;
   align-items: self-end;
   justify-content: space-evenly;
-}
-
-.pictureRow img{
-  margin: 0 25px 25px 0;
+  margin-bottom: 4rem;
 }
 body .mobileContainer img{
   margin: 0;
@@ -99,7 +96,7 @@ section{
 }
 .locationViewer {
   z-index: 2;
-  display: flex;
+  /* display: flex; */
   position: sticky;
   top: 0px;
   font-size: 16px;
@@ -112,7 +109,7 @@ section{
   overflow: hidden;
   flex-direction: column;
   height: 100vh;
-  width: 300px;
+  /* width: 300px; */
 }
 
 .locationViewer a {
@@ -357,7 +354,7 @@ left:0px;
 .caseStudyContent p {
   margin: 0 0 2rem 0;
   /* font-size: 20px; */
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 .caseStudyContainer .picture {
@@ -400,6 +397,7 @@ left:0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-bottom: 4rem;
 }
 
 .Goals {
@@ -433,7 +431,6 @@ table th {
   color: #FFF;
   font-weight: bold;
 }
-
 .tableFirstrow {}
 
 .tableSecondrow {
@@ -452,11 +449,12 @@ tr:hover {
   /* border: 1px solid #205C65; */
   border: 1px solid #CCC;
   /* width: 80%; */
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .pBlock{
   margin: auto;
-  width: 740px;
+  max-width: 740px;
+  padding: 0 10px 0 10px;
 }
 .spacer {
   height: 100px;
@@ -474,17 +472,17 @@ tr:hover {
 }
   footer img {
     margin: auto 0;
-    width: 250px;
+    max-width: 250px;
     height: 250px;
     transform: scaleX(-1);
   }
   footer{
     display: flex;
-    justify-content: left;
+    justify-content: space-evenly;
     height: 50vh;
+    flex-wrap: wrap;
   }
   footer ul{
-    margin: auto 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -565,7 +563,7 @@ h3{
     }
 
     .PersonaCard {
-      margin: 25px 25px 50px 0px;
+      /* margin: 25px 25px 50px 0px; */
       width: 450px;
       border-radius: 25px;
     }
