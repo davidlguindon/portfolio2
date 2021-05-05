@@ -35,17 +35,14 @@ sub{
   75%  { object-position: 0 75%;  }
   100% { object-position: 0 100%;  }
 } */
-.twoPictureRow {
+.pictureRow {
   display: flex;
-  /* justify-content: center; */
   flex-wrap: wrap;
   align-items: self-end;
-  /* flex-direction: column; */
-  max-width: 900px;
-  /* margin: auto; */
+  justify-content: space-evenly;
 }
 
-.twoPictureRow img{
+.pictureRow img{
   margin: 0 25px 25px 0;
 }
 body .mobileContainer img{
@@ -56,25 +53,26 @@ figcaption{
   top: -56px;
   font-size: .8rem;
 }
-.twoPictureRow figure{
+.pictureRow figure{
   /* margin: 25px; */
   /* border: 2px solid lightgray; */
   border-radius: 5px;
 }
-.twoPictureRow > div{
+.pictureRow > div{
   margin: 25px;
 }
-.twoPictureRow figure img{
+.pictureRow figure img{
 max-width: 900px;
 /* min-width: 350px; */
 height: 100%;
 object-fit: contain;
 padding-bottom: 28px;
 }
-.caseStudyContent img{
-max-width: 900px;
+.caseStudyContent .picture img{
+max-width: calc(100vw - 700px);
+min-width: 100%;
 }
-.twoPictureRow>div{
+.pictureRow>div{
   display: flex;
   flex-direction: column;
 }
@@ -401,7 +399,7 @@ left:0px;
 .PersonaGrid {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
+  justify-content: space-evenly;
 }
 
 .Goals {
@@ -454,10 +452,12 @@ tr:hover {
   /* border: 1px solid #205C65; */
   border: 1px solid #CCC;
   /* width: 80%; */
-  max-width: 950px;
   margin-bottom: 2rem;
 }
-
+.pBlock{
+  margin: auto;
+  width: 740px;
+}
 .spacer {
   height: 100px;
 }
@@ -539,7 +539,7 @@ tr:hover {
 
   .caseStudyContent h3 {
     /* text-align: center; */
-    margin-top: 100px;
+    margin-top: 0px;
     margin-bottom: 25px;
   }
 
@@ -711,8 +711,5 @@ h3{
     }
     .caseStudyContainer .Introduction .text {
       width: 35%;
-    }
-    .PersonaGrid {
-      width: 70%;
     }
   }
