@@ -38,9 +38,9 @@ sub{
 .pictureRow {
   display: flex;
   flex-wrap: wrap;
-  align-items: self-end;
+  align-items: center;
   justify-content: space-evenly;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 body .mobileContainer img{
   margin: 0;
@@ -85,7 +85,9 @@ section{
 .underline {
   text-decoration: underline;
 }
-
+.article{
+  margin: auto;
+}
 .caseStudyContent .article p {
   text-align: left;
   text-justify: inter-word;
@@ -397,7 +399,7 @@ left:0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .Goals {
@@ -453,8 +455,9 @@ tr:hover {
 }
 .pBlock{
   margin: auto;
-  max-width: 740px;
-  padding: 0 10px 0 10px;
+  max-width: 932px;
+  padding: 0 15px 0 15px;
+  line-height: 1.4;
 }
 .spacer {
   height: 100px;
@@ -463,7 +466,12 @@ tr:hover {
   display: none;
 }
 @media (min-width: 1px) {
-
+.pictureRow img{
+  margin-bottom: 2rem;
+}
+.pBlock{
+  font-size: 20px;
+}
   p {
   margin: 0 10px;
 }
@@ -478,7 +486,7 @@ tr:hover {
   }
   footer{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 50vh;
     flex-wrap: wrap;
   }
@@ -486,6 +494,7 @@ tr:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 50px;
 
   }
   .PersonaCard .FlexContainer .InfoList {
@@ -563,7 +572,7 @@ h3{
     }
 
     .PersonaCard {
-      /* margin: 25px 25px 50px 0px; */
+      margin: 0 0 2rem 0;
       width: 450px;
       border-radius: 25px;
     }
