@@ -1,0 +1,183 @@
+* {
+  /* border: 1px solid red !important; */
+}
+
+.styleguideContainer {
+  /* margin: 100px 50px 50px 50px; */
+  /* height: 300vh; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: auto auto auto auto auto auto; */
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    'title title styleguideContainerPicture styleguideContainerPicture styleguideContainerPicture styleguideContainerPicture'
+    'overview overview styleguideContainerPicture styleguideContainerPicture styleguideContainerPicture styleguideContainerPicture'
+    'role role styleguideContainerPicture styleguideContainerPicture styleguideContainerPicture styleguideContainerPicture'
+    'problem problem styleguideContainerPicture styleguideContainerPicture styleguideContainerPicture styleguideContainerPicture'
+    'barriers barriers styleguideContainerPicture styleguideContainerPicture styleguideContainerPicture styleguideContainerPicture'
+    'solution solution styleguideContainerPicture styleguideContainerPicture styleguideContainerPicture styleguideContainerPicture';
+}
+
+.styleguideContainer>div {
+  margin: 50px;
+}
+
+.styleguideContainer .title h2 {
+  font-size: 2.355rem;
+  margin: 0;
+}
+
+.styleguideContainer .title {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.styleguideContainer>div>h5 {
+  margin: 2.75rem 0 0 0;
+}
+
+.styleguideContainer>div>h5 {
+  margin: 0 0 0 0;
+}
+
+.styleguideContainer .styleguideContainerPicture {
+  margin: 0 0 0 0;
+  background-image: url(../assets/ResilienceApp/styleguideBackground.jpg);
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  z-index: -1;
+  /* filter        : blur(1px); */
+  height: 300vh;
+}
+
+.heroPicture {
+  display: flex;
+  /* justify-content: center; */
+  /* flex-direction: column; */
+  margin: 50px auto;
+  width: 75%;
+  /* transform: translate3d(0px, 0px, 0px); */
+  /* object-fit: cover; */
+justify-content: space-between;
+align-items: flex-start;
+}
+
+.heroPicture img {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  width: 100%;
+  height: auto;
+  object-fit: scale-down;
+}
+
+.pictureBorder {
+  background-image: linear-gradient(180deg, #4B8A77, #6A988A 40%, #98ACA5);
+  padding: 30px;
+  margin: 200px 8%;
+}
+
+.borderContainerPicture {
+  display: flex;
+  margin: auto;
+  background-color: white;
+}
+.borderContainerPicture img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+.projectNote{
+  margin: 30px 0;
+  /* padding: 10px 75px; */
+  padding: 10px 50px 10px 75px;
+  background-color: #FFF1DD;
+  width: 50%;
+}
+.imgGrid{
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); */
+  grid-template-columns: repeat(auto-fill, minmax(min(360px, 100%), 1fr));
+  grid-gap: 4px;
+  grid-auto-rows: auto;
+}
+.imgGrid div{
+  width: 100%;
+  height: auto;
+  height: 200px;
+  background-color: lightblue;
+}
+.imgGrid img{
+  width: 100%;
+  height:auto;
+object-fit: scale-down;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin: 200px 8%;
+}
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 20px 20px;
+}
+.column img{
+  width: 100%;
+  height:auto;
+object-fit: scale-down;
+}
+
+.pBlock p{
+  margin: 0;
+}
+@media (max-width: 1200px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 20px 20px;
+  }
+  .projectNote{
+    width: 75%;
+  }
+  .pictureBorder{
+    margin: 200px 25px;
+  }
+  .styleguideContainer {
+    /* margin: 100px 50px 50px 50px; */
+    /* height: 300vh; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: auto auto auto auto auto auto; */
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      'title title title title styleguideContainerPicture styleguideContainerPicture'
+      'overview overview overview overview styleguideContainerPicture styleguideContainerPicture'
+      'role role role role styleguideContainerPicture styleguideContainerPicture'
+      'problem problem problem problem styleguideContainerPicture styleguideContainerPicture'
+      'barriers barriers barriers barriers styleguideContainerPicture styleguideContainerPicture'
+      'solution solution solution solution styleguideContainerPicture styleguideContainerPicture';
+
+  }
+.parallax{
+  display: none;
+}
+}
+@media (max-width: 768px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 20px 20px;
+  }
+  .projectNote{
+    width: 100%;
+    margin: 200px 0;
+  }
+  .pictureBorder{
+    margin: 200px 0;
+  }
+}
+@media (max-width: 768px) {
+
+}
