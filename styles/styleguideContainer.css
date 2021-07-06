@@ -178,6 +178,32 @@ object-fit: scale-down;
     margin: 200px 0;
   }
 }
-@media (max-width: 768px) {
-
+@media (max-width: 420px) {
+  .styleguideContainer {
+    /* margin: 100px 50px 50px 50px; */
+    /* height: 300vh; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: auto auto auto auto auto auto; */
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    'title title title title title title'
+    'overview overview overview overview overview overview'
+    'role role role role role role'
+    'problem problem problem problem problem problem'
+    'barriers barriers barriers barriers barriers barriers'
+    'solution solution solution solution solution solution';
+  }
+  .pictureBorder{
+    margin: 100px 0;
+    padding: 3px;
+  }
+  .projectNote{
+    margin: 100px 0;
+  }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 4px;
+  }
 }
