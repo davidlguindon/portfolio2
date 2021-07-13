@@ -1,7 +1,6 @@
 * {
   /* border: 1px solid red !important; */
 }
-
 .styleguideContainer {
   margin: 0 0 100px 0;
   /* height: 300vh; */
@@ -24,7 +23,7 @@
 
 .styleguideContainer .title h2 {
   font-size: 2.355rem;
-  margin: 0;
+  margin: 10px 0;
 }
 
 .styleguideContainer .title {
@@ -85,6 +84,7 @@ align-items: flex-start;
   display: flex;
   margin: auto;
   background-color: white;
+  border-radius: 5px;
 }
 .borderContainerPicture img {
   width: 100%;
@@ -125,6 +125,11 @@ object-fit: scale-down;
   padding: 0 20px;
   margin: 200px 8%;
 }
+.grayBackgroundRow{
+  background-color: #DEE0E5;
+  margin: 0;
+  padding: 200px 8%;
+}
 .column {
   flex: 25%;
   max-width: 25%;
@@ -139,7 +144,10 @@ object-fit: scale-down;
   max-width: 100%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   margin-bottom: 20px;
-  padding: 10px;
+  /* padding: 10px; */
+}
+img{
+  border-radius: 5px;
 }
 .column img{
   width: 100%;
@@ -160,7 +168,7 @@ object-fit: scale-down;
     width: 75%;
   }
   .pictureBorder{
-    margin: 200px 25px;
+    margin: 200px 0;
   }
   .styleguideContainer {
     /* margin: 100px 50px 50px 50px; */
@@ -170,16 +178,19 @@ object-fit: scale-down;
     /* grid-template-columns: auto auto auto auto auto auto; */
     grid-template-rows: auto auto auto auto;
     grid-template-areas:
-      'title title title title styleguideContainerPicture styleguideContainerPicture'
-      'overview overview overview overview styleguideContainerPicture styleguideContainerPicture'
-      'role role role role styleguideContainerPicture styleguideContainerPicture'
-      'problem problem problem problem styleguideContainerPicture styleguideContainerPicture'
-      'barriers barriers barriers barriers styleguideContainerPicture styleguideContainerPicture'
-      'solution solution solution solution styleguideContainerPicture styleguideContainerPicture';
-
+      'title title title styleguideContainerPicture styleguideContainerPicture styleguideContainerPicture'
+      'overview overview overview styleguideContainerPicture styleguideContainerPicture styleguideContainerPicture'
+      'role role role styleguideContainerPicture styleguideContainerPicture styleguideContainerPicture'
+      'problem problem problem styleguideContainerPicture styleguideContainerPicture styleguideContainerPicture'
+      'barriers barriers barriers styleguideContainerPicture styleguideContainerPicture styleguideContainerPicture'
+      'solution solution solution styleguideContainerPicture styleguideContainerPicture styleguideContainerPicture';
+  }
+  .styleguideContainer > div{
+    font-size: 75%;
+    margin: 50px 20px;
   }
 .parallax{
-  display: none;
+  /* display: none; */
 }
 }
 @media (max-width: 768px) {
@@ -196,21 +207,26 @@ object-fit: scale-down;
     margin: 200px 0;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 768px) {
   .styleguideContainer {
     /* margin: 100px 50px 50px 50px; */
     /* height: 300vh; */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     /* grid-template-columns: auto auto auto auto auto auto; */
     grid-template-rows: auto auto auto auto;
     grid-template-areas:
-    'title title title title title title'
-    'overview overview overview overview overview overview'
-    'role role role role role role'
-    'problem problem problem problem problem problem'
-    'barriers barriers barriers barriers barriers barriers'
-    'solution solution solution solution solution solution';
+    'styleguideContainerPicture'
+    'title'
+    'overview'
+    'role'
+    'problem'
+    'barriers'
+    'solution';
+  }
+  .styleguideContainer > div{
+    margin: 50px 10px;
+    font-size: 90%;
   }
   .pictureBorder{
     margin: 100px 0;
@@ -224,5 +240,26 @@ object-fit: scale-down;
     max-width: 100%;
     padding: 4px;
   }
-  html {font-size: 50%;}
+  .largeColumn{
+    flex: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .largeColumn img{
+    padding: 0;
+    margin: 0;
+  }
+  .row{
+    margin: 0;
+    padding: 0;
+  }
+  .styleguideContainer .styleguideContainerPicture{
+    /* background-repeat: no-repeat; */
+    height: 100vh;
+    width: 100%;
+  }
+  footer{
+    min-height: 100vh;
+  }
 }
