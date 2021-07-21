@@ -125,7 +125,7 @@ $(document).ready(function(){
 let options = {
   // root: document.querySelector('#scrollArea'),
   // rootMargin: '0px',
-  threshold: 1
+  threshold: .65
 }
 let observer = new IntersectionObserver(callback, options);
 
@@ -137,7 +137,7 @@ function callback(entries, observer){
     if(item.isIntersecting){
       console.log('container activated', item.intersectionRatio);
         var elements = document.getElementById('bulbOn');
-    setTimeout(function(){ elements.beginElement(); }, 3000);
+    setTimeout(function(){ elements.beginElement(); }, 10);
     }
   });
 
