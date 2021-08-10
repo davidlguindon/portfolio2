@@ -301,6 +301,10 @@ small, .text_small {
   flex-direction: column;
   margin: 0 0 4rem 0;
 }
+.section2 .picture{
+position: relative;
+  top:18%;
+}
 
 .header {
   grid-area: header;
@@ -953,6 +957,9 @@ small, .text_small {
   .section2 h5 {
     text-align: center;
   }
+  .section2 .body {
+    text-align: center;
+  }
 
   .section3 {
     display: flex;
@@ -992,7 +999,6 @@ small, .text_small {
 }
 
 @media (min-width: 1400px) {
-  .section1 {}
 }
 
 /*----- Toggle Button -----*/

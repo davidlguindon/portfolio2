@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="/styles/styles2.css">
   <link rel="stylesheet" type="text/css" href="/styles/casestudies.css">
   <link rel="stylesheet" type="text/css" href="/styles/caseStudyContent.css">
+  <link rel="stylesheet" type="text/css" href="/styles/styleguideContainer.css">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="assets\personallogo.jpg" />
@@ -42,7 +43,7 @@
       </ul>
     </div>
   </nav>
-  <div class="caseStudyContentGrid">
+  <div class="caseStudyContentGrid" style='position:relative; top:-150px; padding-right:50px;'>
     <div class="locationViewer" style="grid-area:locationViewer;">
 
       <a href="#Introduction" class="Introduction">
@@ -63,53 +64,57 @@
     </div>
     <div class="caseStudyContent">
       <section class='Introduction' id='Introduction' style="grid-area:Introduction;">
-        <div class="pictureRow" style='margin-bottom: 25vh;'>
 
-          <div class="text">
-            <h1>LiteSku</h1>
-
-            LiteSku helps small business owners by <br>
-            tracking inventory, ordering product, <br>
-            and checking out customers.
+        <div class="styleguideContainer">
+          <div class='title' style='grid-area:title; margin-bottom:50px;'>
+            <h5 style='font-weight:400;'>2019-2020</h5>
+            <h5>Client: Guindon Designs</h5>
+            <h2>Not sure Yet</h2>
           </div>
-          <img style='max-width: 560px;' src="../assets/LiteSku/liteSkuMobileMockup.png" alt="">
-          <!-- <div class="mobileContainer">
-            <div class="topExtras">
-              <div class="mobileLight"></div>
-              <div class="speaker"></div>
-              <div class="camra"></div>
-            </div>
-            <img src="assets\LiteSku\liteSkulogin.png" alt="ResilienceApp Picture" style='max-width: 100%;'>
-            <div class="bottomExtras">
-              <div class="unlock"></div>
-            </div>
-          </div> -->
-        </div>
-        <div class="pBlock">
-          <p>
+          <div style='grid-area:overview;'>
+            <h5>Overview</h5>LiteSku helps small retail business owners check out customers, keep track of inventory, balance their books, and assists with ordering, along with several other similar features.  Managing a retail store is a lot of work, and having the right tools to make the job faster is essential when you are short on time.  LiteSku helps its users by allowing them quick access to each tool, with minimal downtime, and focuses on making multitasking easier.
+          </div>
+          <div style='grid-area:role;'>
+            <h5>Required Addons</h5>
             LiteSku is designed for mobile.<br>
             It requires a special case that gives extra battery life, a barcode scanner, and a credit card reader.<br>
             It also connects to a recipt printer for shelf labels and recipts.
-          </p>
-        </div>
-        <div class="pictureRow">
-          <figure>
-
-            <img src="assets\LiteSku\liteSkuCase.jpg" alt="Retail Case" style="width: 229px; height:auto;">
-            <figcaption><sub>LiteSku's Required Case</sub></figcaption>
-          </figure>
-          <figure>
-            <img src="assets\LiteSku\liteSkuReceptPrinter.jpeg" alt="Recept Printer" style="width: 350px; height:auto;">
-            <figcaption><sub>Recept Printer Used by LiteSku</sub></figcaption>
-          </figure>
-        </div>
-        <div class="pBlock">
-          <p>
-        I have 15 years of retail management experience working for many different companies. <br>
-          I decided to create LiteSku after using many similar tools that poorly handled multitasking. <br>
-          Most of my early research was from my own experiences in the field.
-          </p>
-        </div>
+          </div>
+          <div style='grid-area:problem;'>
+            <h5>Problem</h5>There are many POS and inventory tracking systems available on the market today.  However, most all-in-one store running apps have trouble switching between tasks quickly, and often require you to lose progress on a job you are working on when a customer needs assistance.
+          </div>
+          <div style='grid-area:barriers;'>
+            <h5>Barriers</h5>Due to COVID-19, setting up interviews with potential users for testing has been difficult.
+          </div>
+          <div style='grid-area:solution;'>
+            <h5>Solution</h5>
+LiteSku focuses on making sure it is easy to swap between tasks quickly and intuitively.  It also lets you rest assured that you can return to your task with minimal loss of time if you are interrupted.
+          </div>
+          <div class='styleguideContainerPicture parallax2' style='grid-area:styleguideContainerPicture; overflow: hidden; background-image: url(../assets/LiteSku/LiteSku%20Tile.jpg); position:relative; left: 50px;'>
+            <div class='parallax' style='width:100%; height: 100%; heroPicture;'>
+              <div style='width:100%; min-height:250vh;'>
+              </div>
+              <div style='width:100%; min-height:250vh;'>
+                <div class="heroPicture">
+                  <img style='box-shadow: none;' src="assets\LiteSku\liteSkuCase.png" alt="Retail Case" style="width: 229px; height:auto;">
+                  <img style='box-shadow: none;' src="assets\LiteSku\liteSkuReceptPrinter.png" alt="Recept Printer" style="width: 350px; height:auto;">
+                </div>
+                  </div>
+                  <div style='width:100%; min-height:250vh;'>
+                    <div class="heroPicture">
+                      <img src="assets\LiteSku\Home.jpg" alt="home" style="max-width:360px; height:auto;">
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="pBlock">
+            <p>
+              I have 15 years of retail management experience working for many different companies. <br>
+              I decided to create LiteSku after using many similar tools that poorly handled multitasking. <br>
+              Most of my early research was from my own experiences in the field.
+            </p>
+          </div>
       </section>
       <section class='DiscoveryResearch' id='DiscoveryResearch'>
         <div class="pBlock">
@@ -119,15 +124,10 @@
               The tasks being completed in the app are all the same for each Persona.<br>
               However, the pain points of each Persona can be vastly different.<br>
               These two personas explain the needs of an employee as they gain experience in their job.<br>
-              <!-- These two Personas show two extremes for LiteSku users. <br><br> -->
-              <!-- All <span class="underline">four personas</span> required unique user flows and
-            interfaces. -->
-              <!-- They all have specific needs that are not as related to one another as you might initially think. -->
             </p>
           </div>
         </div>
         <div class="PersonaGrid">
-          <!-- <div class="PersonaCard" style="background-color: #9B8C6B; color:black;"> -->
           <div class="PersonaCard" style="background-color: lightgray; color:black;">
             <div class="FlexContainer">
               <div class="Picture">
@@ -167,10 +167,6 @@
               <h5>Bio:</h5>
               Carol just started college and spends most her time in classes or studying. She just moved out of her parents house, and her first job is at StoreMart.
             </li>
-            <!-- <li><span style="font-weight:bold">Motivations: </span>Frank is a student and still living at home by himself. His college life keeps him busy, but he also spends a large amount of his time playing video games and secretly aspires to be a
-            professional video game player. Because of this Frank spends nearly as much time playing video games as he does on his college life. Frank’s parents give him a monthly allowance to live on so most of his budget goes to his hobby. Frank
-            is very familiar with technology and would feel comfortable using any sort of device.
-          </li> -->
             <li class="Goals">
               <h5>Goals:</h5>
               Carol wants to be able to understand how to complete her given task after the quick explanation her boss gave her. She needs to be able to use the system to answer customer questions, even though she has not been trained to do every
@@ -180,9 +176,7 @@
               <h5>Frustrations:</h5>
               Carol is overwhelmed by having to do so many things all at once. She does not want to look like she does not know what she is doing in front of customers and boss.
             </li>
-            <!-- <li><span style="font-weight:bold">Quote: </span> “I want to be the very best like no one ever was!”</li> -->
           </div>
-          <!-- <div class="PersonaCard" style='background-color:#6C7EAA; color:black;'> -->
           <div class="PersonaCard" style='background-color:lightgray; color:black;'>
             <div class="FlexContainer">
               <div class="Picture">
@@ -222,9 +216,6 @@
               <h5>Bio:</h5>
               Mark has been working at StoreMart for over 20 years. He takes pride in his job, and thinks the store will fall apart if he does not do twice the work as everyone else.
             </li>
-            <!-- <li><span style="font-weight:bold">Motivations: </span>Frank is a student and still living at home by himself. His college life keeps him busy, but he also spends a large amount of his time playing video games and secretly aspires to be a
-            professional video game player. Because of this Frank spends nearly as much time playing video games as he does on his college life. Frank’s parents give him a monthly allowance to live on so most of his budget goes to his hobby. Frank
-            is very familiar with technology and would feel comfortable using any sort of device.
           </li> -->
             <li class="Goals">
               <h5>Goals:</h5>
@@ -235,14 +226,12 @@
               Mark never has enough time, he cant waste it in menus of an app he has used for thousands of hours. Losing progress on a task is unaccepable as well.
               </ol>
             </li>
-            <!-- <li><span style="font-weight:bold">Quote: </span> “I want to be the very best like no one ever was!”</li> -->
           </div>
         </div>
         <div class="pBlock">
           <p>
             My plan for this project was to use Guerilla Tactics for sense-checking and usability testing.<br>
             However, the COVID-19 pandemic hit shortly after the project was started.<br>
-            <!-- I was looking forward to talking with small business owners so...<br><br> -->
             I decided to narrow the project scope, and focus less on polishing the UX, and adding features for the time being.
           </p>
         </div>
@@ -250,14 +239,11 @@
       <section class='InformationArchitecture' id='InformationArchitecture'>
         <div class="pBlock">
           <div class="pBlock">
-          <h3>Information Architecture</h3>
-          <p>
-            With the narrowed project scope user stories for the MVP became smaller.
-            <!-- Initially, we were reskinning an existing relief app. However, it became clear early that <span class="underline"> starting from scratch </span> would
-            solve our user's needs more effectively. -->
-            <!-- Since there was no prior design, The team started by creating several sets of User Flows for each persona. Then we ran it by our stakeholders while preparing to set up a research team to do some testing later on. -->
-          </p>
-        </div>
+            <h3>Information Architecture</h3>
+            <p>
+              With the narrowed project scope user stories for the MVP became smaller.
+            </p>
+          </div>
         </div>
         <div class="tableborder">
           <table style='height:100%;'>
@@ -403,71 +389,62 @@
           </table>
         </div>
         <div class="pBlock">
-        <p>
-          After setting some guidelines for the project I started creating wireframes.<br>
-        </p>
+          <p>
+            After setting some guidelines for the project I started creating wireframes.<br>
+          </p>
         </div>
-        <!-- <div class="picture">
-          <img src="assets\LiteSku\liteSkuWireframes.png" alt="LiteSku Wireframes">
-          <sub>Early Wireframes made in Figma, with imports from Balsamiq</sub>
-        </div> -->
         <div class="pictureRow">
           <img src="assets\LiteSku\liteSkuWireframe.png" alt="LiteSku Wireframes">
-          <!-- <sub>Early Wireframes made in Figma, with imports from Balsamiq</sub> -->
           <img src="assets\LiteSku\liteSkuWireframe3.png" alt="LiteSku Wireframes">
-          <!-- <sub>Early Wireframes made in Figma, with imports from Balsamiq</sub> -->
           <img src="assets\LiteSku\liteSkuWireframe2.png" alt="LiteSku Wireframes">
           <img src="assets\LiteSku\liteskuSitemap.png" alt="LiteSku Wireframes" style='max-width:700px;'>
-          <!-- <sub>Early Wireframes made in Figma, with imports from Balsamiq</sub> -->
+          <sub>Early Wireframes made in Figma, Balsamiq, and Adobe XD</sub>
         </div>
       </section>
       <section class='VisualDesign' id='VisualDesign'>
         <div class="pBlock">
-        <h3>Visual Design</h3>
-        <p>
-          Created a few moodboards to get a feel for what color pallete and typography would fit the brand.
-          <!-- The blue and white design promotes <span class="underline">stability</span>, safety, and confidence. The cartoon pictures give <span class="underline">healing</span> and softness. -->
-          <!-- The blue and white design promotes thoughts associated with stability, being taken care of, and confidence. The design's warm overall feeling and soft cartoon pictures can give a sense of healing and softness to the project. -->
-        </p>
-      </div>
+          <h3>Visual Design</h3>
+          <p>
+            Created a few moodboards to get a feel for what color pallete and typography would fit the brand.
+            <!-- The blue and white design promotes <span class="underline">stability</span>, safety, and confidence. The cartoon pictures give <span class="underline">healing</span> and softness. -->
+            <!-- The blue and white design promotes thoughts associated with stability, being taken care of, and confidence. The design's warm overall feeling and soft cartoon pictures can give a sense of healing and softness to the project. -->
+          </p>
+        </div>
         <div class="picture">
           <img src="assets\LiteSku\Moodboard6.jpg" alt="Moodboard">
           <sub>One of Eight Moodboards Created</sub>
         </div>
         <div class="pBlock">
-        <p>
-          The moodboard inspired the primary colors for the project.<br>
-          The almost warm icy blues feel relaxed, and confident. Two traits that a busy retail employee could definetly benefit from.
-        </p>
-      </div>
+          <p>
+            The moodboard inspired the primary colors for the project.<br>
+            The almost warm icy blues feel relaxed, and confident. Two traits that a busy retail employee could definetly benefit from.
+          </p>
+        </div>
         <div class="picture">
           <img src="assets\LiteSku\Colors.png" alt="LiteSku Colors">
           <sub>Secondary Colors are for Drawing Attention to Something Important</sub>
         </div>
         <div class="pBlock">
-        <p>
-
-
-          Originally the typography was Noto Serif because it supports many languages, which could be necessary for smaller, family-run grocery stores. <br>
-    However, I later switched to Roboto because San-Serif is a bit easier to read when it comes to smaller pieces of text, and uses Noto as a backup if Roboto does not support the language.
-        </p>
-      </div>
-        <div class="picture">
+          <p>
+            Originally the typography was Noto Serif because it supports many languages, which could be necessary for smaller, family-run stores. <br>
+            However, I later switched to Roboto because San-Serif is a bit easier to read when it comes to smaller pieces of text, and uses Noto as a backup if Roboto does not support the language.
+          </p>
+        </div>
+        <!-- <div class="picture">
           <img src="assets\LiteSku\Typography.png" alt="LiteSku Typography">
           <sub>LiteSku's Typography</sub>
-        </div>
-        <div class="pBlock">
+        </div> -->
+        <!-- <div class="pBlock">
         <p>
-          <!-- While I could talk about components, brand choices, and the logo for a while longer I will save that for another case study. -->
+          While I could talk about components, brand choices, and the logo for a while longer I will save that for another case study.
           To keep the case study short I will skip talking about components, brand choices, and the logo. If you are interested, just ask me in person.
         </p>
-      </div>
+      </div> -->
         <div class="pictureRow">
-
           <img src="assets\LiteSku\Backroom Audit.jpg" alt="Backroom Audit" style="max-width:360px; height:auto;">
           <img src="assets\LiteSku\Home.jpg" alt="home" style="max-width:360px; height:auto;">
           <img src="assets\LiteSku\Item Editor.jpg" alt="Item Editor" style="max-width:360px; height:auto;">
-          <img src="assets\LiteSku\SKU Detail.jpg" alt="SKU Detail" style="max-width:360px; height:auto;">
+          <img src="assets\LiteSku\SKU Summary.jpg" alt="SKU Summary" style="max-width:360px; height:auto;">
         </div>
         <!-- <div class="pictureRow">
 
@@ -479,12 +456,12 @@
           <img src="assets\LiteSku\Item Editor.png" alt="Item Editor" style="width:360px; height:auto;">
         </div> -->
 
-<div class="pBlock">
-        <p>
-          If you want to read about how the design works for both Personas,<br>
-          read the<span>&nbsp<a href="#ProjectArticle" style="color:#4A7365;">article</a>&nbsp</span>on the project.
-        </p>
-      </div>
+        <div class="pBlock">
+          <p>
+            If you want to read about how the design works for both Personas,<br>
+            read the<span>&nbsp<a href="#ProjectArticle" style="color:#4A7365;">article</a>&nbsp</span>on the project.
+          </p>
+        </div>
       </section>
       <section class='ProjectArticle' id='ProjectArticle'>
         <div class="article">
@@ -568,6 +545,7 @@
     </footer>
     <script src="Scripts\script.js"></script>
     <script src="Scripts\onscroll.js"></script>
+    <script src="Scripts\parallax.js"></script>
 </body>
 
 </html>

@@ -43,8 +43,10 @@
 
 .styleguideContainer .styleguideContainerPicture {
   margin: 0 0 0 0;
-  background-image: url(../assets/ResilienceApp/styleguideBackground.jpg);
-  background-position: center;
+  /* background-image: url(../assets/ResilienceApp/styleguideBackground.jpg); */
+  /* background-image: url(assets/LiteSku/LiteSku Tile.jpg); */
+  /* background-image: url(../assets/LiteSku/LiteSku%20Tile.jpg); */
+  /* background-position: center; */
   background-size: contain;
   width: 100%;
   z-index: -1;
@@ -60,8 +62,10 @@
   width: 90%;
   /* transform: translate3d(0px, 0px, 0px); */
   /* object-fit: cover; */
-justify-content: space-between;
-align-items: flex-start;
+/* justify-content: space-around; */
+justify-content: center;
+/* align-items: flex-start; */
+align-items: center;
 }
 
 .heroPicture img {
@@ -161,7 +165,7 @@ object-fit: scale-down;
   padding: 100px 0;
 }
 .pBlock p{
-  margin: 0;
+  margin: 0 10px;
 }
 @media (max-width: 1200px) {
   .column {

@@ -2,6 +2,7 @@
   /* background-color: #ececec; */
   display: grid;
   grid-template-columns:1fr;
+  /* grid-template-rows: 150px; */
   grid-template-areas:
     'resilApp'
     'thisPortfolio'
@@ -289,7 +290,8 @@ section{
   /* grid-template-columns:260px calc(100vw - 260px); */
   /* grid-template-columns:auto 1fr; */
   /* grid-template-columns:repeat(3, 1fr); */
-  grid-template-columns:240px minmax(calc(1028px - 260px), 1fr) minmax(0, 250px);
+  /* grid-template-columns:240px minmax(calc(1028px - 260px), 1fr) minmax(0, 250px); */
+  grid-template-columns:240px minmax(calc(1028px - 260px), 1fr);
   grid-template-areas:
 'locationViewer caseStudyContent'
 'locationViewer footer';
