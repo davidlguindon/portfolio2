@@ -62,8 +62,9 @@
   width: 90%;
   /* transform: translate3d(0px, 0px, 0px); */
   /* object-fit: cover; */
-/* justify-content: space-around; */
-justify-content: center;
+justify-content: space-between;
+/* justify-content: center; */
+/* justify-content: center; */
 /* align-items: flex-start; */
 align-items: center;
 }
