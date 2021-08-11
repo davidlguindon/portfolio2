@@ -12,7 +12,7 @@ window.addEventListener('scroll', function(e){
 
   var scrolled = window.pageYOffset;
 
-  var rate = scrolled * -.1;
+  var rate = scrolled * -.07;
 
   target[0].style.backgroundPosition = ''+rate+'px, 0px';
 });
