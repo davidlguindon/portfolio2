@@ -399,6 +399,7 @@ left:0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  /* justify-content: space-between; */
   margin-bottom: 2rem;
 }
 
@@ -451,7 +452,7 @@ tr:hover {
   /* border: 1px solid #205C65; */
   border: 1px solid #CCC;
   /* width: 80%; */
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
 }
 .pBlock{
   margin: auto;
@@ -548,10 +549,18 @@ tr:hover {
     /* text-align: center; */
     margin-top: 0px;
     margin-bottom: 25px;
+    /* margin: 0 10px 25px 10px; */
   }
 
-h3{
+/* h3{
   padding-left: 50px;
+} */
+h3 {
+  padding-left: 0px;
+  width: 70%;
+  /* margin: 100px auto; */
+  text-align: left;
+  max-width: 900px;
 }
   .caseStudyContent h1 {
     /* font-size: 72px; */
@@ -667,13 +676,6 @@ h3{
   @media (min-width: 1024px) {
     .locationViewer{
       display: flex;
-    }
-    h3 {
-      padding-left: 0px;
-      width: 70%;
-      /* margin: 100px auto; */
-      text-align: left;
-      max-width: 900px;
     }
     .caseStudyContainer .picture {
       width: 950px;

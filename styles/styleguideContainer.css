@@ -163,10 +163,10 @@ object-fit: scale-down;
 }
 
 .pBlock{
-  padding: 100px 0;
+  padding: 100px 10px;
 }
 .pBlock p{
-  margin: 0 10px;
+  margin: 0;
 }
 @media (max-width: 1200px) {
   .column {
