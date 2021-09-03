@@ -725,7 +725,8 @@ position: relative;
   }
 
   .section1 h3 {
-    font-size: 76px;
+    /* font-size: 76px; */
+    font-size: 75px;
     margin: 0 0 1.05rem;
     /* text-shadow: 2px 2px 4px #000000 */
   }
