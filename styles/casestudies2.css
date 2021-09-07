@@ -1,22 +1,22 @@
-.navSpacer{
+.navSpacer {
   height: 100px;
 }
- /* section {
+
+/* section {
   border: 1px solid blue;
   width: 125%;
   height: 100vh;
 } */
-.sectionTilt{
+.sectionTilt {
   transform: rotate(-7deg);
   position: relative;
   top: -145px;
   overflow: hidden;
 }
 
-.sectionTilt:after{
+.sectionTilt:after {}
 
-}
-.heroCaseStudyGrid{
+.heroCaseStudyGrid {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -25,15 +25,153 @@
     'mutualaid mutualaid'
     'liteSku liteSku';
 }
-.heroCaseStudyCard{
+
+.heroCaseStudyCard {
   height: 100%;
   width: 50%;
   border: 1px solid yellow;
 }
-.testsection{
+
+.testsection {
   width: 80%;
   height: 40vh;
   border: 1px solid purple;
   margin: auto;
   padding-bottom: 100px;
+}
+
+.backgroundStripe {
+  position: relative;
+  height: 0px;
+  width: 100%;
+  z-index: -1;
+  /* overflow: hidden; */
+}
+
+.backgroundStripe::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -50vw;
+  height: 25vw;
+  width: 25vw;
+  border: #98ACA5 inset 25vw;
+  transform: translateY(-50%) rotate(calc(45deg + 180deg));
+  opacity: .2;
+  overflow: hidden;
+}
+
+.pageSectionCard {
+  width: 1200px;
+  box-shadow: 0 2px 4px 0 rgba(74, 73, 74, 0.25);
+  margin-bottom: 200px;
+  transition: .3s;
+  display: flex;
+}
+
+.pageSectionCardPicture {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 420px;
+  width: 50%;
+}
+
+.pageSectionCardInformation {
+  width: 50%;
+  height: 420px;
+  display: flex;
+}
+
+.pageSectionCardInformationContentWrapper {
+  position: relative;
+  top: 15px;
+  margin: auto;
+  padding: 0 80px;
+}
+
+.pageSectionCardOuterContainer {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.pageSectionCard:hover {
+  transform: scale(1.02);
+  transition: transform 200ms ease 0s;
+  cursor: pointer;
+}
+
+.introductionCard {
+  margin-bottom: 200px;
+}
+
+.introductionCardWrapper .introductionCard .pictureHolder {
+  margin: 100px 100px 0 0;
+  position: relative;
+  padding: 50px;
+  background-color: white;
+  left: 60%;
+  width: 450px;
+}
+
+.introductionCardWrapper .introductionCard .pictureHolder::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-style: solid;
+  border-width: 12px 0 0 12px;
+  content: '';
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: -6px 0 0 -6px;
+  vertical-align: top;
+  border-color: #4A7365 transparent transparent #98ACA5;
+}
+
+.introductionCardWrapper .introductionCard .pictureHolder::after {
+  border-style: solid;
+  border-width: 0 12px 12px 0;
+  content: '';
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  vertical-align: top;
+  border-color: transparent #4A7365 #98ACA5 transparent;
+  position: absolute;
+  right: -6px;
+  bottom: -6px;
+}
+
+.colorAngle {
+  position: relative;
+  overflow: hidden;
+}
+
+.colorAngle::before {
+  overflow: hidden;
+  content: '';
+  position: absolute;
+  border: #98ACA5 solid 50vw;
+  transform: translateY(-50%) rotate(calc(45deg + 180deg));
+  height: 0px;
+  width: 100%;
+  top: -175px;
+  opacity: .2;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+footer {
+  width: 100%;
+  height: 25px;
+  margin: 0 10% 5% 0;
+  float: right;
+}
+
+footer p sub {
+  float: right;
 }
