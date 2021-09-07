@@ -63,24 +63,24 @@
 }
 
 .pageSectionCard {
+  /* width: 100%; */
   width: 1200px;
   box-shadow: 0 2px 4px 0 rgba(74, 73, 74, 0.25);
-  margin-bottom: 200px;
   transition: .3s;
   display: flex;
+  height: auto;
 }
 
 .pageSectionCardPicture {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 420px;
+  /* height: 420px; */
   width: 50%;
 }
 
 .pageSectionCardInformation {
   width: 50%;
-  height: 420px;
   display: flex;
 }
 
@@ -94,6 +94,21 @@
 .pageSectionCardOuterContainer {
   max-width: 1400px;
   margin: auto;
+  /* Padding is for 1200:375 Aspect Ratio. */
+  padding-top: 30%;
+  position: relative;
+  /* margin-bottom: 200px; */
+}
+.pageSectionCardOuterContainerAspectRatio {
+  width: 100%;
+  display: flex;
+  /* max-height: 375px; */
+  height: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .pageSectionCard:hover {
