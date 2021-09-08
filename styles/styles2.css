@@ -365,18 +365,12 @@ position: relative;
   background-size: cover;
   display: none;
 }
-.front{
-  background: url("../assets/Textures/texture.jpg");
-}
-.back{
-  background: url("../assets/Textures/texture.jpg");
-}
 .card {
   font-family: 'Lato', sans-serif;
   position: relative;
   width: 450px;
   height: 250px;
-  padding: 10px 15px 15px 10px;
+  /* padding: 10px 15px 15px 10px; */
   /* margin-top:50px; */
   border-radius: 2px;
   /* background: url("../assets/Textures/texture.jpg"); */
@@ -506,6 +500,7 @@ position: relative;
   background-clip: text;
   -webkit-background-clip: text;
   background-size: cover;
+  margin: auto;
 }
 
 .card.front {
@@ -538,6 +533,13 @@ position: relative;
   transform: rotateY(0deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  background: url("../assets/Textures/texture.jpg");
+  background-size: cover;
+  border-radius: 2px;
+  width: 452px;
+  height: 252px;
+  display: flex;
+  flex-direction: column;
 }
 
 .flipped {
@@ -545,7 +547,9 @@ position: relative;
   transform: rotateY(180deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  /* background: url("../assets/Textures/texture.jpg"); */
+  background: url("../assets/Textures/texture.jpg");
+  background-size: cover;
+  border-radius: 2px;
 }
 
 .front.flipped {
