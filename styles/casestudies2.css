@@ -101,6 +101,8 @@
 .pageSectionCardInformation {
   width: 50%;
   display: flex;
+  height: 100%;
+  overflow: hidden;
 }
 
 .pageSectionCardInformationContentWrapper {
@@ -108,13 +110,16 @@
   top: 15px;
   margin: auto;
   padding: 0 80px;
+  /* height: 100%; */
+  /* overflow: hidden; */
 }
 
 .pageSectionCardOuterContainer {
   max-width: 1400px;
   margin: auto;
   /* Padding is for 1200:375 Aspect Ratio. */
-  padding-top: 30%;
+  /* padding-top: 30%; */
+  padding-top: calc(150px + 15%);
   position: relative;
   /* margin-bottom: 200px; */
 }
@@ -208,4 +213,82 @@ footer {
 
 footer p sub {
   float: right;
+}
+.pageSectionCardInformationContentWrapper a:hover{
+  color: #c6a344;
+  transition: color .2s;
+  border-bottom: 0px solid #c6a344;
+}
+.pageSectionCardInformationContentWrapper a{
+  text-decoration: none;
+  font-size: calc(10px + .5vw);
+  color: black;
+  /* text-decoration-color: #c6a344; */
+  border-bottom: 2.5px solid #c6a344;
+}
+.pageSectionCardInformationContentWrapper p{
+  font-size: calc(12px + .5vw);
+}
+/* .pageSectionCardInformationContentWrapper p{
+  font-size: 80%;
+} */
+.pageSectionCardInformationContentWrapper h2{
+  margin: 0;
+}
+@media (max-width: 1200px) {
+  /* .pageSectionCardInformationContentWrapper p{
+    font-size: 20px;
+  } */
+}
+@media (max-width: 1024px) {
+  /* .pageSectionCardInformationContentWrapper p{
+    font-size: 16px;
+  } */
+  .pageSectionCardInformationContentWrapper{
+    padding:  0 40px;
+  }
+.pageSectionCardInformationContentWrapper h2{
+font-size: 2.0em;
+/* font-size: 75%; */
+}
+}
+@media (max-width: 750px) {
+  /* .pageSectionCardInformationContentWrapper p{
+    font-size: 16px;
+  } */
+  .pageSectionCard{
+    width: auto;
+  }
+  .pageSectionCardOuterContainerAspectRatio{
+    display: block;
+    position: inherit;
+    height: auto;
+  }
+  .pageSectionCardOuterContainer{
+    padding-top: 0px;
+  }
+  .pageSectionCardInformationContentWrapper{
+    margin:auto 0;
+    padding: 0px 40px;
+    position: inherit;
+    width: 100%;
+  }
+  .pageSectionCardPicture{
+    display: none;
+  }
+  .pageSectionCardInformation{
+    width: 100%;
+    margin-bottom: 1.15rem;
+  }
+  .pageSectionCard{
+    box-shadow: none;
+    border-bottom: 1px solid #4A7365;
+  }
+  .pageSectionCardInformationContentWrapper h2{
+margin-top: 1.15rem;
+    font-size: 1.4em;
+    /* font-size: 75%; */
+  }
+  .pageSectionCardInformationContentWrapper a{
+  }
 }
