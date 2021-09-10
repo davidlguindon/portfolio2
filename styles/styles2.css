@@ -262,6 +262,7 @@ small, .text_small {
   color: #ffffff;
   text-align: center;
   height: 100vh;
+  display: flex;
 }
 
 .section5 h1 {
@@ -701,7 +702,7 @@ position: relative;
   }
 
   .sectionPadding {
-    padding: 140px 5%;
+    padding: 140px 10%;
   }
 
   .serviceContainer {
@@ -716,6 +717,7 @@ position: relative;
 @media (min-width: 768px) {
   .section1 .content {
     display: inline-block;
+    margin: auto;
   }
 
   .hiddenMobile {
@@ -742,6 +744,7 @@ position: relative;
     font-size: 75px;
     margin: 0 0 1.05rem;
     /* text-shadow: 2px 2px 4px #000000 */
+    line-height: 1em;
   }
 
   .section1 .body {
@@ -927,7 +930,7 @@ position: relative;
 
   .section1 .content {
     margin: auto 0;
-    width: 615px;
+    width: 55%;
   }
 
   .section1 .picture {
