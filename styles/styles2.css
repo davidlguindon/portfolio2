@@ -293,7 +293,7 @@ small, .text_small {
 
 .hvcenter {
   margin: auto;
-  padding-top: 44px;
+  /* padding-top: 44px; */
 }
 
 .picture {
@@ -405,6 +405,7 @@ position: relative;
   clip-path: url(#business-card-svg);
   position: relative;
   top: 8px;
+  margin: auto;
 }
 
 .front-text {
@@ -507,9 +508,10 @@ position: relative;
 .card.front {
   transform: rotateZ(-7deg);
   /* left:calc(10% + 715px); */
-  left: calc(25% + 415px);
   /* left: 53.1%; */
   /* left: 23.1%; */
+  /* left: calc(25% + 415px); */
+  left: calc(34% + 415px);
   top: calc(23.5% - 10px);
   position: absolute;
   transition: 1.5s ease-out;
@@ -519,14 +521,16 @@ position: relative;
 .card.back {
   transform: rotateZ(4deg);
   /* top: 48.1%; */
-  left: calc(115px + 48vw);
   /* left: calc(10% + 915px); */
   /* left: 73.25%; */
   /* left: 43.25%; */
   position: absolute;
   /* top: calc(23vw + 180px); */
-  top: calc(23.5% + 400px + -10vw);
   /* background: url("../assets/Textures/texture.jpg"); */
+
+  /* left: calc(115px + 48vw); */
+  left: calc(115px + 56vw);
+  top: calc(23.5% + 400px + -10vw);
 }
 
 .not-flipped {
@@ -702,7 +706,8 @@ position: relative;
   }
 
   .sectionPadding {
-    padding: 140px 10%;
+    /* padding: 140px 10%; */
+    padding: 140px 5%;
   }
 
   .serviceContainer {
@@ -905,6 +910,7 @@ position: relative;
 @media screen and (min-width: 860px) {}
 
 @media (min-width: 1024px) {
+
   .section1 .body {
     width: auto;
   }
@@ -931,6 +937,7 @@ position: relative;
   .section1 .content {
     margin: auto 0;
     width: 55%;
+    /* width: 42%; */
   }
 
   .section1 .picture {
