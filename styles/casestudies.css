@@ -34,7 +34,7 @@
     background-image: url(../assets/LiteSku/LiteSku%20Tile.jpg);
 }
 .resilApp .projectPicture{
-    background-image: url(../assets/resilMockup.png);
+    /* background-image: url(../assets/resilMockup.png); */
     background-image: url(../assets/ResilienceApp/styleguideBackground.jpg);
     background-size: contain;
     position: relative;
