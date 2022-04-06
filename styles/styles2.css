@@ -583,6 +583,8 @@ position: relative;
 
 .front.flipped .name-text {
   margin: auto;
+  width: auto;
+  height: auto;
 }
 
 #top-card:checked~.card.front {
