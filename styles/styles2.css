@@ -478,6 +478,8 @@ position: relative;
   text-align: left;
   color: transparent;
   font-weight: 700;
+  width: 100%;
+  height: 100%;
 }
 
 .role-text {
